@@ -1,0 +1,4 @@
+[forest]
+trees = ["trees"]
+root = "index"
+base_url = "https://thosgood.com/homotopical-holomorphic"

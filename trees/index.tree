@@ -1,0 +1,21 @@
+\title{Homotopical holomorphic notes}
+
+\import{macros}
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{Existence of resolutions by holomorphic twisting cochains}
+
+  \ul{
+    \li{
+      For a single coherent sheaf: [[TT78, Proposition 2.4]](TT78); the paragraphs around [[OTT81, Lemma 1.6]](OTT81).
+    }
+
+    \li{
+      For perfect complexes: [[OTT85, Proposition 1.2.3]](OTT85).
+    }
+  }
+}
+
+\put\transclude/expanded{false}
+\transclude{bibliography}

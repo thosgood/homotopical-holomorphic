@@ -1,0 +1,25 @@
+\xmlns:html{http://www.w3.org/1999/xhtml}
+
+\def\todo[x]{\strong{\em{TO-DO: \x}}}
+
+\def\proof[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{proof}
+      \body
+    }
+  }
+}
+
+\def\cat[x]{#{\mathcal{\x}}}
+\def\Cat[x]{#{\mathsf{\x}}}
+\def\sh[x]{#{\mathscr{\x}}}
+
+\def\from{#{\leftarrow}}
+\def\simto{#{\xrightarrow{\sim}}}
+\def\simfrom{#{\xleftarrow{\sim}}}
+
+\def\id{#{\operatorname{id}}}
+\def\Ker{#{\operatorname{Ker}}}
+\def\Hom{#{\operatorname{Hom}}}
