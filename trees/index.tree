@@ -3,6 +3,32 @@
 \import{macros}
 \put\transclude/numbered{false}
 
+\substree{
+  \title{Everything I know}
+  \taxon{motto}
+
+  \p{
+    I know roughly three things:
+    
+    \ol{
+      \li{
+        \em{simplicial objects}, but in particular really just the \strong{Čech nerve}
+      }
+      \li{
+        \em{sheaves}, but in particular really just \strong{vector bundles as #{\{g_{\alpha\beta}\}}}
+      }
+      \li{
+        \em{homotopy coherent structures}, but in particular really just the \strong{Maurer-Cartan equation #{\mathrm{d}a+a^2=0}}
+      }
+    }
+  }
+
+  \p{
+    It turns out that, if this is all you know, you can still build up to quite a lot of holomorphic geometry.
+    The purpose of these notes is to explore that approach, and to tidy up some of its history and exposition.
+  }
+}
+
 \subtree{
   \title{Existence of resolutions by holomorphic twisting cochains}
 
