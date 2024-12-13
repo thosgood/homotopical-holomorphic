@@ -16,7 +16,7 @@
         \em{simplicial objects}, but in particular really just the \strong{Čech nerve}
       }
       \li{
-        \em{sheaves}, but in particular really just \strong{transition data #{\{g_{\alpha\beta}\}}}
+        \em{sheaves}, but in particular really just \strong{gluing data #{\{g_{\alpha\beta}\}}}
       }
       \li{
         \em{homotopy coherent structures}, but in particular really just the \strong{Maurer-Cartan equation #{\mathrm{d}a+a^2=0}}
