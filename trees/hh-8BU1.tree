@@ -1,0 +1,44 @@
+\title{Perfectness of complexes}
+
+\import{macros}
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{Strictly perfect complex}
+  \taxon{definition}
+
+  \p{
+    Let #{(X,\OO_X)} be a ringed space, and #{L^\bullet} a complex of #{\OO_X}-modules.
+    We say that #{L^\bullet} is \em{strictly perfect} if \todo{definition from Wei}
+  }
+}
+
+\subtree{
+  \taxon{lemma}
+
+  \p{
+    If #{(X,\OO_X)} is a \em{locally} ringed space, then a complex #{L^\bullet} of #{\OO_X}-modules is strictly perfect if and only if it is bounded and such that each #{L^i} is locally free of finite rank.
+  }
+
+  \proof{
+    \todo{}
+  }
+}
+
+\subtree{
+  \title{Perfect complex}
+  \taxon{definition}
+
+  \p{
+    Let #{(X,\OO_X)} be a ringed space, and #{L^\bullet} a complex of #{\OO_X}-modules.    
+    We say that #{L^\bullet} is \em{perfect} if it is locally quasi-isomorphic to a strictly perfect complex.
+  }
+
+  \subtree{
+    \taxon{unpacking}
+    
+    \p{
+      That is, #{L^\bullet} is perfect if, for all #{x\in X}, there exists some open neighbourhood #{U_x} of #{x} and some strictly perfect complex #{L_{U_x}^\bullet} on #{(U_x,\OO_{U_x})} such that #{L_{U_x}^\bullet\simeq L^\bullet|U_x}.
+    }
+  }
+}

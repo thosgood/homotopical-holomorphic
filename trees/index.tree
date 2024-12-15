@@ -2,6 +2,7 @@
 \author{Tim Hosgood}
 
 \import{macros}
+\put\transclude/expanded{false}
 \put\transclude/numbered{false}
 
 \subtree{
@@ -30,19 +31,10 @@
   }
 }
 
-\subtree{
-  \title{Existence of resolutions by holomorphic twisting cochains}
 
-  \ul{
-    \li{
-      For a single coherent sheaf: [[TT78, Proposition 2.4]](TT78); the paragraphs around [[OTT81, Lemma 1.6]](OTT81).
-    }
+\transclude{hh-VBWR}
+\transclude{hh-8BU1}
 
-    \li{
-      For perfect complexes: [[OTT85, Proposition 1.2.3]](OTT85).
-    }
-  }
-}
 
 \put\transclude/expanded{false}
 \transclude{bibliography}

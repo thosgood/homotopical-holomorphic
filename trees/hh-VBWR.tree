@@ -1,0 +1,34 @@
+\title{Resolutions by holomorphic twisting cochains}
+
+\import{macros}
+\put\transclude/numbered{false}
+
+\subtree{
+  \taxon{theorem}
+
+  \p{
+    Let #{\sh{F}} be a coherent sheaf on a holomorphic manifold.
+    Then #{\sh{F}} admits a resolution by a holomorphic twisting cochain.
+    Furthermore, for any choice of open cover #{\mathcal{U}} of the manifold, we can construct the holomorphic twisting cochain to be with respect to a refinement of #{\mathcal{U}}.
+  }
+
+  \proof{
+    This is [[TT78, Proposition 2.4]](TT78);
+    a brief summary of the proof is also given in the paragraphs around [[OTT81, Lemma 1.6]](OTT81).
+    The fact that we can do this with respect to a refinement of a given cover is shown in [[OTT85, Proposition 1.2.3]](OTT85).
+  }
+}
+
+\subtree{
+  \taxon{theorem}
+
+  \p{
+    Let #{\sh{F}^\bullet} be a [perfect complex](hh-8BU1) on a holomorphic manifold.
+    Then #{\sh{F}^\bullet} admits a resolution by a holomorphic twisting cochain.
+    Furthermore, for any choice of open cover #{\mathcal{U}} of the manifold, we can construct the holomorphic twisting cochain to be with respect to a refinement of #{\mathcal{U}}.
+  }
+
+  \proof{
+    This is [[OTT85, Proposition 1.2.3]](OTT85).
+  }
+}

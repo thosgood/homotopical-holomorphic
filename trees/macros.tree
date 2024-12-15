@@ -20,6 +20,7 @@
 \def\simto{#{\xrightarrow{\sim}}}
 \def\simfrom{#{\xleftarrow{\sim}}}
 
+\def\OO{#{\sh{O}}}
 \def\id{#{\operatorname{id}}}
 \def\Ker{#{\operatorname{Ker}}}
 \def\Hom{#{\operatorname{Hom}}}
