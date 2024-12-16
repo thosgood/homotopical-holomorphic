@@ -7,7 +7,7 @@
   \taxon{theorem}
 
   \p{
-    Let #{\sh{F}} be a coherent sheaf on a holomorphic manifold.
+    Let #{\sh{F}} be a [coherent sheaf](hh-3L2M) on a holomorphic manifold.
     Then #{\sh{F}} admits a resolution by a holomorphic twisting cochain.
     Furthermore, for any choice of open cover #{\mathcal{U}} of the manifold, we can construct the holomorphic twisting cochain to be with respect to a refinement of #{\mathcal{U}}.
   }
