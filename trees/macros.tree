@@ -12,6 +12,8 @@
   }
 }
 
+\def\stacks[x]{[[Stacks:\x]](https://stacks.math.columbia.edu/tag/\x)}
+
 \def\cat[x]{#{\mathcal{\x}}}
 \def\Cat[x]{#{\mathsf{\x}}}
 \def\sh[x]{#{\mathscr{\x}}}

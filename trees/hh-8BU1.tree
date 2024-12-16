@@ -1,7 +1,19 @@
-\title{Perfectness of complexes}
+\title{Perfectness conditions on complexes}
 
 \import{macros}
 \put\transclude/numbered{false}
+
+\subtree{
+  \taxon{literature}
+  \ul{
+    \li{
+      Brief overview: [[Wei2016, §2]](Wei2016)
+    }
+    \li{
+      Detailed proofs: \stacks{08C3} and \stacks{08CL}
+    }
+  }
+}
 
 \subtree{
   \title{Strictly perfect complex}
@@ -9,19 +21,7 @@
 
   \p{
     Let #{(X,\OO_X)} be a ringed space, and #{L^\bullet} a complex of #{\OO_X}-modules.
-    We say that #{L^\bullet} is \em{strictly perfect} if \todo{definition from Wei}
-  }
-}
-
-\subtree{
-  \taxon{lemma}
-
-  \p{
-    If #{(X,\OO_X)} is a \em{locally} ringed space, then a complex #{L^\bullet} of #{\OO_X}-modules is strictly perfect if and only if it is bounded and such that each #{L^i} is locally free of finite rank.
-  }
-
-  \proof{
-    \todo{}
+    We say that #{L^\bullet} is \em{strictly perfect} if it is bounded and each #{L^i} is a direct summand of a locally free #{\OO_X}-module of finite rank.
   }
 }
 
@@ -33,12 +33,32 @@
     Let #{(X,\OO_X)} be a ringed space, and #{L^\bullet} a complex of #{\OO_X}-modules.    
     We say that #{L^\bullet} is \em{perfect} if it is locally quasi-isomorphic to a strictly perfect complex.
   }
+}
+
+\subtree{
+  \taxon{lemma}
+
+  \p{
+    If #{(X,\OO_X)} is a \em{locally} ringed space, then a complex #{L^\bullet} of #{\OO_X}-modules is strictly perfect if and only if it is bounded and such that each #{L^i} is locally free of finite rank.
+  }
+
+  \proof{
+    Since #{(X,\OO_X)} is \em{locally} ringed, any direct summand of a locally free #{\OO_X}-module of finite rank is itself locally free of finite rank (\stacks{0BCI})
+  }
+}
+
+\subtree{
+  \taxon{corollary}
+
+  \p{
+    If #{(X,\OO_X)} is a \em{locally} ringed space, then a complex #{L^\bullet} of #{\OO_X}-modules is perfect if and only if it is locally quasi-isomorphic to a bounded complex of locally free modules of finite rank.
+  }
 
   \subtree{
     \taxon{unpacking}
     
     \p{
-      That is, #{L^\bullet} is perfect if, for all #{x\in X}, there exists some open neighbourhood #{U_x} of #{x} and some strictly perfect complex #{L_{U_x}^\bullet} on #{(U_x,\OO_{U_x})} such that #{L_{U_x}^\bullet\simeq L^\bullet|U_x}.
+      #{L^\bullet} is perfect if and only if, for all #{x\in X}, there exists some open neighbourhood #{U_x} of #{x} and some bounded complex #{L_{U_x}^\bullet} of locally free #{\OO_{U_x}}-modules of finite rank such that #{L_{U_x}^\bullet\simeq L^\bullet|U_x}.
     }
   }
 }

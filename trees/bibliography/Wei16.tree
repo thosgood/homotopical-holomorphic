@@ -1,0 +1,18 @@
+\taxon{reference}
+
+\title{Twisted complexes on a ringed space as a dg-enhancement of the derived category of perfect complexes}
+\author{Zhaoting Wei}
+\date{2016}
+\meta{venue}{\em{European Journal of Mathematics} \strong{2} pp. 716–759}
+\meta{doi}{10.1007/s40879-016-0102-8}
+
+\meta{bibtex}{\startverb
+@article{Wei16,
+  title = {Twisted complexes on a ringed space as a dg-enhancement of the derived category of perfect complexes},
+  author = {Wei, Zhaoting},
+  date = {2016},
+  journaltitle = {European Journal of Mathematics},
+  volume = {2},
+  pages = {716–759},
+  doi = {10.1007/s40879-016-0102-8}
+}\stopverb}

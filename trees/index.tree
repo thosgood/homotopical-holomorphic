@@ -2,7 +2,6 @@
 \author{Tim Hosgood}
 
 \import{macros}
-\put\transclude/expanded{false}
 \put\transclude/numbered{false}
 
 \subtree{
@@ -26,15 +25,21 @@
   }
 
   \p{
-    It turns out that, if this is all you know, you can still build up to quite a lot of holomorphic geometry.
-    The purpose of these notes is to explore that approach, and to tidy up some of its history and exposition.
+    It turns out that, even if this is all you know, you can prove a surprising amount of non-trivial facts about complex geometry (in particular, about coherent analytic sheaves).
+    \strong{The purpose of these notes is to explore that approach, and to tidy up some of its history and exposition.}
   }
 }
 
 
-\transclude{hh-VBWR}
+
+\put\transclude/numbered{true}
+\put\transclude/expanded{false}
 \transclude{hh-8BU1}
+\transclude{hh-3L2M}
+\transclude{hh-VBWR}
 
 
+
+\put\transclude/numbered{false}
 \put\transclude/expanded{false}
 \transclude{bibliography}
