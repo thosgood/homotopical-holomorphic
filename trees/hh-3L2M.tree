@@ -11,7 +11,7 @@
 
     \todo{the definition in EGA isn't functorial, and assumes Noetherian most of the time}
 
-    \todo{Hartshorne also only deals with the Noetherian case so it makes Oka coherence sound trivial}
+    \todo{Hartshorne also only deals with the Noetherian case so it makes Oka coherence sound trivial; also he (I think) defines it as "f.g. quasi-coherent", but "quasi-coherent" isn't a good notion to work with in general (e.g. in the holomorphic case)}
   }
 }
 
