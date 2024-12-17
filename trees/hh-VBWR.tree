@@ -7,7 +7,7 @@
   \taxon{theorem}
 
   \p{
-    Let #{\sh{F}} be a [coherent sheaf](hh-3L2M) on a holomorphic manifold.
+    Let #{\sh{F}} be a [\strong{coherent sheaf}](hh-3L2M) on a \strong{holomorphic manifold}.
     Then #{\sh{F}} admits a resolution by a holomorphic twisting cochain.
     Furthermore, for any choice of open cover #{\mathcal{U}} of the manifold, we can construct the holomorphic twisting cochain to be with respect to a refinement of #{\mathcal{U}}.
   }
@@ -23,7 +23,7 @@
   \taxon{theorem}
 
   \p{
-    Let #{\sh{F}^\bullet} be a [perfect complex](hh-8BU1) on a holomorphic manifold.
+    Let #{\sh{F}^\bullet} be a [\strong{perfect complex}](hh-8BU1) on a \strong{holomorphic manifold}.
     Then #{\sh{F}^\bullet} admits a resolution by a holomorphic twisting cochain.
     Furthermore, for any choice of open cover #{\mathcal{U}} of the manifold, we can construct the holomorphic twisting cochain to be with respect to a refinement of #{\mathcal{U}}.
   }
@@ -37,12 +37,12 @@
   \taxon{theorem}
 
   \p{
-    Let #{\sh{F}^\bullet} be a [perfect complex](hh-8BU1) on an arbitrary locally ringed space such that each #{\sh{F}^i} is quasi-coherent.
+    Let #{\sh{F}^\bullet} be a [\strong{perfect complex}](hh-8BU1) (such that each #{\sh{F}^i} is quasi-coherent) on a \strong{locally ringed space}.
     Then #{\sh{F}^\bullet} admits a resolution by a twisting cochain.
   }
 
   \proof{
-    This is [[Wei2016, Proposition 3.20]](Wei2016) (though the terminology there is different: "twisted perfect complexes" are (roughly) exactly twisting cochains).
+    This is [[Wei2016, Proposition 3.20]](Wei2016), though the terminology there is different: their "twisted perfect complexes" are (roughly) exactly twisting cochains.
   }
 }
 
