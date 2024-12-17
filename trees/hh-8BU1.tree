@@ -58,7 +58,7 @@
     \taxon{unpacking}
     
     \p{
-      #{L^\bullet} is perfect if and only if, for all #{x\in X}, there exists some open neighbourhood #{U_x} of #{x} and some bounded complex #{L_{U_x}^\bullet} of locally free #{\OO_{U_x}}-modules of finite rank such that #{L_{U_x}^\bullet\simeq L^\bullet|U_x}.
+      #{L^\bullet} is perfect if and only if, for all #{x\in X}, there exists some open neighbourhood #{U_x} of #{x} and some bounded complex #{L_{U_x}^\bullet} of locally free #{\OO_{U_x}}-modules of finite rank such that #{L_{U_x}^\bullet\simeq L^\bullet|_{U_x}}.
     }
   }
 }
