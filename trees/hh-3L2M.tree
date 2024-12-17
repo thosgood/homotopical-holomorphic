@@ -7,7 +7,7 @@
   \taxon{history}
 
   \p{
-    The definition of \em{coherence} for a sheaf of #{\OO_X}-modules has changed over time, and trying to figure out which definitions agree and why they appear different is a confusing task.
+    The definition of what it means for a sheaf of #{\OO_X}-modules to be \em{coherent} has changed over time, and trying to figure out which definitions agree and why they appear different is a confusing task.
 
     \todo{the definition in EGA isn't functorial, and assumes Noetherian most of the time}
 
