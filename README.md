@@ -1,1 +1,0 @@
-# Homotopical holomorphic notes

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>434</fr:anchor><fr:addr
+type="user">Stacks</fr:addr><fr:route>Stacks.xml</fr:route><fr:title
+text="The Stacks project">The Stacks project</fr:title><fr:taxon>Reference</fr:taxon><fr:authors><fr:author>The Stacks project authors</fr:author></fr:authors><fr:meta
+name="external">https://stacks.math.columbia.edu</fr:meta><fr:meta
+name="bibtex"><![CDATA[@online{Stacks,
+  title = {{{The Stacks project}}},
+  author = {The {Stacks project authors}},
+  url = {https://stacks.math.columbia.edu},
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
