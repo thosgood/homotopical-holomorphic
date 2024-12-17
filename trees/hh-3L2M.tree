@@ -166,7 +166,7 @@
 }
 
 \p{\todo{coherence}}
-\p{\todo{mention the problem: we get an abelian category, but are now "almost never" closed under pullbacks (and sometimes #{\OO_X} itself isn't even coherent! this means that finite free modules won't be coherent! that's not good!)}}
+\p{\todo{mention the problem: we get an abelian category, but are now "almost never" closed under pullbacks (and sometimes #{\OO_X} itself isn't even coherent! this means that finite free modules won't be coherent! that's not good!) BUT if #{\OO_X} is coherent (as it is for holomorphic things!) then everything (including pullbacks) is fine since coherent = f.p.!}}
 
 \subtree{
   \taxon{slogan}
