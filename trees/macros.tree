@@ -1,6 +1,10 @@
 \xmlns:html{http://www.w3.org/1999/xhtml}
 
-\def\todo[x]{\strong{\em{TO-DO: \x}}}
+\xmlns:html{http://www.w3.org/1999/xhtml}
+\def\table[body]{\<html:table>{\body}}
+\def\th[body]{\<html:th>{\body}}
+\def\tr[body]{\<html:tr>{\body}}
+\def\td[body]{\<html:td>{\body}}
 
 \def\proof[body]{
   \scope{
@@ -13,6 +17,8 @@
 }
 
 \def\stacks[x]{[[Stacks:\x]](https://stacks.math.columbia.edu/tag/\x)}
+
+\def\todo[x]{\strong{\em{TO-DO: \x}}}
 
 \def\cat[x]{#{\mathcal{\x}}}
 \def\Cat[x]{#{\mathsf{\x}}}
