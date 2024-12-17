@@ -7,11 +7,40 @@
   \taxon{history}
 
   \p{
-    The definition of what it means for a sheaf of #{\OO_X}-modules to be \em{coherent} has changed over time, and trying to figure out which definitions agree and why they appear different is a confusing task.
+    Looking up the definition of what it means for a sheaf of #{\OO_X}-modules to be \em{coherent} will give different results depending on the reference, both in terms of when it was written and what its focus is.
+    For example, you might hear people complain that the definition in EGA (\todo{find the precise citation}) is functorial, or that the definition in Hartshorne (\todo{find the precise citation}) makes Oka coherence sound trivial.
+    Lots of the confusion comes from the fact that, when dealing with (locally) Noetherian schemes, the differences between various finiteness conditions collapse somewhat, making it hard to tell that they were actually distinct in the first place.
+    Not only this, but references dealing with \em{algebraic} geometry (in the sense that they talk about \em{schemes}) are likely to focus largely on \em{quasi}-coherent sheaves, which are not well-behaved objects for arbitrary locally ringed spaces, and definitely not well-behaved in the specific case of complex manifolds.
 
-    \todo{the definition in EGA isn't functorial, and assumes Noetherian most of the time}
+    \todo{history: Cartan, Oka, Serre (FAC), EGA, ...}
+  }
+}
 
-    \todo{Hartshorne also only deals with the Noetherian case so it makes Oka coherence sound trivial; also he (I \em{think}) defines it as "f.g. quasi-coherent", but "quasi-coherent" isn't a good notion to work with in general (e.g. in the holomorphic case)}
+\subtree{
+  \taxon{slogan}
+
+  \p{
+    "Coherent" is the magic word in analytic geometry, much how "Noetherian" is in algebraic geometry, or "partition of unity" is in differential geometry. This analogy is not entirely precise, and I don't want to try to make it so, but a good justification is that each of these turns up in the corresponding \em{acyclicity theorems} (maybe interchanging "Noetherian" with "quasi-coherent", if you like).
+    In fact, these words can be seen as unique to each field:
+  }
+
+  \ul{
+    \li{
+      \strong{Algebraic geometry : Noetherian.}
+      For schemes, although the Nullstellensatz can be seen as a type of partition of unity, [it doesn't involve extensions by zero](https://math.stackexchange.com/a/4053578); and although coherence is still an important notion, the moment that a scheme is (locally) Noetherian, coherence is "trivial" (in that the structure sheaf is coherent "by definition", for e.g. Hartshorne's definition of coherent (\todo{citation})); but on a locally Noetherian scheme, quasi-coherent sheaves are really well behaved, and generalise coherent sheaves in that they are just "[coherent sheaves of possibly infinite rank]((https://stacks.math.columbia.edu/tag/01XZ))".
+    }
+    \li{
+      \strong{Differential geometry : partitions of unity.}
+      For smooth manifolds, their structure sheaves are generally [neither Noetherian](https://mathoverflow.net/questions/21168/how-to-classify-the-algebras-c∞m#comment43031_21345) [nor coherent](https://math.stackexchange.com/a/305962) (non-zero smooth functions with identically zero Taylor series are the problem in both cases); but partitions of unity allow us to do a lot of things anyway.
+    }
+    \li{
+      \strong{Analytic geometry : coherent.}
+      For holomorphic manifolds, we don't have partitions of unity (the [identity theorem](https://en.wikipedia.org/wiki/Identity_theorem) means that if a holomorphic function vanishes on an open subset then it vanishes everywhere); and we can rarely expect the structure sheaf to be Noetherian (for example, it is not Noetherian for Stein manifolds (\todo{citation?}), which are the analogue of affine schemes (in algebraic geometry) or contractible spaces (in differential geometry)); but a fundamental theorem of Oka tells us that the structure sheaf of \em{any} holomorphic manifold is coherent.
+    }
+  }
+
+  \p{
+    Again, this analogy is not a precise mathematical statement.
   }
 }
 
