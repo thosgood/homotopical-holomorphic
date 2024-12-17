@@ -62,3 +62,7 @@
     }
   }
 }
+
+\p{
+  \todo{perfectness and pseudo-coherence?}
+}
