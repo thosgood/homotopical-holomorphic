@@ -4,18 +4,6 @@
 \put\transclude/numbered{false}
 
 \subtree{
-  \taxon{literature}
-  \ul{
-    \li{
-      Brief overview: [[Wei2016, §2]](Wei2016)
-    }
-    \li{
-      Detailed proofs: \stacks{08C3} and \stacks{08CL}
-    }
-  }
-}
-
-\subtree{
   \title{Strictly perfect complex}
   \taxon{definition}
 
@@ -65,4 +53,16 @@
 
 \p{
   \todo{perfectness and pseudo-coherence?}
+}
+
+\subtree{
+  \taxon{literature}
+  \ul{
+    \li{
+      Brief overview: [[Wei2016, §2]](Wei2016)
+    }
+    \li{
+      Detailed proofs: \stacks{08C3} and \stacks{08CL}
+    }
+  }
 }

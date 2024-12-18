@@ -42,7 +42,7 @@
   }
 
   \proof{
-    This is [[Wei2016, Proposition 3.20]](Wei2016), though the terminology there is different: their "twisted perfect complexes" are (roughly) exactly twisting cochains.
+    This is a corollary (\todo{explain how!}) to [[Wei2016, Proposition 3.20]](Wei2016), though the terminology there is different: their "twisted perfect complexes" are (roughly) exactly twisting cochains.
   }
 }
 

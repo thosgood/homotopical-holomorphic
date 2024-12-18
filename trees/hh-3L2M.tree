@@ -38,79 +38,6 @@
 }
 
 \subtree{
-  \taxon{history}
-
-  \p{
-    Looking up the definition of what it means for a sheaf of #{\OO_X}-modules to be \em{coherent} will give different results depending on the reference, both in terms of when it was written and what its focus is.
-    For example, you might hear people complain that the definition in EGA (\todo{find the precise citation}) is functorial, or that the definition in Hartshorne (\todo{find the precise citation}) makes Oka coherence sound trivial.
-    Lots of the confusion comes from the fact that, when dealing with (locally) Noetherian schemes, the differences between various finiteness conditions collapse somewhat, making it hard to tell that they were actually distinct in the first place.
-    Not only this, but references dealing with \em{algebraic} geometry (in the sense that they talk about \em{schemes}) are likely to focus largely on \em{quasi}-coherent sheaves, which are not well-behaved objects for arbitrary locally ringed spaces, and definitely not well-behaved in the specific case of complex manifolds.
-  }
-
-  \p{
-    \todo{history: Cartan, Oka, Serre (FAC), EGA, SGA 6, ... Grauert–Remmer–Forster?}
-  }
-}
-
-\subtree{
-  \taxon{literature}
-
-  \todo{FAC, Stacks, SGA 6, Oka(?), the original (Cartan?) citation}
-}
-
-\subtree{
-  \title{Magic words for analytic, algebraic, and smooth}
-  \taxon{slogan}
-
-  \p{
-    "Coherent" is the magic word in analytic geometry, much how "Noetherian" is in algebraic geometry, or "partition of unity" is in differential geometry.
-    In fact, these words can be seen as somewhat defining for each field:
-
-    \table{
-      \tr{
-        \th{} \th{analytic} \th{algebraic} \th{smooth}
-      }
-      \tr{
-        \td{\strong{coherent}} \td{y} \td{~} \td{n}
-      }
-      \tr{
-        \td{\strong{Noetherian}} \td{n} \td{y} \td{n}
-      }
-      \tr{
-        \td{\strong{partition of unity}} \td{n} \td{~} \td{y}
-      }
-    }
-
-    \strong{Note:} \em{This is not a precise mathematical statement, and we will not try to make it one.}
-  }
-
-  \subtree{
-    \taxon{explication}
-
-    \ul{
-      \li{
-        \p{
-          \strong{Algebraic geometry : Noetherian.}
-          For schemes, although the Nullstellensatz can be seen as a type of partition of unity, [it doesn't involve extensions by zero](https://math.stackexchange.com/a/4053578); and although coherence is still an important notion, the moment that a scheme is (locally) Noetherian, coherence is "trivial" (in that the structure sheaf is coherent "by definition", for e.g. Hartshorne's definition of coherent (\todo{citation})); but on a locally Noetherian scheme, quasi-coherent sheaves are really well behaved, and generalise coherent sheaves in that they are just "[coherent sheaves of possibly infinite rank]((https://stacks.math.columbia.edu/tag/01XZ))".
-        }
-      }
-      \li{
-        \p{
-          \strong{Differential geometry : partitions of unity.}
-          For smooth manifolds, their structure sheaves are generally [neither Noetherian](https://mathoverflow.net/questions/21168/how-to-classify-the-algebras-c∞m#comment43031_21345) [nor coherent](https://math.stackexchange.com/a/305962) (non-zero smooth functions with identically zero Taylor series are the problem in both cases); but partitions of unity allow us to do a lot of things anyway.
-        }
-      }
-      \li{
-        \p{
-          \strong{Analytic geometry : coherent.}
-          For holomorphic manifolds, we don't have partitions of unity (the [identity theorem](https://en.wikipedia.org/wiki/Identity_theorem) means that if a holomorphic function vanishes on an open subset then it vanishes everywhere); and we can rarely expect the structure sheaf to be Noetherian (for example, it is not Noetherian for Stein manifolds (\todo{citation?}), which are the analogue of affine schemes (in algebraic geometry) or contractible spaces (in differential geometry)); but a fundamental theorem of Oka tells us that the structure sheaf of \em{any} holomorphic manifold is coherent.
-        }
-      }
-    }
-  }
-}
-
-\subtree{
   \title{Sheaf of finite type}
   \taxon{definition}
 
@@ -201,7 +128,7 @@
 
       \p{
         Let
-        ##{
+        #{
           0
           \to \sh{H}
           \hookrightarrow \sh{G}
@@ -241,10 +168,35 @@
 
 \p{\todo{we saw above that if things are of finite type, then if they are \em{also} of finite presentation then stuff starts to work out well... so can we come up with a condition that ensures that subsheaves of finite type are of finite presentation?}}
 
-\p{\todo{"caveat" definition of coherent: any subsheaf of finite type is of finite presentation (the caveat being: the sheaf itself has to be affected by this condition, i.e. it has to be of finite type itself)}}
+\p{\todo{"caveat" definition of coherent: any subsheaf of finite type is of finite presentation (the caveat being: the sheaf itself has to be affected by this condition, i.e. it has to be of finite type itself) ("This phrasing more closely mirrors the algebraic definition, of a coherent module over a ring (\stacks{05CV}).")}}
 
-\p{\todo{coherence}}
-\p{\todo{mention the problem: we get an abelian category, but are now "almost never" closed under pullbacks (and sometimes #{\OO_X} itself isn't even coherent! this means that finite free modules won't be coherent! that's not good!) BUT if #{\OO_X} is coherent (as it is for holomorphic things!) then everything (including pullbacks) is fine since coherent = f.p.!}}
+\p{\todo{coherence: the \stacks{01BV} definition}}
+
+
+\subtree{
+  \taxon{Lemma}
+
+  \p{
+    The two definitions of coherence —
+
+    \ol{
+      \li{
+        #{\sh{F}} is of finite type, and all its subsheaves of finite type are of finite presentation
+      }
+      \li{
+        #{\sh{F}} is of finite type, and the kernel of any morphism from a finite free sheaf is of finite type
+      }
+    }
+
+    — are equivalent.
+  }
+
+  \proof{
+    \todo{}
+  }
+}
+
+\p{\todo{mention the problem: we get an abelian category, but are now "almost never" closed under pullbacks (and sometimes #{\OO_X} itself isn't even coherent! this means that finite free modules won't be coherent! that's not good!) BUT if #{\OO_X} is coherent (as it is for holomorphic things!) then everything (including pullbacks) is fine since coherent = f.p.! AND note a source of confusion: if #{(X,\OO_X)} is a locally Noetherian scheme, then coherent = f.p. also! so either condition would suffice to simplify things, and in alg geom it's not so restrictive to say locally Noetherian (and then #{\OO_X} is coherent since it's always f.p.), but in holomorphic world (especially Stein) it is far too restrictive, but that's ok because Oka directly proved that #{\OO_X} is coherent without needing to assume the (essentially never true) hypothesis that #{(X,\OO_X)} is Noetherian}}
 
 \subtree{
   \taxon{slogan}
@@ -284,34 +236,6 @@
 
     where #{V\subseteq U\subseteq X}.
   }
-
-  \p{
-    Here we are appealing to a different (but equivalent) definition of coherence, phrased in terms of subsheaves: "#{\sh{F}} is coherent if it is of finite type and if all its subsheaves of finite type are of finite presentation".
-    This phrasing more closely mirrors the algebraic definition, of a coherent module over a ring (\stacks{05CV}).
-  }
-
-  \subtree{
-    \taxon{explication}
-
-    \p{
-      The two definitions of coherence that we have given are
-
-      \ol{
-        \li{
-          #{\sh{F}} is of finite type, and all its subsheaves of finite type are of finite presentation;
-        }
-        \li{
-          #{\sh{F}} is of finite type, and the kernel of any morphism from a finite free sheaf is of finite type.
-        }
-      }
-
-      Let's explain how they are equivalent.
-    }
-
-    \p{
-      \todo{explain why coherent is equivalent to this last condition}
-    }
-  }
 }
 
 \subtree{
@@ -321,4 +245,77 @@
   \p{\todo{quasi-coherence}}
 
   \p{\todo{pseudo-coherence??? just mention in passing as it carries on the pattern "finite type, finite presentation, ..." (made precise by \stacks{064T} (for just modules over a ring though...))}}
+}
+
+\subtree{
+  \title{Magic words for analytic, algebraic, and smooth}
+  \taxon{slogan}
+
+  \p{
+    "Coherent" is the magic word in analytic geometry, much how "Noetherian" is in algebraic geometry, or "partition of unity" is in differential geometry.
+    In fact, these words can be seen as somewhat defining for each field:
+
+    \table{
+      \tr{
+        \th{} \th{analytic} \th{algebraic} \th{smooth}
+      }
+      \tr{
+        \td{\strong{coherent}} \td{y} \td{~} \td{n}
+      }
+      \tr{
+        \td{\strong{Noetherian}} \td{n} \td{y} \td{n}
+      }
+      \tr{
+        \td{\strong{partition of unity}} \td{n} \td{~} \td{y}
+      }
+    }
+
+    \strong{Note:} \em{This is not a precise mathematical statement, and we will not try to make it one.}
+  }
+
+  \subtree{
+    \taxon{explication}
+
+    \ul{
+      \li{
+        \p{
+          \strong{Algebraic geometry : Noetherian.}
+          For schemes, although the Nullstellensatz can be seen as a type of partition of unity, [it doesn't involve extensions by zero](https://math.stackexchange.com/a/4053578); and although coherence is still an important notion, the moment that a scheme is (locally) Noetherian, coherence is "trivial" (in that the structure sheaf is coherent "by definition", for e.g. Hartshorne's definition of coherent (\todo{citation})); but on a locally Noetherian scheme, quasi-coherent sheaves are really well behaved, and generalise coherent sheaves in that they are just "[coherent sheaves of possibly infinite rank]((https://stacks.math.columbia.edu/tag/01XZ))".
+        }
+      }
+      \li{
+        \p{
+          \strong{Differential geometry : partitions of unity.}
+          For smooth manifolds, their structure sheaves are generally [neither Noetherian](https://mathoverflow.net/questions/21168/how-to-classify-the-algebras-c∞m#comment43031_21345) [nor coherent](https://math.stackexchange.com/a/305962) (non-zero smooth functions with identically zero Taylor series are the problem in both cases); but partitions of unity allow us to do a lot of things anyway.
+        }
+      }
+      \li{
+        \p{
+          \strong{Analytic geometry : coherent.}
+          For holomorphic manifolds, we don't have partitions of unity (the [identity theorem](https://en.wikipedia.org/wiki/Identity_theorem) means that if a holomorphic function vanishes on an open subset then it vanishes everywhere); and we can rarely expect the structure sheaf to be Noetherian (for example, it is not Noetherian for Stein manifolds (\todo{citation?}), which are the analogue of affine schemes (in algebraic geometry) or contractible spaces (in differential geometry)); but a fundamental theorem of Oka tells us that the structure sheaf of \em{any} holomorphic manifold is coherent.
+        }
+      }
+    }
+  }
+}
+
+\subtree{
+  \taxon{history}
+
+  \p{
+    Looking up the definition of what it means for a sheaf of #{\OO_X}-modules to be \em{coherent} will give different results depending on the reference, both in terms of when it was written and what its focus is.
+    For example, you might hear people complain that the definition in EGA (\todo{find the precise citation}) is functorial, or that the definition in Hartshorne (\todo{find the precise citation}) makes Oka coherence sound trivial.
+    Lots of the confusion comes from the fact that, when dealing with (locally) Noetherian schemes, the differences between various finiteness conditions collapse somewhat, making it hard to tell that they were actually distinct in the first place.
+    Not only this, but references dealing with \em{algebraic} geometry (in the sense that they talk about \em{schemes}) are likely to focus largely on \em{quasi}-coherent sheaves, which are not well-behaved objects for arbitrary locally ringed spaces, and definitely not well-behaved in the specific case of complex manifolds.
+  }
+
+  \p{
+    \todo{history: Cartan, Oka, Serre (FAC), EGA, SGA 6, ... Grauert–Remmer–Forster?}
+  }
+}
+
+\subtree{
+  \taxon{literature}
+
+  \todo{FAC, Stacks, SGA 6, Oka(?), the original (Cartan?) citation}
 }
