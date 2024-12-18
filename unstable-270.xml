@@ -7,23 +7,8 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>389</fr:anchor><fr:addr
-type="machine">#268</fr:addr><fr:route>unstable-268.xml</fr:route><fr:taxon>Explication</fr:taxon><fr:authors /><fr:parent>#267</fr:parent></fr:frontmatter><fr:mainmatter><fr:ul><fr:li><fr:p><fr:strong>Algebraic geometry : Noetherian.</fr:strong>
-          For schemes, although the Nullstellensatz can be seen as a type of partition of unity, <fr:link
-type="external"
-href="https://math.stackexchange.com/a/4053578">it doesn't involve extensions by zero</fr:link>; and although coherence is still an important notion, the moment that a scheme is (locally) Noetherian, coherence is "trivial" (in that the structure sheaf is coherent "by definition", for e.g. Hartshorne's definition of coherent (<fr:strong><fr:em>TO-DO: citation</fr:em></fr:strong>)); but on a locally Noetherian scheme, quasi-coherent sheaves are really well behaved, and generalise coherent sheaves in that they are just "<fr:link
-type="external"
-href="%28https://stacks.math.columbia.edu/tag/01XZ)">coherent sheaves of possibly infinite rank</fr:link>".</fr:p></fr:li>
-      <fr:li><fr:p><fr:strong>Differential geometry : partitions of unity.</fr:strong>
-          For smooth manifolds, their structure sheaves are generally <fr:link
-type="external"
-href="https://mathoverflow.net/questions/21168/how-to-classify-the-algebras-c%E2%88%9Em#comment43031_21345">neither Noetherian</fr:link> <fr:link
-type="external"
-href="https://math.stackexchange.com/a/305962">nor coherent</fr:link> (non-zero smooth functions with identically zero Taylor series are the problem in both cases); but partitions of unity allow us to do a lot of things anyway.</fr:p></fr:li>
-      <fr:li><fr:p><fr:strong>Analytic geometry : coherent.</fr:strong>
-          For holomorphic manifolds, we don't have partitions of unity (the <fr:link
-type="external"
-href="https://en.wikipedia.org/wiki/Identity_theorem">identity theorem</fr:link> means that if a holomorphic function vanishes on an open subset then it vanishes everywhere); and we can rarely expect the structure sheaf to be Noetherian (for example, it is not Noetherian for Stein manifolds (<fr:strong><fr:em>TO-DO: citation?</fr:em></fr:strong>), which are the analogue of affine schemes (in algebraic geometry) or contractible spaces (in differential geometry)); but a fundamental theorem of Oka tells us that the structure sheaf of <fr:em>any</fr:em> holomorphic manifold is coherent.</fr:p></fr:li></fr:ul></fr:mainmatter><fr:backmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>393</fr:anchor><fr:addr
+type="machine">#270</fr:addr><fr:route>unstable-270.xml</fr:route><fr:taxon>Literature</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:strong><fr:em>TO-DO: FAC, Stacks, SGA 6, Oka(?), the original (Cartan?) citation</fr:em></fr:strong></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -38,7 +23,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>390</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>394</fr:anchor><fr:addr
 type="user">hh-3L2M</fr:addr><fr:route>hh-3L2M.xml</fr:route><fr:title
 text="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
