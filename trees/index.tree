@@ -19,7 +19,7 @@
         \em{sheaves}, but in particular really just \strong{gluing data #{\{g_{\alpha\beta}\}}}
       }
       \li{
-        \em{homotopy coherent structures}, but in particular really just the \strong{Maurer-Cartan equation #{\mathrm{d}a+a^2=0}}
+        \em{homotopy coherent structures}, but in particular really just the \strong{Maurer-Cartan equation #{\mathrm{d}\mathfrak{a}+\mathfrak{a}^2=0}}
       }
     }
   }
