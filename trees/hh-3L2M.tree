@@ -199,65 +199,57 @@
   }
 }
 
-\p{\todo{mention the problem: we get an abelian category, but are now "almost never" closed under pullbacks (and sometimes #{\OO_X} itself isn't even coherent! this means that finite free modules won't be coherent! that's not good!) BUT if #{\OO_X} is coherent (as it is for holomorphic things!) then everything (including pullbacks) is fine since coherent = f.p.! AND note a source of confusion: if #{(X,\OO_X)} is a locally Noetherian scheme, then coherent = f.p. also! so either condition would suffice to simplify things, and in alg geom it's not so restrictive to say locally Noetherian (and then #{\OO_X} is coherent since it's always f.p.), but in holomorphic world (especially Stein) it is far too restrictive, but that's ok because Oka directly proved that #{\OO_X} is coherent without needing to assume the (essentially never true) hypothesis that #{(X,\OO_X)} is Noetherian}}
+\p{\todo{mention the problem: we get an abelian category, but are now "almost never" closed under pullbacks (and sometimes #{\OO_X} itself isn't even coherent! this means that finite free modules won't be coherent! that's not good!) BUT if #{\OO_X} is coherent (as it is for holomorphic things!) then everything (including pullbacks) is fine since coherent = f.p.!}}
+
+\p{\todo{include the fact (combining \stacks{01C0} with \stacks{01BP}) that, for coherent, SES on stalks implies SES on a neighbourhood}}
 
 \subtree{
   \title{Quasi- and pseudo-coherent sheaves}
   \taxon{aside}
 
-  \p{\todo{quasi-coherence}}
+  \p{\todo{quasi-coherence} ...but on a locally Noetherian scheme, quasi-coherent sheaves are really well behaved, and generalise coherent sheaves in that they are just "[coherent sheaves of possibly infinite rank](https://stacks.math.columbia.edu/tag/01XZ)"}
 
   \p{\todo{pseudo-coherence??? just mention in passing as it carries on the pattern "finite type, finite presentation, ..." (made precise by \stacks{064T} (for just modules over a ring though...))}}
 }
 
 \subtree{
-  \title{Magic words for analytic, algebraic, and smooth}
-  \taxon{hand-waving}
+  \title{Algebraic, holomorphic, and smooth geometry}
+  \taxon{example}
 
   \p{
-    "Coherent" is the magic word in analytic geometry, much how "Noetherian" is in algebraic geometry, or "partition of unity" is in differential geometry.
-    In fact, these words can be seen as somewhat defining for each field:
+    Different finiteness conditions show up in different ways depending on the flavour of geometry being studied.
+  }
 
-    \table{
-      \tr{
-        \th{} \th{analytic} \th{algebraic} \th{smooth}
-      }
-      \tr{
-        \td{\strong{coherent}} \td{y} \td{~} \td{n}
-      }
-      \tr{
-        \td{\strong{Noetherian}} \td{n} \td{y} \td{n}
-      }
-      \tr{
-        \td{\strong{partition of unity}} \td{n} \td{~} \td{y}
-      }
-    }
+  \p{
+    \strong{Algebraic geometry.}
+    For locally Noetherian schemes #{(X,\OO_X)}, the structure sheaf #{\OO_X} is itself coherent (\stacks{01XZ}).
+    This implies, amongst other things, that a sheaf of #{\OO_X}-modules is then coherent if and only if it is finitely presented (also \stacks{01XZ}).
+    Since being locally Noetherian is not an overly restrictive hypothesis in general, some algebraic geometry references even \em{define} coherence as being finitely presented (or, equivalently, "quasi-coherent of finite type") — most notably \todo{Hartshorne}.
+  }
 
-    \strong{Note:} \em{This is not a precise mathematical statement, and we will not try to make it one.}
+  \p{
+    \strong{Holomorphic geometry.}
+    For complex manifolds, the Noetherian condition is generally far too restrictive: any Stein manifold gives an example of a non-Noetherian #{(X,\OO_X)}.
+    What is arguably surprising, however, is that \em{despite} this the structure sheaf #{\OO_X} of any complex manifold is still coherent.
+    This is a deep non-trivial theorem of Oka, and one of the fundamental results in complex geometry.
+  }
+
+  \p{
+    \strong{Differential geometry}.
+    For smooth manifolds, their structure sheaves are generally [neither Noetherian](https://mathoverflow.net/questions/21168/how-to-classify-the-algebras-c∞m#comment43031_21345) [nor coherent](https://math.stackexchange.com/a/305962).
+    In both cases, non-zero smooth functions with identically zero Taylor series on a neighbourhood are the problem.
+    However, differential geometry can appeal to something that neither algebraic nor analytic geometry can: partitions of unity, with bump functions.
   }
 
   \subtree{
-    \taxon{justification}
+    \title{Partitions of unity and the Nullstellensatz}
+    \taxon{aside}
 
-    \ul{
-      \li{
-        \p{
-          \strong{Algebraic geometry : Noetherian.}
-          For schemes, although the Nullstellensatz can be seen as a type of partition of unity, [it doesn't involve extensions by zero](https://math.stackexchange.com/a/4053578); and although coherence is still an important notion, the moment that a scheme is (locally) Noetherian, coherence is "trivial" (in that the structure sheaf is coherent "by definition", for e.g. Hartshorne's definition of coherent (\todo{citation})); but on a locally Noetherian scheme, quasi-coherent sheaves are really well behaved, and generalise coherent sheaves in that they are just "[coherent sheaves of possibly infinite rank]((https://stacks.math.columbia.edu/tag/01XZ))".
-        }
-      }
-      \li{
-        \p{
-          \strong{Differential geometry : partitions of unity.}
-          For smooth manifolds, their structure sheaves are generally [neither Noetherian](https://mathoverflow.net/questions/21168/how-to-classify-the-algebras-c∞m#comment43031_21345) [nor coherent](https://math.stackexchange.com/a/305962) (non-zero smooth functions with identically zero Taylor series are the problem in both cases); but partitions of unity allow us to do a lot of things anyway.
-        }
-      }
-      \li{
-        \p{
-          \strong{Analytic geometry : coherent.}
-          For complex manifolds, we don't have partitions of unity (the [identity theorem](https://en.wikipedia.org/wiki/Identity_theorem) means that if a holomorphic function vanishes on an open subset then it vanishes everywhere); and we can rarely expect the structure sheaf to be Noetherian (for example, it is not Noetherian for Stein manifolds (\todo{citation?}), which are the analogue of affine schemes (in algebraic geometry) or contractible spaces (in differential geometry)); but a fundamental theorem of Oka tells us that the structure sheaf of \em{any} complex manifold is coherent.
-        }
-      }
+    \p{
+      Although the existence of partitions of unity in the smooth case is not expressed as a property of #{(X,\OO_X)}, it still plays an analogous role to the coherence of #{\OO_X}, in that it gives rise to acyclicity theorems of resolutions.
+      It is possible to think of the Nullstellensatz — a form of which holds in both the algebraic (over an algebraically closed field) and holomorphic cases — as a type of partition of unity statement: one version of it says that, for any set of functions #{f_1,\ldots,f_n\in\OO_X(X)} that do not have a common zero, we can find #{g_1,\ldots,g_n\in\OO_X(X)} such that #{\sum_i f_ig_i=1} (where #{X} is affine in the algebraic case, and Stein in the holomorphic case).
+      Indeed, this can even be proven by using coherence of the structure sheaf: it follows from Cartan's Theorem B.
+      However, this analogy is not entirely precise, since partitions of unity involve extension by zero ("bump functions"), which is not possible in the algebraic or holomorphic cases; the fact that smooth partitions of unity are stronger (in this sense) is what implies that the structure sheaf of a smooth manifold is \em{soft}, and thus acyclic.
     }
   }
 }
@@ -266,84 +258,99 @@
 \subtree{
   \taxon{summary}
 
-  \p{
-    For a sheaf #{\sh{F}} of #{\OO_X}-modules on a ringed space #{(X,\OO_X)}, we have three classical finiteness conditions:
+  \subtree{
+    \taxon{definition}
 
-    \ul{
-      \li{
-        \strong{Finite type:} locally covered by some finite free sheaf
-        ##{
-          \OO_U^{\oplus r}\twoheadrightarrow\sh{F}|_U
+    \p{
+      For a sheaf #{\sh{F}} of #{\OO_X}-modules on a ringed space #{(X,\OO_X)}, we have three classical finiteness conditions:
+
+      \ul{
+        \li{
+          \strong{Finite type:} locally covered by some finite free sheaf
+          ##{
+            \OO_U^{\oplus r}\twoheadrightarrow\sh{F}|_U
+          }
+          (i.e. #{\sh{F}} is locally finitely generated by sections)
         }
-        (i.e. #{\sh{F}} is locally finitely generated by sections)
-      }
-      \li{
-        \strong{Finite presentation:} ... and all the extra fluff is locally the image of some finite free sheaf
-        ##{
-          \OO_V^{\oplus s}\to\OO_V^{\oplus r}\twoheadrightarrow\sh{F}|_V
+        \li{
+          \strong{Finite presentation:} ... and all the extra fluff is locally the image of some finite free sheaf
+          ##{
+            \OO_V^{\oplus s}\to\OO_V^{\oplus r}\twoheadrightarrow\sh{F}|_V
+          }
+          (i.e. #{\sh{F}} is locally the cokernel of a finite free morphism)
         }
-        (i.e. #{\sh{F}} is locally the cokernel of a finite free morphism)
-      }
-      \li{
-        \strong{Coherent:} ... and this whole story is also true of any subsheaf of finite type
-        ##{
-          \left[
-            \sh{F}'\hookrightarrow\sh{F}
-            \quad\text{and}\quad
-            \OO_U^{\oplus r'}\twoheadrightarrow\sh{F}'_U
-          \right]
-          \implies
-          \left[
-            \OO_V^{\oplus s'}\to\OO_V^{\oplus r'}\twoheadrightarrow\sh{F}'|_V
-          \right]
+        \li{
+          \strong{Coherent:} ... and this whole story is also true of any subsheaf of finite type
+          ##{
+            \left[
+              \sh{F}'\hookrightarrow\sh{F}
+              \quad\text{and}\quad
+              \OO_U^{\oplus r'}\twoheadrightarrow\sh{F}'_U
+            \right]
+            \implies
+            \left[
+              \OO_V^{\oplus s'}\to\OO_V^{\oplus r'}\twoheadrightarrow\sh{F}'|_V
+            \right]
+          }
+          (i.e. #{\sh{F}} is locally the cokernel of a finite free morphism, as are all its subsheaves of finite type)
         }
-        (i.e. #{\sh{F}} is locally the cokernel of a finite free morphism, as are all its subsheaves of finite type)
       }
+
+      (where #{V\subseteq U\subseteq X}).
     }
-
-    (where #{V\subseteq U\subseteq X}).
   }
 
-  \ul{
-    \li{
-      \p{
-        By definition, [finite type #{\Longleftarrow} finite presentation #{\Longleftarrow} coherent].
-      }
+  \subtree{
+    \taxon{Application}
+
+    \p{
+      Coherence allows us to turn exactness on \em{stalks} to exactness on \em{neighbourhoods}.
     }
+  }
 
-    \li{
-      \p{
-        \stacks{01BZ}:
-        If #{\OO_X} itself is coherent, then [finite presentation #{\iff} coherent].
+  \subtree{
+    \taxon{implications}
+    \ul{
+      \li{
+        \p{
+          By definition, [finite type #{\Longleftarrow} finite presentation #{\Longleftarrow} coherent].
+        }
       }
 
-      \p{
-        In particular, if #{\OO_X} is coherent, then any locally free sheaf of finite rank (i.e. any "vector bundle") is also coherent.
-      }
-    }
+      \li{
+        \p{
+          \stacks{01BZ}:
+          If #{\OO_X} itself is coherent, then [finite presentation #{\iff} coherent].
+        }
 
-    \li{
-      \p{
-        \stacks{01XZ}:
-        If #{(X,\OO_X)} is a locally Noetherian scheme, then these three conditions are \em{almost} equivalent: [finite type* #{\iff} finite presentation #{\iff} coherent], where "finite type*" means \em{quasi-coherent} of finite type (but we don't want to talk about quasi-coherence right now).
+        \p{
+          In particular, if #{\OO_X} is coherent, then any locally free sheaf of finite rank (i.e. any "vector bundle") is also coherent.
+        }
       }
 
-      \p{
-        In particular, if #{(X,\OO_X)} is a locally Noetherian scheme, then #{\OO_X} is coherent, and the proof of this is trivial: it's of finite presentation (indeed, it's even of finite type).
-      }
-    }
+      \li{
+        \p{
+          \stacks{01XZ}:
+          If #{(X,\OO_X)} is a locally Noetherian scheme, then these three conditions are \em{almost} equivalent: [finite type* #{\iff} finite presentation #{\iff} coherent], where "finite type*" means \em{quasi-coherent} of finite type (but we don't want to talk about quasi-coherence right now).
+        }
 
-    \li{
-      \p{
-        The fact that #{\OO_X} is coherent when #{(X,\OO_X)} is a complex manifold is a very surprising fact, and the proof (by Oka) is not at all trivial.
-        Indeed, #{(X,\OO_X)} is not at all Noetherian in the case where #{X} is in particular a Stein manifold, so we cannot simply copy the algebraic proof and say that it follows from #{\OO_X} being of finite type.
+        \p{
+          In particular, if #{(X,\OO_X)} is a locally Noetherian scheme, then #{\OO_X} is coherent, and the proof of this is trivial: it's of finite presentation (indeed, it's even of finite type).
+        }
       }
-    }
 
-    \li{
-      \p{
-        When #{(X,\OO_X)} is a smooth manifold, then #{(X,\OO_X)} is not Noetherian but also #{\OO_X} is not coherent.
-        This \em{would} cause a lot of issues, were it not for the fact that partitions of unity allow differential geometers to build acyclic resolutions in the form of flasque sheaves.
+      \li{
+        \p{
+          The fact that #{\OO_X} is coherent when #{(X,\OO_X)} is a complex manifold is a very surprising fact, and the proof (by Oka) is not at all trivial.
+          Indeed, #{(X,\OO_X)} is not at all Noetherian in the case where #{X} is in particular a Stein manifold, so we cannot simply copy the algebraic proof and say that it follows from #{\OO_X} being of finite type.
+        }
+      }
+
+      \li{
+        \p{
+          When #{(X,\OO_X)} is a smooth manifold, then #{(X,\OO_X)} is not Noetherian and also #{\OO_X} is not coherent.
+          This \em{would} cause a lot of issues, were it not for the fact that partitions of unity allow differential geometers to build acyclic resolutions in the form of flasque sheaves.
+        }
       }
     }
   }
