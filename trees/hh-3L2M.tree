@@ -169,15 +169,60 @@
   }
 }
 
-\p{\todo{we saw above that if things are of finite type, then if they are \em{also} of finite presentation then stuff starts to work out well... so can we come up with a condition that ensures that subsheaves of finite type are of finite presentation?}}
+\subtree{
+  \title{Motivation for a definition of coherence}
+  \taxon{remark}
 
-\p{\todo{"caveat" definition of coherent: any subsheaf of finite type is of finite presentation (the caveat being: the sheaf itself has to be affected by this condition, i.e. it has to be of finite type itself) ("This phrasing more closely mirrors the algebraic definition, of a coherent module over a ring (\stacks{05CV}).")}}
-
-\p{\todo{coherence: the \stacks{01BV} definition}}
-
+  \p{\todo{we saw above that if things are of finite type, then if they are \em{also} of finite presentation then stuff starts to work out well... so can we come up with a condition that ensures that subsheaves of finite type are of finite presentation?}}
+}
 
 \subtree{
-  \taxon{Lemma}
+  \title{Coherent sheaf}
+  \taxon{definition-with-caveat}
+
+  \p{
+    Let #{(X,\OO_X)} be a ringed space, and #{\sh{F}} a sheaf of #{\OO_X}-modules.
+    We say that #{\sh{F}} is \em{coherent} if the following condition holds:
+
+    \subtree{
+      \taxon{condition}
+
+      \p{
+        Any subsheaf #{\sh{G}\subseteq\sh{F}} of finite type is further of finite presentation.
+      }
+    }
+
+    \subtree{
+      \taxon{caveat}
+
+      \p{
+        This condition on subsheaves has to include #{\sh{F}} itself, i.e. #{\sh{F}} must be of finite type.
+      }
+    }
+  }
+}
+
+\subtree{
+  \title{Coherent sheaf}
+  \taxon{definition}
+
+  \p{
+    Let #{(X,\OO_X)} be a ringed space, and #{\sh{F}} a sheaf of #{\OO_X}-modules.
+    We say that #{\sh{F}} is \em{coherent} if it is of finite type and further satisfies the condition that locally the kernel of any morphism from a finite-rank free sheaf is of finite type: for every morphism of the form #{\varphi\colon\OO_U^{\oplus r}\to\sh{F}|_{U}} for #{r\in\mathbb{N}} and #{U\subseteq X} open, the kernel #{\Ker\varphi} is of finite type.
+  }
+
+  \subtree{
+    \taxon{remark}
+
+    \p{
+      This condition is a priori very strong: note that we impose the constraint on the kernel of \em{arbitrary} maps from a finite-rank free sheaf, not just on surjections.
+    }
+  }
+}
+
+\subtree{
+  \title{The two definitions of coherence agree}
+  \taxon{lemma}
 
   \p{
     The two definitions of coherence —
@@ -199,21 +244,79 @@
   }
 }
 
-\p{\todo{mention the problem: we get an abelian category, but are now "almost never" closed under pullbacks (and sometimes #{\OO_X} itself isn't even coherent! this means that finite free modules won't be coherent! that's not good!) BUT if #{\OO_X} is coherent (as it is for holomorphic things!) then everything (including pullbacks) is fine since coherent = f.p.!}}
+\subtree{
+  \title{Properties of coherent sheaves}
+  \taxon{remark}
 
-\p{\todo{include the fact (combining \stacks{01C0} with \stacks{01BP}) that, for coherent, SES on stalks implies SES on a neighbourhood}}
+  \p{
+    By definition, coherent sheaves are also of finite type, but since we are trying to build a hierarchy of finiteness conditions we should show that coherent sheaves are also of finite presentation.
+    Then we will have that [coherent #{\implies} finite presentation #{\implies} finite type].
+  }
+
+  \subtree{
+    \title{Coherence generalises finite presentation}
+    \taxon{lemma}
+
+    \p{
+      Let #{(X,\OO_X)} be a ringed space, and #{\sh{F}} a sheaf of #{\OO_X}-modules.
+      If #{\sh{F}} is coherent, then it is also of finite presentation.
+    }
+
+    \proof{
+      \p{
+        This is \stacks{01BW}.
+        The idea of the (short) proof is to use that #{\sh{F}} is of finite type to build a surjection from a finite-rank free sheaf, and then the fact that the kernel of this surjection is also, by the definition of coherence, of finite type; this gives a finite presentation.
+      }
+    }
+  }
+
+  \subtree{
+    \taxon{corollary}
+
+    \p{
+      Let #{(X,\OO_X)} be a ringed space, #{\sh{F}} a sheaf of #{\OO_X}-modules, and #{\sh{G}} a subsheaf of #{\sh{F}}.
+      If #{\sh{F}} is coherent, then the following conditions are equivalent:
+
+      \ol{
+        \li{
+          #{\sh{G}} is coherent;
+        }
+        \li{
+          #{\sh{G}} is of finite presentation;
+        }
+        \li{
+          #{\sh{G}} is of finite type.
+        }
+      }
+    }
+
+    \proof{
+      \p{
+        We know that, in general, coherence implies finite presentation implies finite type, so we know that [(1) #{\implies} (2) #{\implies} (3)] even without the hypothesis that #{\sh{F}} is coherent.
+        But then, since #{\sh{F}} \em{is} coherent, [(3) #{\implies} (2)].
+        Finally, we have a sort of domino effect: if #{\sh{H}} is a subsheaf of #{\sh{G}}, then it is also a subsheaf of #{\sh{F}}, and the property of being finite type is a property on a sheaf itself, not on its realisation as a subsheaf of a specific sheaf;
+        in other words, any subsheaf #{\sh{H}} of #{\sh{G}} of finite type is also a subsheaf of #{\sh{F}} of finite type, and thus of finite presentation (since #{\sh{F}} is coherent);
+        thus #{\sh{G}} is coherent, i.e. [(2) #{\implies} (1)].
+      }
+    }
+  }
+
+  \p{\todo{mention the problem: we get an abelian category (\stacks{01BY}), but are now "almost never" closed under pullbacks (and sometimes #{\OO_X} itself isn't even coherent! this means that finite free modules won't be coherent! that's not good!) BUT if #{\OO_X} is coherent (as it is for holomorphic things!) then everything (including pullbacks) is fine since coherent = f.p.!}}
+
+  \p{\todo{include the fact (combining \stacks{01C0} with \stacks{01BP}) that, for coherent, SES on stalks implies SES on a neighbourhood}}
+}
 
 \subtree{
-  \title{Quasi- and pseudo-coherent sheaves}
+  \title{Quasi-coherent and pseudo-coherent sheaves}
   \taxon{aside}
 
-  \p{\todo{quasi-coherence} ...but on a locally Noetherian scheme, quasi-coherent sheaves are really well behaved, and generalise coherent sheaves in that they are just "[coherent sheaves of possibly infinite rank](https://stacks.math.columbia.edu/tag/01XZ)"}
+  \p{\todo{quasi-coherence} ...but on a locally Noetherian scheme, quasi-coherent sheaves are surprisingly well behaved, and generalise coherent sheaves in that they are just "[coherent sheaves of possibly infinite rank](https://stacks.math.columbia.edu/tag/01XZ)"}
 
   \p{\todo{pseudo-coherence??? just mention in passing as it carries on the pattern "finite type, finite presentation, ..." (made precise by \stacks{064T} (for just modules over a ring though...))}}
 }
 
 \subtree{
-  \title{Algebraic, holomorphic, and smooth geometry}
+  \title{Algebraic, holomorphic, and smooth geometries}
   \taxon{example}
 
   \p{
@@ -301,7 +404,7 @@
   }
 
   \subtree{
-    \taxon{Application}
+    \taxon{application}
 
     \p{
       Coherence allows us to turn exactness on \em{stalks} to exactness on \em{neighbourhoods}.
@@ -313,7 +416,11 @@
     \ul{
       \li{
         \p{
-          By definition, [finite type #{\Longleftarrow} finite presentation #{\Longleftarrow} coherent].
+          In general, [finite type #{\Longleftarrow} finite presentation #{\Longleftarrow} coherent].
+        }
+
+        \p{
+          For any subsheaf of a coherent sheaf, these three conditions become equivalent.
         }
       }
 
@@ -331,7 +438,7 @@
       \li{
         \p{
           \stacks{01XZ}:
-          If #{(X,\OO_X)} is a locally Noetherian scheme, then these three conditions are \em{almost} equivalent: [finite type* #{\iff} finite presentation #{\iff} coherent], where "finite type*" means \em{quasi-coherent} of finite type (but we don't want to talk about quasi-coherence right now).
+          If #{(X,\OO_X)} is a locally Noetherian scheme, then these three conditions are \em{almost} equivalent: for any sheaf, [finite type* #{\iff} finite presentation #{\iff} coherent], where "finite type*" means \em{quasi-coherent} of finite type (but we don't want to talk about quasi-coherence right now).
         }
 
         \p{
