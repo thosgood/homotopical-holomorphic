@@ -7,10 +7,114 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>396</fr:anchor><fr:addr
-type="machine">#270</fr:addr><fr:route>unstable-270.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#269</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:strong><fr:em>TO-DO:</fr:em></fr:strong>
-  </fr:mainmatter><fr:backmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>472</fr:anchor><fr:addr
+type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:title
+text="Finiteness conditions on sheaves › Properties of coherent sheaves"><fr:link
+type="local"
+href="hh-3L2M.xml"
+addr="hh-3L2M"
+title="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:link> › Properties of coherent sheaves</fr:title><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>By definition, coherent sheaves are also of finite type, but since we are trying to build a hierarchy of finiteness conditions we should show that coherent sheaves are also of finite presentation.
+    Then we will have that [coherent <fr:tex
+display="inline"><![CDATA[\implies ]]></fr:tex> finite presentation <fr:tex
+display="inline"><![CDATA[\implies ]]></fr:tex> finite type].</fr:p><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>363</fr:anchor><fr:addr
+type="machine">#272</fr:addr><fr:route>unstable-272.xml</fr:route><fr:title
+text="Coherence generalises finite presentation">Coherence generalises finite presentation</fr:title><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>#271</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
+      If <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent, then it is also of finite presentation.</fr:p>
+  
+    
+    <fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>364</fr:anchor><fr:addr
+type="machine">#273</fr:addr><fr:route>unstable-273.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#272</fr:parent></fr:frontmatter><fr:mainmatter>
+      <fr:p>This is <fr:link
+type="external"
+href="https://stacks.math.columbia.edu/tag/01BW">[Stacks:01BW]</fr:link>.
+        The idea of the (short) proof is to use that <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is of finite type to build a surjection from a finite-rank free sheaf, and then the fact that the kernel of this surjection is also, by the definition of coherence, of finite type; this gives a finite presentation.</fr:p>
+    </fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>365</fr:anchor><fr:addr
+type="machine">#274</fr:addr><fr:route>unstable-274.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:parent>#271</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules, and <fr:tex
+display="inline"><![CDATA[\mathscr {G}]]></fr:tex> a subsheaf of <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex>.
+      If <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent, then the following conditions are equivalent:
+
+      <fr:ol><fr:li><fr:tex
+display="inline"><![CDATA[\mathscr {G}]]></fr:tex> is coherent;</fr:li>
+        <fr:li><fr:tex
+display="inline"><![CDATA[\mathscr {G}]]></fr:tex> is of finite presentation;</fr:li>
+        <fr:li><fr:tex
+display="inline"><![CDATA[\mathscr {G}]]></fr:tex> is of finite type.</fr:li></fr:ol></fr:p>
+  
+    
+    <fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>366</fr:anchor><fr:addr
+type="machine">#275</fr:addr><fr:route>unstable-275.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#274</fr:parent></fr:frontmatter><fr:mainmatter>
+      <fr:p>We know that, in general, coherence implies finite presentation implies finite type, so we know that [(1) <fr:tex
+display="inline"><![CDATA[\implies ]]></fr:tex> (2) <fr:tex
+display="inline"><![CDATA[\implies ]]></fr:tex> (3)] even without the hypothesis that <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent.
+        But then, since <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> <fr:em>is</fr:em> coherent, [(3) <fr:tex
+display="inline"><![CDATA[\implies ]]></fr:tex> (2)].
+        Finally, we have a sort of domino effect: if <fr:tex
+display="inline"><![CDATA[\mathscr {H}]]></fr:tex> is a subsheaf of <fr:tex
+display="inline"><![CDATA[\mathscr {G}]]></fr:tex>, then it is also a subsheaf of <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex>, and the property of being finite type is a property on a sheaf itself, not on its realisation as a subsheaf of a specific sheaf;
+        in other words, any subsheaf <fr:tex
+display="inline"><![CDATA[\mathscr {H}]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathscr {G}]]></fr:tex> of finite type is also a subsheaf of <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> of finite type, and thus of finite presentation (since <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent);
+        thus <fr:tex
+display="inline"><![CDATA[\mathscr {G}]]></fr:tex> is coherent, i.e. [(2) <fr:tex
+display="inline"><![CDATA[\implies ]]></fr:tex> (1)].</fr:p>
+    </fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:p><fr:strong><fr:em>TO-DO: mention the problem: we get an abelian category (<fr:link
+type="external"
+href="https://stacks.math.columbia.edu/tag/01BY">[Stacks:01BY]</fr:link>), but are now "almost never" closed under pullbacks! and sometimes <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> itself isn't even coherent! this means that finite free modules won't be coherent! that's not good! BUT if <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent (as it is for holomorphic things!) then everything (including pullbacks) is fine since coherent = f.p.! (<fr:link
+type="external"
+href="https://stacks.math.columbia.edu/tag/01BZ">[Stacks:01BZ]</fr:link>)</fr:em></fr:strong></fr:p><fr:p><fr:strong><fr:em>TO-DO: include the fact (combining <fr:link
+type="external"
+href="https://stacks.math.columbia.edu/tag/01C0">[Stacks:01C0]</fr:link> with <fr:link
+type="external"
+href="https://stacks.math.columbia.edu/tag/01BP">[Stacks:01BP]</fr:link>) that, for coherent, SES on stalks implies SES on a neighbourhood</fr:em></fr:strong></fr:p></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -25,7 +129,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>397</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>473</fr:anchor><fr:addr
 type="user">hh-3L2M</fr:addr><fr:route>hh-3L2M.xml</fr:route><fr:title
 text="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"

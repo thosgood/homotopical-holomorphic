@@ -7,10 +7,14 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>396</fr:anchor><fr:addr
-type="machine">#270</fr:addr><fr:route>unstable-270.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#269</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:strong><fr:em>TO-DO:</fr:em></fr:strong>
-  </fr:mainmatter><fr:backmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>398</fr:anchor><fr:addr
+type="machine">#273</fr:addr><fr:route>unstable-273.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#272</fr:parent></fr:frontmatter><fr:mainmatter>
+      <fr:p>This is <fr:link
+type="external"
+href="https://stacks.math.columbia.edu/tag/01BW">[Stacks:01BW]</fr:link>.
+        The idea of the (short) proof is to use that <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is of finite type to build a surjection from a finite-rank free sheaf, and then the fact that the kernel of this surjection is also, by the definition of coherence, of finite type; this gives a finite presentation.</fr:p>
+    </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -25,7 +29,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>397</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>399</fr:anchor><fr:addr
 type="user">hh-3L2M</fr:addr><fr:route>hh-3L2M.xml</fr:route><fr:title
 text="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"

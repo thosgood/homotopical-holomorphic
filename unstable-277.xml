@@ -7,10 +7,53 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>396</fr:anchor><fr:addr
-type="machine">#270</fr:addr><fr:route>unstable-270.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#269</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:strong><fr:em>TO-DO:</fr:em></fr:strong>
-  </fr:mainmatter><fr:backmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>416</fr:anchor><fr:addr
+type="machine">#277</fr:addr><fr:route>unstable-277.xml</fr:route><fr:title
+text="Finiteness conditions on sheaves › Algebraic, holomorphic, and smooth geometries"><fr:link
+type="local"
+href="hh-3L2M.xml"
+addr="hh-3L2M"
+title="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:link> › Algebraic, holomorphic, and smooth geometries</fr:title><fr:taxon>Example</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Different finiteness conditions show up in different ways depending on the flavour of geometry being studied.</fr:p><fr:p><fr:strong>Algebraic geometry.</fr:strong>
+    For locally Noetherian schemes <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex>, the structure sheaf <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is itself coherent (<fr:link
+type="external"
+href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>).
+    This implies, amongst other things, that a sheaf of <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules is then coherent if and only if it is finitely presented (also <fr:link
+type="external"
+href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>).
+    Since being locally Noetherian is not an overly restrictive hypothesis in general, some algebraic geometry references even <fr:em>define</fr:em> coherence as being finitely presented (or, equivalently, "quasi-coherent of finite type") — most notably <fr:strong><fr:em>TO-DO: Hartshorne</fr:em></fr:strong>.</fr:p><fr:p><fr:strong>Holomorphic geometry.</fr:strong>
+    For complex manifolds, the Noetherian condition is generally far too restrictive: any Stein manifold gives an example of a non-Noetherian <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex>.
+    What is arguably surprising, however, is that <fr:em>despite</fr:em> this the structure sheaf <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> of any complex manifold is still coherent.
+    This is a deep non-trivial theorem of Oka, and one of the fundamental results in complex geometry.</fr:p><fr:p><fr:strong>Differential geometry</fr:strong>.
+    For smooth manifolds, their structure sheaves are generally <fr:link
+type="external"
+href="https://mathoverflow.net/questions/21168/how-to-classify-the-algebras-c%E2%88%9Em#comment43031_21345">neither Noetherian</fr:link> <fr:link
+type="external"
+href="https://math.stackexchange.com/a/305962">nor coherent</fr:link>.
+    In both cases, non-zero smooth functions with identically zero Taylor series on a neighbourhood are the problem.
+    However, differential geometry can appeal to something that neither algebraic nor analytic geometry can: partitions of unity, with bump functions.</fr:p><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>369</fr:anchor><fr:addr
+type="machine">#278</fr:addr><fr:route>unstable-278.xml</fr:route><fr:title
+text="Partitions of unity and the Nullstellensatz">Partitions of unity and the Nullstellensatz</fr:title><fr:taxon>Aside</fr:taxon><fr:authors /><fr:parent>#277</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Although the existence of partitions of unity in the smooth case is not expressed as a property of <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex>, it still plays an analogous role to the coherence of <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>, in that it gives rise to acyclicity theorems of resolutions.
+      It is possible to think of the Nullstellensatz — a form of which holds in both the algebraic (over an algebraically closed field) and holomorphic cases — as a type of partition of unity statement: one version of it says that, for any set of functions <fr:tex
+display="inline"><![CDATA[f_1,\ldots ,f_n\in \mathscr {O}_X(X)]]></fr:tex> that do not have a common zero, we can find <fr:tex
+display="inline"><![CDATA[g_1,\ldots ,g_n\in \mathscr {O}_X(X)]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\sum _i f_ig_i=1]]></fr:tex> (where <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is affine in the algebraic case, and Stein in the holomorphic case).
+      Indeed, this can even be proven by using coherence of the structure sheaf: it follows from Cartan's Theorem B.
+      However, this analogy is not entirely precise, since partitions of unity involve extension by zero ("bump functions"), which is not possible in the algebraic or holomorphic cases; the fact that smooth partitions of unity are stronger (in this sense) is what implies that the structure sheaf of a smooth manifold is <fr:em>soft</fr:em>, and thus acyclic.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -25,7 +68,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>397</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>417</fr:anchor><fr:addr
 type="user">hh-3L2M</fr:addr><fr:route>hh-3L2M.xml</fr:route><fr:title
 text="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
