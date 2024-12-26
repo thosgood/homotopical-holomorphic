@@ -6,6 +6,8 @@
 \def\tr[body]{\<html:tr>{\body}}
 \def\td[body]{\<html:td>{\body}}
 
+\def\mark[body]{\<html:mark>{\body}}
+
 \def\proof[body]{
   \scope{
     \put\transclude/toc{false}
@@ -18,7 +20,7 @@
 
 \def\stacks[x]{[[Stacks:\x]](https://stacks.math.columbia.edu/tag/\x)}
 
-\def\todo[x]{\strong{\em{TO-DO: \x}}}
+\def\todo[x]{\mark{\strong{\em{TO-DO: \x}}}}
 
 \def\cat[x]{#{\mathcal{\x}}}
 \def\Cat[x]{#{\mathsf{\x}}}

@@ -12,6 +12,8 @@
     To start with...
     things being finite in some sense is usually nice, so let's start by essentially saying "finite bases exist", but because we're working with \em{sheaves} we want to say something that allows for much richer behaviour, namely that we just want to be \em{locally} "finite dimensional", and this gives the notion of \em{finite type}
 
+    we're motivated by (locally) free sheaves — these turn up all over the place and we'd like to be studying them
+
     but here's the immediate problem: by imposing this condition, we no longer have an abelian category of sheaves!
   }
 
@@ -212,10 +214,10 @@
   }
 
   \subtree{
-    \taxon{remark}
+    \taxon{comment}
 
     \p{
-      This condition is a priori very strong: note that we impose the constraint on the kernel of \em{arbitrary} maps from a finite-rank free sheaf, not just on surjections.
+      Note that we impose the constraint on the kernel of \em{arbitrary} maps from a finite-rank free sheaf, not just on surjections.
     }
   }
 }
@@ -240,7 +242,7 @@
   }
 
   \proof{
-    \todo{}
+    \todo{write this proof}
   }
 }
 
@@ -271,6 +273,7 @@
   }
 
   \subtree{
+    \title{Finiteness conditions on subsheaves of coherent sheaves}
     \taxon{corollary}
 
     \p{
@@ -301,16 +304,96 @@
     }
   }
 
-  \p{\todo{mention the problem: we get an abelian category (\stacks{01BY}), but are now "almost never" closed under pullbacks! and sometimes #{\OO_X} itself isn't even coherent! this means that finite free modules won't be coherent! that's not good! BUT if #{\OO_X} is coherent (as it is for holomorphic things!) then everything (including pullbacks) is fine since coherent = f.p.! (\stacks{01BZ})}}
+  \p{
+    Now, at last, we get the full two-out-of-three property, and it is stronger than the partial results that we had for sheaves of finite presentation, in that we do not even need to assume that the sheaves are of finite type:
 
-  \p{\todo{include the fact (combining \stacks{01C0} with \stacks{01BP}) that, for coherent, SES on stalks implies SES on a neighbourhood}}
+    \subtree{
+      \taxon{lemma}
+
+      \p{
+        Let #{0\to\sh{H}\to\sh{G}\to\sh{F}\to0} be a short exact sequence of sheaves of #{\OO_X}-modules.
+        If any two of #{\sh{H}}, #{\sh{G}}, and #{\sh{F}} are coherent, then so too is the third.
+      }
+
+      \proof{
+        \p{
+          This is part of \stacks{01BY}.
+        }
+      }
+    }
+  }
+
+  \p{
+    In fact, we have an even better result than mere two-out-of-three:
+
+    \subtree{
+      \title{Coherent sheaves form an abelian category}
+      \taxon{lemma}
+
+      \p{
+        The category of coherent sheaves of #{\OO_X}-modules on a ringed space #{(X,\OO_X)} is an abelian category.
+        Furthermore, its inclusion into the category of sheaves of #{\OO_X}-modules is an exact functor.
+      }
+
+      \proof{
+        \p{
+          This is the rest of \stacks{01BY}.
+        }
+      }
+    }
+  }
+
+  \p{
+    However, in getting an abelian category, we have paid a price somewhere else: in general, it is \em{not} true that the pullback of a coherent sheaf is coherent.
+    Even worse, there is \em{no reason} a priori for #{\OO_X} itself to be coherent, and so we cannot even ensure that (locally) free sheaves of finite rank are coherent — these \em{should} be a prototypical example of whatever sort of finiteness conditions we want, so the fact that the category of locally free sheaves is \em{not} necessarily a subcategory of the category of coherent sheaves is not a desirable outcome.
+    But it turns out that the latter problem is somehow the only problem, in the sense of the following results:
+
+    \subtree{
+      \taxon{lemma}
+
+      \p{
+        Let #{(X,\OO_X)} be a ringed space, and #{\sh{F}} a sheaf of #{\OO_X}-modules.
+        If #{\OO_X} is coherent, then #{\sh{F}} is coherent if and only if #{\sh{F}} is of finite presentation.
+      }
+
+      \proof{
+        This is \stacks{01BZ}.
+      }
+    }
+
+    \subtree{
+      \taxon{corollary}
+
+      \p{
+        Let #{(X,\OO_X)} and #{(Y,\OO_Y)} be ringed spaces, and #{f\colon(X,\OO_X)\to(Y,\OO_Y)} a morphism.
+        If #{\OO_X} is coherent, then the pullback functor #{f^*} that sends sheaves of #{\OO_Y}-modules to sheaves of #{\OO_X}-modules respects coherence: the pullback of any coherent sheaf is again coherent.
+      }
+
+      \p{
+        Any coherent #{\OO_Y}-module is in particular of finite presentation, and pullback always preserves being of finite presentation;
+        since #{\OO_X} is coherent, being of finite presentation implies coherence, and so the pullback is coherent.
+      }
+    }
+  }
+
+  \p{
+    The fact that #{\OO_X} itself can be non-coherent is "not surprising", since an arbitrary ringed space with no further hypotheses could conceivably have "too many functions".
+
+    \todo{oka's coherence theorem}
+  }
+
+  \p{
+    the other fundamental result: grauert's theorem for pushforwards?
+  }
+
+  \p{\todo{the big property of coherence: (combining \stacks{01C0} with \stacks{01BP}) for coherent, SES on stalks implies SES on a neighbourhood}}
 }
 
 \subtree{
   \title{Quasi-coherent and pseudo-coherent sheaves}
   \taxon{aside}
 
-  \p{\todo{quasi-coherence} ...but on a locally Noetherian scheme, quasi-coherent sheaves are surprisingly well behaved, and generalise coherent sheaves in that they are just "[coherent sheaves of possibly infinite rank](https://stacks.math.columbia.edu/tag/01XZ)"}
+  \p{\todo{quasi-coherence} ...but on a locally Noetherian scheme, quasi-coherent sheaves are surprisingly well behaved, and generalise coherent sheaves in that they are just "coherent sheaves of possibly infinite rank" (\stacks{01XZ})"}
 
   \p{\todo{pseudo-coherence??? just mention in passing as it carries on the pattern "finite type, finite presentation, ..." (made precise by \stacks{064T} (for just modules over a ring though...))}}
 }
@@ -323,25 +406,33 @@
     Different finiteness conditions show up in different ways depending on the flavour of geometry being studied.
   }
 
-  \p{
-    \strong{Algebraic geometry.}
-    For locally Noetherian schemes #{(X,\OO_X)}, the structure sheaf #{\OO_X} is itself coherent (\stacks{01XZ}).
-    This implies, amongst other things, that a sheaf of #{\OO_X}-modules is then coherent if and only if it is finitely presented (also \stacks{01XZ}).
-    Since being locally Noetherian is not an overly restrictive hypothesis in general, some algebraic geometry references even \em{define} coherence as being finitely presented (or, equivalently, "quasi-coherent of finite type") — most notably \todo{Hartshorne}.
-  }
+  \ul{
+    \li{
+      \p{
+        \strong{Algebraic geometry.}
+        For locally Noetherian schemes #{(X,\OO_X)}, the structure sheaf #{\OO_X} is itself coherent (\stacks{01XZ}).
+        This implies, amongst other things, that a sheaf of #{\OO_X}-modules is then coherent if and only if it is finitely presented (also \stacks{01XZ}).
+        Since being locally Noetherian is not an overly restrictive hypothesis in general, some algebraic geometry references even \em{define} coherence as being finitely presented (or, equivalently, "quasi-coherent of finite type") — most notably \todo{Hartshorne}.
+      }
+    }
 
-  \p{
-    \strong{Holomorphic geometry.}
-    For complex manifolds, the Noetherian condition is generally far too restrictive: any Stein manifold gives an example of a non-Noetherian #{(X,\OO_X)}.
-    What is arguably surprising, however, is that \em{despite} this the structure sheaf #{\OO_X} of any complex manifold is still coherent.
-    This is a deep non-trivial theorem of Oka, and one of the fundamental results in complex geometry.
-  }
+    \li{
+      \p{
+        \strong{Holomorphic geometry.}
+        For complex manifolds, the Noetherian condition is generally far too restrictive: any Stein manifold gives an example of a non-Noetherian #{(X,\OO_X)}.
+        What is arguably surprising, however, is that \em{despite} this the structure sheaf #{\OO_X} of any complex manifold is still coherent.
+        This is a deep non-trivial theorem of Oka, and one of the fundamental results in complex geometry.
+      }
+    }
 
-  \p{
-    \strong{Differential geometry}.
-    For smooth manifolds, their structure sheaves are generally [neither Noetherian](https://mathoverflow.net/questions/21168/how-to-classify-the-algebras-c∞m#comment43031_21345) [nor coherent](https://math.stackexchange.com/a/305962).
-    In both cases, non-zero smooth functions with identically zero Taylor series on a neighbourhood are the problem.
-    However, differential geometry can appeal to something that neither algebraic nor analytic geometry can: partitions of unity, with bump functions.
+    \li{
+      \p{
+        \strong{Differential geometry}.
+        For smooth manifolds, their structure sheaves are generally [neither Noetherian](https://mathoverflow.net/questions/21168/how-to-classify-the-algebras-c∞m#comment43031_21345) [nor coherent](https://math.stackexchange.com/a/305962).
+        In both cases, non-zero smooth functions with identically zero Taylor series on a neighbourhood are the problem.
+        However, differential geometry can appeal to something that neither algebraic nor analytic geometry can: partitions of unity, with bump functions.
+      }
+    }
   }
 
   \subtree{
