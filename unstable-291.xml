@@ -7,12 +7,9 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>409</fr:anchor><fr:addr
-type="machine">#256</fr:addr><fr:route>unstable-256.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#255</fr:parent></fr:frontmatter><fr:mainmatter>
-        This is <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01B8">[Stacks:01B8]</fr:link>.
-      </fr:mainmatter><fr:backmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>453</fr:anchor><fr:addr
+type="machine">#291</fr:addr><fr:route>unstable-291.xml</fr:route><fr:taxon>Literature</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><html:mark
+xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: FAC, Stacks, SGA 6, Oka(?), the original (Cartan?) citation</fr:em></fr:strong></html:mark></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -27,7 +24,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>410</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>454</fr:anchor><fr:addr
 type="user">hh-3L2M</fr:addr><fr:route>hh-3L2M.xml</fr:route><fr:title
 text="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"

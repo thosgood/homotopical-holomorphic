@@ -7,12 +7,48 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>409</fr:anchor><fr:addr
-type="machine">#256</fr:addr><fr:route>unstable-256.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#255</fr:parent></fr:frontmatter><fr:mainmatter>
-        This is <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>449</fr:anchor><fr:addr
+type="machine">#289</fr:addr><fr:route>unstable-289.xml</fr:route><fr:taxon>Implications</fr:taxon><fr:authors /><fr:parent>#286</fr:parent></fr:frontmatter><fr:mainmatter><fr:ul><fr:li><fr:p>In general, [finite type <fr:tex
+display="inline"><![CDATA[\Longleftarrow ]]></fr:tex> finite presentation <fr:tex
+display="inline"><![CDATA[\Longleftarrow ]]></fr:tex> coherent].</fr:p>
+
+        <fr:p>For any subsheaf of a coherent sheaf, these three conditions become equivalent.</fr:p></fr:li>
+
+      <fr:li><fr:p><fr:link
 type="external"
-href="https://stacks.math.columbia.edu/tag/01B8">[Stacks:01B8]</fr:link>.
-      </fr:mainmatter><fr:backmatter><fr:tree
+href="https://stacks.math.columbia.edu/tag/01BZ">[Stacks:01BZ]</fr:link>:
+          If <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> itself is coherent, then [finite presentation <fr:tex
+display="inline"><![CDATA[\iff ]]></fr:tex> coherent].</fr:p>
+
+        <fr:p>In particular, if <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent, then any locally free sheaf of finite rank (i.e. any "vector bundle") is also coherent.</fr:p></fr:li>
+
+      <fr:li><fr:p><fr:link
+type="external"
+href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>:
+          If <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a locally Noetherian scheme, then these three conditions are <fr:em>almost</fr:em> equivalent: for any sheaf, [finite type* <fr:tex
+display="inline"><![CDATA[\iff ]]></fr:tex> finite presentation <fr:tex
+display="inline"><![CDATA[\iff ]]></fr:tex> coherent], where "finite type*" means <fr:em>quasi-coherent</fr:em> of finite type (but we don't want to talk about quasi-coherence right now).</fr:p>
+
+        <fr:p>In particular, if <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a locally Noetherian scheme, then <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent, and the proof of this is trivial: it's of finite presentation (indeed, it's even of finite type).</fr:p></fr:li>
+
+      <fr:li><fr:p>The fact that <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent when <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a complex manifold is a very surprising fact, and the proof (by Oka) is not at all trivial.
+          Indeed, <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is not at all Noetherian in the case where <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is in particular a Stein manifold, so we cannot simply copy the algebraic proof and say that it follows from <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> being of finite type.</fr:p></fr:li>
+
+      <fr:li><fr:p>When <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a smooth manifold, then <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is not Noetherian and also <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is not coherent.
+          This <fr:em>would</fr:em> cause a lot of issues, were it not for the fact that partitions of unity allow differential geometers to build acyclic resolutions in the form of flasque sheaves.</fr:p></fr:li></fr:ul></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -27,7 +63,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>410</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>450</fr:anchor><fr:addr
 type="user">hh-3L2M</fr:addr><fr:route>hh-3L2M.xml</fr:route><fr:title
 text="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"

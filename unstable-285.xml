@@ -7,12 +7,26 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>409</fr:anchor><fr:addr
-type="machine">#256</fr:addr><fr:route>unstable-256.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#255</fr:parent></fr:frontmatter><fr:mainmatter>
-        This is <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01B8">[Stacks:01B8]</fr:link>.
-      </fr:mainmatter><fr:backmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>503</fr:anchor><fr:addr
+type="machine">#285</fr:addr><fr:route>unstable-285.xml</fr:route><fr:title
+text="Finiteness conditions on sheaves › Algebraic, holomorphic, and smooth geometries › Partitions of unity and the Nullstellensatz"><fr:link
+type="local"
+href="unstable-284.xml"
+addr="#284"
+title="Finiteness conditions on sheaves › Algebraic, holomorphic, and smooth geometries"><fr:link
+type="local"
+href="hh-3L2M.xml"
+addr="hh-3L2M"
+title="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:link> › Algebraic, holomorphic, and smooth geometries</fr:link> › Partitions of unity and the Nullstellensatz</fr:title><fr:taxon>Aside</fr:taxon><fr:authors /><fr:parent>#284</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Although the existence of partitions of unity in the smooth case is not expressed as a property of <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex>, it still plays an analogous role to the coherence of <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>, in that it gives rise to acyclicity theorems of resolutions.
+      It is possible to think of the Nullstellensatz — a form of which holds in both the algebraic (over an algebraically closed field) and holomorphic cases — as a type of partition of unity statement: one version of it says that, for any set of functions <fr:tex
+display="inline"><![CDATA[f_1,\ldots ,f_n\in \mathscr {O}_X(X)]]></fr:tex> that do not have a common zero, we can find <fr:tex
+display="inline"><![CDATA[g_1,\ldots ,g_n\in \mathscr {O}_X(X)]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\sum _i f_ig_i=1]]></fr:tex> (where <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is affine in the algebraic case, and Stein in the holomorphic case).
+      Indeed, this can even be proven by using coherence of the structure sheaf: it follows from Cartan's Theorem B.
+      However, this analogy is not entirely precise, since partitions of unity involve extension by zero ("bump functions"), which is not possible in the algebraic or holomorphic cases; the fact that smooth partitions of unity are stronger (in this sense) is what implies that the structure sheaf of a smooth manifold is <fr:em>soft</fr:em>, and thus acyclic.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -27,7 +41,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>410</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>504</fr:anchor><fr:addr
 type="user">hh-3L2M</fr:addr><fr:route>hh-3L2M.xml</fr:route><fr:title
 text="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
