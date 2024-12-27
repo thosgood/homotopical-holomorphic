@@ -378,12 +378,56 @@
 
   \p{
     The fact that #{\OO_X} itself can be non-coherent is "not surprising", since an arbitrary ringed space with no further hypotheses could conceivably have "too many functions".
+    There are two particularly important results concerning ringed spaces whose structure sheaf is coherent: one in algebraic geometry, and one in holomorphic geometry; the latter is one of the fundamental results in complex geometry.
 
-    \todo{oka's coherence theorem}
+    \subtree{
+      \title{Noetherian coherence}
+      \taxon{theorem}
+
+      \p{
+        Let #{(X,\OO_X)} be a locally Noetherian scheme.
+        Then #{\OO_X} is a coherent #{\OO_X}-module.
+      }
+
+      \proof{
+        \p{
+          This is \stacks{01XZ}.
+        }
+      }
+    }
+
+    \subtree{
+      \title{Oka's coherence}
+      \taxon{theorem}
+
+      \p{
+        Let #{(X,\OO_X)} be a complex manifold.
+        Then #{\OO_X} is a coherent #{\OO_X}-module.
+      }
+
+      \proof{
+        \p{
+          \todo{give a good reference}
+        }
+      }
+
+      \subtree{
+        \taxon{remark}
+
+        \p{
+          One reason that this result is so deep is that it is somehow stronger than the corresponding result in algebraic geometry, since #{\OO_X(X)} is not a Noetherian ring in general for complex manifolds (e.g. for #{X} a Stein manifold) and yet #{\OO_X} is still coherent.
+        }
+      }
+    }
   }
 
   \p{
-    the other fundamental result: grauert's theorem for pushforwards?
+    Alongside Oka's coherence theorem, the other fundamental result for holomorphic geometry concerns pushforwards.
+    Combining Oka's coherence theorem with \todo{the lemma about #{\OO_X} coherent implies pullback preserves coherence}
+
+    \todo{
+      the other fundamental result: grauert's theorem for pushforwards?
+    }
   }
 
   \p{\todo{the big property of coherence: (combining \stacks{01C0} with \stacks{01BP}) for coherent, SES on stalks implies SES on a neighbourhood}}
