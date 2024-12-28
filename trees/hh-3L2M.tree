@@ -343,8 +343,15 @@
     }
   }
 
+  \p{\todo{finally, the big property of coherence: (combining \stacks{01C0} with \stacks{01BP}) for coherent, SES on stalks implies SES on a neighbourhood}}
+}
+
+\subtree{
+  \title{Coherence of the structure sheaf, and pullbacks and pushforwards}
+  \taxon{remark}
+
   \p{
-    However, in getting an abelian category, we have paid a price somewhere else: in general, it is \em{not} true that the pullback of a coherent sheaf is coherent.
+    Even though coherent sheaves give an abelian category when the other finiteness conditions did not, we have paid a price somewhere else: in general, it is \em{not} true that the pullback of a coherent sheaf is coherent.
     Even worse, there is \em{no reason} a priori for #{\OO_X} itself to be coherent, and so we cannot even ensure that (locally) free sheaves of finite rank are coherent — these \em{should} be a prototypical example of whatever sort of finiteness conditions we want, so the fact that the category of locally free sheaves is \em{not} necessarily a subcategory of the category of coherent sheaves is not a desirable outcome.
     But it turns out that the latter problem is somehow the only problem, in the sense of the following results:
 
@@ -369,9 +376,11 @@
         If #{\OO_X} is coherent, then the pullback functor #{f^*} that sends sheaves of #{\OO_Y}-modules to sheaves of #{\OO_X}-modules respects coherence: the pullback of any coherent sheaf is again coherent.
       }
 
-      \p{
-        Any coherent #{\OO_Y}-module is in particular of finite presentation, and pullback always preserves being of finite presentation;
-        since #{\OO_X} is coherent, being of finite presentation implies coherence, and so the pullback is coherent.
+      \proof{
+        \p{
+          Any coherent #{\OO_Y}-module is in particular of finite presentation, and pullback always preserves being of finite presentation;
+          since #{\OO_X} is coherent, being of finite presentation implies coherence, and so the pullback is coherent.
+        }
       }
     }
   }
@@ -397,7 +406,7 @@
     }
 
     \subtree{
-      \title{Oka's coherence}
+      \title{Oka coherence}
       \taxon{theorem}
 
       \p{
@@ -423,14 +432,40 @@
 
   \p{
     Alongside Oka's coherence theorem, the other fundamental result for holomorphic geometry concerns pushforwards.
-    Combining Oka's coherence theorem with \todo{the lemma about #{\OO_X} coherent implies pullback preserves coherence}
-
-    \todo{
-      the other fundamental result: grauert's theorem for pushforwards?
+    Combining Oka's coherence theorem (or by assuming a locally Noetherian hypothesis, in the algebraic case) with \todo{the lemma about #{\OO_X} coherent implies pullback preserves coherence}, we obtain \em{functoriality of coherent sheaves for complex manifolds}, in that
+    ##{
+      \begin{aligned}
+        \Cat{RingSp}
+        &\longrightarrow \Cat{Cat}
+      \\(X,\OO_X)
+        &\longmapsto \Cat{Coh}(X)
+      \\{}[f\colon(X,\OO_X)\to(Y,\OO_Y)]
+        &\longmapsto [f^*\colon\Cat{Coh}(Y)\to\Cat{Coh}(X)]
+      \end{aligned}
     }
+    defines a (pseudo-)functor from the category of ringed spaces to the category of (dg-)categories.
+    More simply, for \em{any} morphism #{f\colon(X,\OO_X)\to(Y,\OO_Y)} we obtain a pullback functor #{f^*\colon\Cat{Coh}(Y)\to\Cat{Coh}(X)}.
+    It is then natural to ask if a similar stories holds true for a pushforward functor.
   }
 
-  \p{\todo{the big property of coherence: (combining \stacks{01C0} with \stacks{01BP}) for coherent, SES on stalks implies SES on a neighbourhood}}
+  \p{
+    In general, for an arbitrary morphism #{f\colon(X,\OO_X)\to(Y,\OO_Y)}, it is not the case that the pushforward #{f_*\sh{F}} of a coherent sheaf #{\sh{F}} of #{\OO_X}-modules will again be coherent (as a sheaf of #{\OO_Y}-modules).
+    However, this \em{is} true if we take #{f} to be \em{proper} (by a result of Grauert–Remmert \todo{cite GR84, Theorem 10.4.6} in the holomorphic case, and Grothendieck \todo{cite EGA III, 3.2.1} in the algebraic case).
+    Here we state only the holomorphic version; the algebraic version is \stacks{02O3}.
+
+    \subtree{
+      \title{Grauert direct image}
+      \taxon{theorem}
+
+      \p{
+        \todo{state}
+      }
+
+      \proof{
+        \todo{mention a few proofs? including Levy's "A new proof of the Grauert direct image theorem"}
+      }
+    }
+  }
 }
 
 \subtree{
@@ -583,8 +618,8 @@
 
       \li{
         \p{
-          The fact that #{\OO_X} is coherent when #{(X,\OO_X)} is a complex manifold is a very surprising fact, and the proof (by Oka) is not at all trivial.
-          Indeed, #{(X,\OO_X)} is not at all Noetherian in the case where #{X} is in particular a Stein manifold, so we cannot simply copy the algebraic proof and say that it follows from #{\OO_X} being of finite type.
+          The fact that #{\OO_X} is coherent when #{(X,\OO_X)} is a complex manifold is a deep theorem of Oka whose proof is not at all trivial.
+          Indeed, #{(X,\OO_X)} is not Noetherian in the case where #{X} is in particular a Stein manifold, so we cannot simply copy the algebraic proof and say that it follows from #{\OO_X} being of finite type.
         }
       }
 

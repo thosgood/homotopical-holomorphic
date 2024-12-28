@@ -33,11 +33,32 @@
 
 
 \put\transclude/numbered{true}
-\put\transclude/expanded{false}
-\transclude{hh-3L2M}
-\transclude{hh-8BU1}
-\transclude{hh-VBWR}
+\put\transclude/expanded{true}
 
+\subtree{
+  \title{Theory}
+  \taxon{part}
+
+  \put\transclude/numbered{true}
+  \put\transclude/expanded{false}
+
+  \transclude{hh-3L2M}
+  \transclude{hh-8BU1}
+  \transclude{hh-VBWR}
+}
+
+\put\transclude/expanded{true}
+
+\subtree{
+  \title{Applications}
+  \taxon{part}
+
+  \put\transclude/numbered{true}
+  \put\transclude/expanded{false}
+  
+  \transclude{hh-224J}
+  \transclude{hh-ICBL}
+}
 
 
 \put\transclude/numbered{false}
