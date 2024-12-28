@@ -7,14 +7,18 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>563</fr:anchor><fr:addr
-type="machine">#266</fr:addr><fr:route>unstable-266.xml</fr:route><fr:title
-text="Finiteness conditions on sheaves › Motivation for a definition of coherence"><fr:link
-type="local"
-href="hh-3L2M.xml"
-addr="hh-3L2M"
-title="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:link> › Motivation for a definition of coherence</fr:title><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: we saw above that if things are of finite type, then if they are <fr:em>also</fr:em> of finite presentation then stuff starts to work out well... so can we come up with a condition that ensures that subsheaves of finite type are of finite presentation?</fr:em></fr:strong></html:mark></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>601</fr:anchor><fr:addr
+type="user">hh-ICBL</fr:addr><fr:route>hh-ICBL.xml</fr:route><fr:title
+text="Six-functors">Six-functors</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>347</fr:anchor><fr:addr
+type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Overview</fr:taxon><fr:authors /><fr:parent>hh-ICBL</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><html:mark
+xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: write this</fr:em></fr:strong></html:mark></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -28,8 +32,42 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="false"
+root="true"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>602</fr:anchor><fr:addr
+type="user">index</fr:addr><fr:route>index.xml</fr:route><fr:title
+text="Homotopical holomorphic notes">Homotopical holomorphic notes</fr:title><fr:authors><fr:author>Tim Hosgood</fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>564</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>508</fr:anchor><fr:addr
+type="machine">#236</fr:addr><fr:route>unstable-236.xml</fr:route><fr:title
+text="Everything I know">Everything I know</fr:title><fr:taxon>Motto</fr:taxon><fr:authors><fr:author>Tim Hosgood</fr:author></fr:authors><fr:parent>index</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>I know roughly three things:
+    
+    <fr:ol><fr:li><fr:em>simplicial objects</fr:em>, but in particular really just the <fr:strong>Čech nerve</fr:strong></fr:li>
+      <fr:li><fr:em>sheaves</fr:em>, but in particular really just <fr:strong>gluing data <fr:tex
+display="inline"><![CDATA[\{g_{\alpha \beta }\}]]></fr:tex></fr:strong></fr:li>
+      <fr:li><fr:em>homotopy coherent structures</fr:em>, but in particular really just the <fr:strong>Maurer-Cartan equation <fr:tex
+display="inline"><![CDATA[\mathrm {d}\mathfrak {a}+\mathfrak {a}^2=0]]></fr:tex></fr:strong></fr:li></fr:ol></fr:p><fr:p>It turns out that, even if this is all you know, you can prove a surprising amount of non-trivial facts about complex geometry (in particular, about coherent analytic sheaves).
+    <fr:strong>The purpose of these notes is to explore that approach, and to tidy up some of its history and exposition.</fr:strong></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>510</fr:anchor><fr:addr
+type="machine">#237</fr:addr><fr:route>unstable-237.xml</fr:route><fr:title
+text="Theory">Theory</fr:title><fr:taxon>Part</fr:taxon><fr:authors><fr:author>Tim Hosgood</fr:author></fr:authors><fr:parent>index</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>512</fr:anchor><fr:addr
 type="user">hh-3L2M</fr:addr><fr:route>hh-3L2M.xml</fr:route><fr:title
 text="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
@@ -944,4 +982,412 @@ expanded="true"
 root="false"
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>434</fr:anchor><fr:addr
 type="machine">#303</fr:addr><fr:route>unstable-303.xml</fr:route><fr:taxon>Literature</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: FAC, Stacks, SGA 6, Oka(?), the original (Cartan?) citation</fr:em></fr:strong></html:mark></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: FAC, Stacks, SGA 6, Oka(?), the original (Cartan?) citation</fr:em></fr:strong></html:mark></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>513</fr:anchor><fr:addr
+type="user">hh-8BU1</fr:addr><fr:route>hh-8BU1.xml</fr:route><fr:title
+text="Perfectness conditions on complexes">Perfectness conditions on complexes</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>351</fr:anchor><fr:addr
+type="machine">#247</fr:addr><fr:route>unstable-247.xml</fr:route><fr:title
+text="Strictly perfect complex">Strictly perfect complex</fr:title><fr:taxon>Definition</fr:taxon><fr:authors /><fr:parent>hh-8BU1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex
+display="inline"><![CDATA[L^\bullet ]]></fr:tex> a complex of <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
+    We say that <fr:tex
+display="inline"><![CDATA[L^\bullet ]]></fr:tex> is <fr:em>strictly perfect</fr:em> if it is bounded and each <fr:tex
+display="inline"><![CDATA[L^i]]></fr:tex> is a direct summand of a locally free <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-module of finite rank.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>352</fr:anchor><fr:addr
+type="machine">#248</fr:addr><fr:route>unstable-248.xml</fr:route><fr:title
+text="Perfect complex">Perfect complex</fr:title><fr:taxon>Definition</fr:taxon><fr:authors /><fr:parent>hh-8BU1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex
+display="inline"><![CDATA[L^\bullet ]]></fr:tex> a complex of <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.    
+    We say that <fr:tex
+display="inline"><![CDATA[L^\bullet ]]></fr:tex> is <fr:em>perfect</fr:em> if it is locally quasi-isomorphic to a strictly perfect complex.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>353</fr:anchor><fr:addr
+type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>hh-8BU1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a <fr:em>locally</fr:em> ringed space, then a complex <fr:tex
+display="inline"><![CDATA[L^\bullet ]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules is strictly perfect if and only if it is bounded and such that each <fr:tex
+display="inline"><![CDATA[L^i]]></fr:tex> is locally free of finite rank.</fr:p>
+  
+    
+    <fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>349</fr:anchor><fr:addr
+type="machine">#250</fr:addr><fr:route>unstable-250.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#249</fr:parent></fr:frontmatter><fr:mainmatter>
+    Since <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is <fr:em>locally</fr:em> ringed, any direct summand of a locally free <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-module of finite rank is itself locally free of finite rank (<fr:link
+type="external"
+href="https://stacks.math.columbia.edu/tag/0BCI">[Stacks:0BCI]</fr:link>)
+  </fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>354</fr:anchor><fr:addr
+type="machine">#251</fr:addr><fr:route>unstable-251.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:parent>hh-8BU1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a <fr:em>locally</fr:em> ringed space, then a complex <fr:tex
+display="inline"><![CDATA[L^\bullet ]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules is perfect if and only if it is locally quasi-isomorphic to a bounded complex of locally free modules of finite rank.</fr:p><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>355</fr:anchor><fr:addr
+type="machine">#252</fr:addr><fr:route>unstable-252.xml</fr:route><fr:taxon>Unpacking</fr:taxon><fr:authors /><fr:parent>#251</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:tex
+display="inline"><![CDATA[L^\bullet ]]></fr:tex> is perfect if and only if, for all <fr:tex
+display="inline"><![CDATA[x\in  X]]></fr:tex>, there exists some open neighbourhood <fr:tex
+display="inline"><![CDATA[U_x]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> and some bounded complex <fr:tex
+display="inline"><![CDATA[L_{U_x}^\bullet ]]></fr:tex> of locally free <fr:tex
+display="inline"><![CDATA[\mathscr {O}_{U_x}]]></fr:tex>-modules of finite rank such that <fr:tex
+display="inline"><![CDATA[L_{U_x}^\bullet \simeq  L^\bullet |_{U_x}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:p><html:mark
+xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: perfectness and pseudo-coherence?</fr:em></fr:strong></html:mark></fr:p><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>357</fr:anchor><fr:addr
+type="machine">#253</fr:addr><fr:route>unstable-253.xml</fr:route><fr:taxon>Literature</fr:taxon><fr:authors /><fr:parent>hh-8BU1</fr:parent></fr:frontmatter><fr:mainmatter><fr:ul><fr:li>Brief overview: <fr:link
+type="external"
+href="Wei2016">[Wei2016, §2]</fr:link></fr:li>
+    <fr:li>Detailed proofs: <fr:link
+type="external"
+href="https://stacks.math.columbia.edu/tag/08C3">[Stacks:08C3]</fr:link> and <fr:link
+type="external"
+href="https://stacks.math.columbia.edu/tag/08CL">[Stacks:08CL]</fr:link></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>514</fr:anchor><fr:addr
+type="user">hh-VBWR</fr:addr><fr:route>hh-VBWR.xml</fr:route><fr:title
+text="Resolutions by twisting cochains">Resolutions by twisting cochains</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:addr
+type="machine">#239</fr:addr><fr:route>unstable-239.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:parent>hh-VBWR</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> be a <fr:link
+type="local"
+href="hh-3L2M.xml"
+addr="hh-3L2M"
+title="Finiteness conditions on sheaves"><fr:strong>coherent sheaf</fr:strong></fr:link> on a <fr:strong>holomorphic manifold</fr:strong>.
+    Then <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> admits a resolution by a holomorphic twisting cochain.
+    Furthermore, for any choice of open cover <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> of the manifold, we can construct the holomorphic twisting cochain to be with respect to a refinement of <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>.</fr:p>
+  
+    
+    <fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>314</fr:anchor><fr:addr
+type="machine">#240</fr:addr><fr:route>unstable-240.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#239</fr:parent></fr:frontmatter><fr:mainmatter>
+    This is <fr:link
+type="local"
+href="TT78.xml"
+addr="TT78"
+title="Duality and Intersection Theory in Complex Manifolds. I.">[TT78, Proposition 2.4]</fr:link>;
+    a brief summary of the proof is also given in the paragraphs around <fr:link
+type="external"
+href="OTT81">[OTT81, Lemma 1.6]</fr:link>.
+    The fact that we can do this with respect to a refinement of a given cover is shown in <fr:link
+type="local"
+href="OTT85.xml"
+addr="OTT85"
+title="A Grothendieck–Riemann–Roch formula for maps of complex manifolds">[OTT85, Proposition 1.2.3]</fr:link>.
+  </fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>315</fr:anchor><fr:addr
+type="machine">#241</fr:addr><fr:route>unstable-241.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:parent>hh-VBWR</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathscr {F}^\bullet ]]></fr:tex> be a <fr:link
+type="local"
+href="hh-8BU1.xml"
+addr="hh-8BU1"
+title="Perfectness conditions on complexes"><fr:strong>perfect complex</fr:strong></fr:link> on a <fr:strong>holomorphic manifold</fr:strong>.
+    Then <fr:tex
+display="inline"><![CDATA[\mathscr {F}^\bullet ]]></fr:tex> admits a resolution by a holomorphic twisting cochain.
+    Furthermore, for any choice of open cover <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> of the manifold, we can construct the holomorphic twisting cochain to be with respect to a refinement of <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>.</fr:p>
+  
+    
+    <fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>316</fr:anchor><fr:addr
+type="machine">#242</fr:addr><fr:route>unstable-242.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#241</fr:parent></fr:frontmatter><fr:mainmatter>
+    This is <fr:link
+type="local"
+href="OTT85.xml"
+addr="OTT85"
+title="A Grothendieck–Riemann–Roch formula for maps of complex manifolds">[OTT85, Proposition 1.2.3]</fr:link>, or <fr:link
+type="external"
+href="Wei2016">[Wei2016, Proposition 3.20]</fr:link>.
+  </fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>317</fr:anchor><fr:addr
+type="machine">#243</fr:addr><fr:route>unstable-243.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:parent>hh-VBWR</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathscr {F}^\bullet ]]></fr:tex> be a <fr:link
+type="local"
+href="hh-8BU1.xml"
+addr="hh-8BU1"
+title="Perfectness conditions on complexes"><fr:strong>perfect complex</fr:strong></fr:link> (such that each <fr:tex
+display="inline"><![CDATA[\mathscr {F}^i]]></fr:tex> is quasi-coherent) on a <fr:strong>locally ringed space</fr:strong>.
+    Then <fr:tex
+display="inline"><![CDATA[\mathscr {F}^\bullet ]]></fr:tex> admits a resolution by a twisting cochain.</fr:p>
+  
+    
+    <fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>318</fr:anchor><fr:addr
+type="machine">#244</fr:addr><fr:route>unstable-244.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#243</fr:parent></fr:frontmatter><fr:mainmatter>
+    This is a corollary (<html:mark
+xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: explain how!</fr:em></fr:strong></html:mark>) to <fr:link
+type="external"
+href="Wei2016">[Wei2016, Proposition 3.20]</fr:link>, though the terminology there is different: their "twisted perfect complexes" are (roughly) exactly twisting cochains.
+  </fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>320</fr:anchor><fr:addr
+type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>hh-VBWR</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:link
+type="external"
+href="Wei2016">[Wei2016]</fr:link> deals with two other important results:
+
+    <fr:ol><fr:li>"Twisted coherent complexes", which deal with bounded-above (instead of bounded) complexes; this is spelled out in detail in the algebraic case, but it should be possible to translate it to the general case by working with pseudo-coherence instead (as mentioned in Remark 5.2 loc. cit.)</fr:li>
+      <fr:li>The fully general "sheafification functor" concerns (not necessarily perfect) complexes of sheaves and "twisted complexes", which are like twisting cochains but the (not-necessarily-bounded) complexes consist of arbitrary sheaves, not just locally free ones.
+        It is conjectured (in Section 5.3 loc. cit.) that there is still a Quillen equivalence at this full level of generality.</fr:li></fr:ol></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>515</fr:anchor><fr:addr
+type="machine">#238</fr:addr><fr:route>unstable-238.xml</fr:route><fr:title
+text="Applications">Applications</fr:title><fr:taxon>Part</fr:taxon><fr:authors><fr:author>Tim Hosgood</fr:author></fr:authors><fr:parent>index</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>504</fr:anchor><fr:addr
+type="user">hh-224J</fr:addr><fr:route>hh-224J.xml</fr:route><fr:title
+text="Holomorphic K-theory and G-theory">Holomorphic <fr:tex
+display="inline"><![CDATA[K]]></fr:tex>-theory and <fr:tex
+display="inline"><![CDATA[G]]></fr:tex>-theory</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>499</fr:anchor><fr:addr
+type="machine">#304</fr:addr><fr:route>unstable-304.xml</fr:route><fr:taxon>Overview</fr:taxon><fr:authors /><fr:parent>hh-224J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><html:mark
+xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: write this</fr:em></fr:strong></html:mark></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>505</fr:anchor><fr:addr
+type="user">hh-ICBL</fr:addr><fr:route>hh-ICBL.xml</fr:route><fr:title
+text="Six-functors">Six-functors</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>347</fr:anchor><fr:addr
+type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Overview</fr:taxon><fr:authors /><fr:parent>hh-ICBL</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><html:mark
+xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: write this</fr:em></fr:strong></html:mark></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>517</fr:anchor><fr:addr
+type="user">bibliography</fr:addr><fr:route>bibliography.xml</fr:route><fr:title
+text="Complete list of references">Complete list of references</fr:title><fr:taxon>Bibliography</fr:taxon><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:em>Click anywhere on an entry to see the corresponding BibTeX.</fr:em></fr:p>
+  <fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>518</fr:anchor><fr:addr
+type="user">Wei16</fr:addr><fr:route>Wei16.xml</fr:route><fr:title
+text="Twisted complexes on a ringed space as a dg-enhancement of the derived category of perfect complexes">Twisted complexes on a ringed space as a dg-enhancement of the derived category of perfect complexes</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2016</fr:year></fr:date><fr:authors><fr:author>Zhaoting Wei</fr:author></fr:authors><fr:meta
+name="venue"><fr:em>European Journal of Mathematics</fr:em> <fr:strong>2</fr:strong> pp. 716–759</fr:meta><fr:meta
+name="doi">10.1007/s40879-016-0102-8</fr:meta><fr:meta
+name="bibtex"><![CDATA[@article{Wei16,
+  title = {Twisted complexes on a ringed space as a dg-enhancement of the derived category of perfect complexes},
+  author = {Wei, Zhaoting},
+  date = {2016},
+  journaltitle = {European Journal of Mathematics},
+  volume = {2},
+  pages = {716–759},
+  doi = {10.1007/s40879-016-0102-8}
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>520</fr:anchor><fr:addr
+type="user">OTT85</fr:addr><fr:route>OTT85.xml</fr:route><fr:title
+text="A Grothendieck–Riemann–Roch formula for maps of complex manifolds">A Grothendieck–Riemann–Roch formula for maps of complex manifolds</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>1985</fr:year></fr:date><fr:authors><fr:author>Nigel R. O'Brian</fr:author><fr:author>Domingo Toledo</fr:author><fr:author>Yue Lin L. Tong</fr:author></fr:authors><fr:meta
+name="venue"><fr:em>Mathematische Annalen</fr:em> <fr:strong>271</fr:strong> pp. 493–526</fr:meta><fr:meta
+name="doi">10.1007/BF01456132</fr:meta><fr:meta
+name="bibtex"><![CDATA[@article{OTT1985,
+  title = {A Grothendieck-Riemann-Roch formula for maps of complex manifolds},
+  author = {O'Brian, Nigel R. and Toledo, Domingo and Tong, Yue Lin L.},
+  date = {1985},
+  journal = {Mathematische Annalen},
+  volume = {271},
+  number = {4},
+  pages = {493–526},
+  doi = {10.1007/BF01456132}
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>524</fr:anchor><fr:addr
+type="user">OTT81a</fr:addr><fr:route>OTT81a.xml</fr:route><fr:title
+text="The Trace Map and Characteristic Classes for Coherent Sheaves">The Trace Map and Characteristic Classes for Coherent Sheaves</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>1985</fr:year></fr:date><fr:authors><fr:author>Nigel R. O'Brian</fr:author><fr:author>Domingo Toledo</fr:author><fr:author>Yue Lin L. Tong</fr:author></fr:authors><fr:meta
+name="venue"><fr:em>American Journal of Mathematics</fr:em> <fr:strong>103</fr:strong> pp. 225–252</fr:meta><fr:meta
+name="doi">10.2307/2374215</fr:meta><fr:meta
+name="bibtex"><![CDATA[@article{OTT1981a,
+  title = {The Trace Map and Characteristic Classes for Coherent Sheaves},
+  author = {O'Brian, Nigel R. and Toledo, Domingo and Tong, Yue Lin L.},
+  date = {1981},
+  journaltitle = {American Journal of Mathematics},
+  volume = {103},
+  number = {2},
+  pages = {225–252},
+  doi = {10.2307/2374215}
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>528</fr:anchor><fr:addr
+type="user">TT78</fr:addr><fr:route>TT78.xml</fr:route><fr:title
+text="Duality and Intersection Theory in Complex Manifolds. I.">Duality and Intersection Theory in Complex Manifolds. I.</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>1978</fr:year></fr:date><fr:authors><fr:author>Domingo Toledo</fr:author><fr:author>Yue Lin L. Tong</fr:author></fr:authors><fr:meta
+name="venue"><fr:em>Mathematische Annalen</fr:em> <fr:strong>237</fr:strong> pp. 41–77</fr:meta><fr:meta
+name="doi">10.1007/BF01351557</fr:meta><fr:meta
+name="bibtex"><![CDATA[@article{TT1978,
+  title = {Duality and Intersection Theory in Complex Manifolds. I.},
+  author = {Toledo, Domingo and Tong, Yue Lin L},
+  date = {1978},
+  journaltitle = {Mathematische Annalen},
+  volume = {237},
+  pages = {41–77},
+  doi = {10.1007/BF01351557}
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>531</fr:anchor><fr:addr
+type="user">Stacks</fr:addr><fr:route>Stacks.xml</fr:route><fr:title
+text="The Stacks project">The Stacks project</fr:title><fr:taxon>Reference</fr:taxon><fr:authors><fr:author>The Stacks project authors</fr:author></fr:authors><fr:meta
+name="external">https://stacks.math.columbia.edu</fr:meta><fr:meta
+name="bibtex"><![CDATA[@online{Stacks,
+  title = {{{The Stacks project}}},
+  author = {The {Stacks project authors}},
+  url = {https://stacks.math.columbia.edu},
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

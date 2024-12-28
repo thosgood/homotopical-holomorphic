@@ -7,14 +7,15 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>563</fr:anchor><fr:addr
-type="machine">#266</fr:addr><fr:route>unstable-266.xml</fr:route><fr:title
-text="Finiteness conditions on sheaves › Motivation for a definition of coherence"><fr:link
-type="local"
-href="hh-3L2M.xml"
-addr="hh-3L2M"
-title="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:link> › Motivation for a definition of coherence</fr:title><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: we saw above that if things are of finite type, then if they are <fr:em>also</fr:em> of finite presentation then stuff starts to work out well... so can we come up with a condition that ensures that subsheaves of finite type are of finite presentation?</fr:em></fr:strong></html:mark></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>492</fr:anchor><fr:addr
+type="machine">#302</fr:addr><fr:route>unstable-302.xml</fr:route><fr:taxon>History</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Looking up the definition of what it means for a sheaf of <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules to be <fr:em>coherent</fr:em> will give different results depending on the reference, both in terms of when it was written and what its focus is.
+    For example, you might hear people complain that "the definition in EGA (<html:mark
+xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: citation</fr:em></fr:strong></html:mark>) is not functorial (it's not preserved by pullbacks)", or that "the definition in Hartshorne (<html:mark
+xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: citation</fr:em></fr:strong></html:mark>) makes Oka coherence sound trivial".
+    Lots of confusion stems from the fact that, when dealing with (locally) Noetherian schemes, or ringed spaces with coherent structure sheaf (such as complex manifolds), the differences between various finiteness conditions collapse somewhat, making it hard to tell that they were actually distinct in the first place.
+    Not only this, but references dealing with <fr:em>algebraic</fr:em> geometry (in the sense that they talk about <fr:em>schemes</fr:em>) are likely to discuss <fr:em>quasi</fr:em>-coherent sheaves, which are not well-behaved objects for arbitrary locally ringed spaces, and definitely not well-behaved in the specific case of complex manifolds.</fr:p><fr:p>Part of the reason for this confusing proliferation of competing definitions is the historical journey coherent sheaves have taken: they started in complex geometry, worked their way into algebraic geometry, and then through into scheme theory.</fr:p><fr:p><html:mark
+xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: history: Cartan, Oka, Serre (FAC), EGA, SGA 6, ... Grauert–Remmer–Forster?</fr:em></fr:strong></html:mark></fr:p></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -29,7 +30,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>564</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>493</fr:anchor><fr:addr
 type="user">hh-3L2M</fr:addr><fr:route>hh-3L2M.xml</fr:route><fr:title
 text="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
