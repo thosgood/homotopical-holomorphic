@@ -6,16 +6,20 @@
 \subtree{
   \taxon{overview}
 
-  \p{\todo{write the following:}}
+  \p{
+    We have already convinced ourselves that sheaves of #{\OO_X}-modules (for simplicity, we often just say \em{sheaves}) on a ringed space #{(X,\OO_X)} are interesting, so now let's consider how we can study them.
+  }
 
   \p{
-    To start with...
-    things being finite in some sense is usually nice, so let's start by essentially saying "finite bases exist", but because we're working with \em{sheaves} we want to say something that allows for much richer behaviour, namely that we just want to be \em{locally} "finite dimensional", and this gives the notion of \em{finite type}
-
-    we're motivated by (locally) free sheaves — these turn up all over the place and we'd like to be studying them
-
-    but here's the immediate problem: by imposing this condition, we no longer have an abelian category of sheaves!
+    One of our main examples of sheaves of #{\OO_X}-modules is that of vector bundles (or, really, locally free sheaves).
+    These are particularly nice because they are of finite rank, and, as is often the case in any sort of linear algebra, when things are of "finite dimension" their study becomes less finicky.
+    So a first definition that we could consider is something that requires the existence of "finite bases".
+    Since we're working with \em{sheaves}, we don't want to impose some global condition, so it makes sense to ask for our sheaves to be "locally finite dimensional".
+    Formalising this gives the notion of \strong{sheaves of finite type}.
+    But we immediately run into a problem: this is quite a strong condition to impose, and the sheaves of finite type carve out such a small subcategory of the category of arbitrary sheaves that they do not form an abelian category; kernels and cokernels of morphisms between sheaves of finite type are not necessarily themselves of finite type.
   }
+
+  \p{\todo{write the following:}}
 
   \p{
     but then we notice an asymmetry, in that this is good for surjections but not yet injections; to fix this it suffices to pass to \em{finite presentation} (which is an obvious specific case of \em{quasi-coherent}, but one that actually behaves much better for \em{arbitrary} locally ringed spaces)
@@ -472,7 +476,7 @@
   \title{Quasi-coherent and pseudo-coherent sheaves}
   \taxon{aside}
 
-  \p{\todo{quasi-coherence} ...but on a locally Noetherian scheme, quasi-coherent sheaves are surprisingly well behaved, and generalise coherent sheaves in that they are just "coherent sheaves of possibly infinite rank" (\stacks{01XZ})"}
+  \p{\todo{quasi-coherence} ... but on a locally Noetherian scheme, quasi-coherent sheaves are surprisingly well behaved, and generalise coherent sheaves in that they are just "coherent sheaves of possibly infinite rank" (\stacks{01XZ})" \todo{also mention Fréchet and nuclear/condensed} \todo{also that note about how quasi-coherent actually is an abelian category even in the holomorphic case?}}
 
   \p{\todo{pseudo-coherence??? just mention in passing as it carries on the pattern "finite type, finite presentation, ..." (made precise by \stacks{064T} (for just modules over a ring though...))}}
 }

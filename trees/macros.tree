@@ -34,3 +34,6 @@
 \def\id{#{\operatorname{id}}}
 \def\Ker{#{\operatorname{Ker}}}
 \def\Hom{#{\operatorname{Hom}}}
+
+\def\cover{#{\mathscr{U}}}
+\def\cechnerve[x]{#{\check{\x}}}

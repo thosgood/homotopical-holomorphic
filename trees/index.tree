@@ -6,14 +6,14 @@
 
 \subtree{
   \title{Everything I know}
-  \taxon{motto}
+  \taxon{overview}
 
   \p{
     I know roughly three things:
-    
+
     \ol{
       \li{
-        \em{simplicial objects}, but in particular really just the \strong{Čech nerve}
+        \em{simplicial objects}, but in particular really just the \strong{Čech nerve #{\cechnerve{\cover}}}
       }
       \li{
         \em{sheaves}, but in particular really just \strong{gluing data #{\{g_{\alpha\beta}\}}}
@@ -22,11 +22,16 @@
         \em{homotopy coherent structures}, but in particular really just the \strong{Maurer-Cartan equation #{\mathrm{d}\mathfrak{a}+\mathfrak{a}^2=0}}
       }
     }
+
+    Note that \em{algebraic geometry} is missing from this list.
   }
 
   \p{
-    It turns out that, even if this is all you know, you can prove a surprising amount of non-trivial facts about complex geometry (in particular, about coherent analytic sheaves).
-    \strong{The purpose of these notes is to explore that approach, and to tidy up some of its history and exposition.}
+    It turns out that, even if this is all you know, you can prove a surprising amount of non-trivial facts about complex geometry without any algebraic assumptions like "Kähler" or "projective" (i.e. without appealing to GAGA).
+    In particular, we can develop a working theory of \strong{coherent analytic sheaves} without requiring a preliminary course in \em{algebraic} geometry.}
+
+  \p{
+    \strong{The purpose of these notes is to explore this approach, and to organise some of its history and exposition.}
   }
 }
 
@@ -55,7 +60,7 @@
 
   \put\transclude/numbered{true}
   \put\transclude/expanded{false}
-  
+
   \transclude{hh-224J}
   \transclude{hh-ICBL}
 }
