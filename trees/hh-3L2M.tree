@@ -30,7 +30,11 @@
   }
 
   \p{
-    the best thing about coherent is that we always get an abelian category, whereas that's really not clear (or even necessarily true) for the other weaker finiteness conditions; the bad thing is that we lose closure under pullbacks... we would get this back \em{if} the structure sheaf were coherent, but that's not always the case! (give the example of smooth functions)
+    coherent is GREAT because it lets us to stalk-to-neighbourhood arguments! this is super useful!
+  }
+
+  \p{
+    another great thing about coherent is that we always get an abelian category, whereas that's really not clear (or even necessarily true) for the other weaker finiteness conditions; the bad thing is that we lose closure under pullbacks... we would get this back \em{if} the structure sheaf were coherent, but that's not always the case! (give the example of smooth functions)
   }
 
   \p{
