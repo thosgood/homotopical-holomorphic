@@ -1,946 +1,668 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>490</fr:anchor><fr:addr
-type="machine">#300</fr:addr><fr:route>unstable-300.xml</fr:route><fr:taxon>Application</fr:taxon><fr:authors /><fr:parent>#298</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Coherence allows us to turn exactness on <fr:em>stalks</fr:em> to exactness on <fr:em>neighbourhoods</fr:em>.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
-text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>491</fr:anchor><fr:addr
-type="user">hh-3L2M</fr:addr><fr:route>hh-3L2M.xml</fr:route><fr:title
-text="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>369</fr:anchor><fr:addr
-type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:taxon>Overview</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>We have already convinced ourselves that sheaves of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules (for simplicity, we often just say <fr:em>sheaves</fr:em>) on a ringed space <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> are interesting, so now let's consider how we can study them.</fr:p><fr:p>One of our main examples of sheaves of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules is that of vector bundles (or, really, locally free sheaves).
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>490</fr:anchor>
+    <fr:addr type="machine">#300</fr:addr>
+    <fr:route>unstable-300.xml</fr:route>
+    <fr:taxon>Application</fr:taxon>
+    <fr:authors />
+    <fr:parent>#298</fr:parent>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:p>Coherence allows us to turn exactness on <fr:em>stalks</fr:em> to exactness on <fr:em>neighbourhoods</fr:em>.</fr:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Context">Context</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>491</fr:anchor>
+            <fr:addr type="user">hh-3L2M</fr:addr>
+            <fr:route>hh-3L2M.xml</fr:route>
+            <fr:title text="Finiteness conditions on sheaves">Finiteness conditions on sheaves</fr:title>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>369</fr:anchor>
+                <fr:addr type="machine">#254</fr:addr>
+                <fr:route>unstable-254.xml</fr:route>
+                <fr:taxon>Overview</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>We have already convinced ourselves that sheaves of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules (for simplicity, we often just say <fr:em>sheaves</fr:em>) on a ringed space <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> are interesting, so now let's consider how we can study them.</fr:p>
+                <fr:p>One of our main examples of sheaves of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules is that of vector bundles (or, really, locally free sheaves).
     These are particularly nice because they are of finite rank, and, as is often the case in any sort of linear algebra, when things are of "finite dimension" their study becomes less finicky.
     So a first definition that we could consider is something that requires the existence of "finite bases".
     Since we're working with <fr:em>sheaves</fr:em>, we don't want to impose some global condition, so it makes sense to ask for our sheaves to be "locally finite dimensional".
     Formalising this gives the notion of <fr:strong>sheaves of finite type</fr:strong>.
-    But we immediately run into a problem: this is quite a strong condition to impose, and the sheaves of finite type carve out such a small subcategory of the category of arbitrary sheaves that they do not form an abelian category; kernels and cokernels of morphisms between sheaves of finite type are not necessarily themselves of finite type.</fr:p><fr:p><html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: write the following:</fr:em></fr:strong></html:mark></fr:p><fr:p>but then we notice an asymmetry, in that this is good for surjections but not yet injections; to fix this it suffices to pass to <fr:em>finite presentation</fr:em> (which is an obvious specific case of <fr:em>quasi-coherent</fr:em>, but one that actually behaves much better for <fr:em>arbitrary</fr:em> locally ringed spaces)</fr:p><fr:p>finally, there's a rather slick way of <fr:em>ensuring</fr:em> finite presentation (but a priori strictly stronger) by just saying "finite type" twice, which is the definition of <fr:em>coherent</fr:em>, and this turns out to be equivalent to finite presentation if the structure sheaf itself is coherent; another definition of coherent is "any subsheaf of finite type is of finite presentation", i.e. we find a way to ensure the converse of finite-type=&gt;finite-presentation</fr:p><fr:p>the best thing about coherent is that we always get an abelian category, whereas that's really not clear (or even necessarily true) for the other weaker finiteness conditions; the bad thing is that we lose closure under pullbacks... we would get this back <fr:em>if</fr:em> the structure sheaf were coherent, but that's not always the case! (give the example of smooth functions)</fr:p><fr:p>the fact that the holomorphic structure sheaf is coherent is a BIG theorem, because it's often not even Noetherian (e.g. for Stein)! and when the structure sheaf is coherent, we get lots of nice things, e.g. coherence is then preserved under pullbacks</fr:p><fr:p>in the algebraic case, especially in the case of a locally Noetherian scheme, all these properties get a bit mixed together (<fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>) and it can be hard to realise that they're all a priori distinct; you really need non-Noetherian to see the difference (see e.g. <fr:link
-type="external"
-href="https://math.stackexchange.com/a/1450934">MSE:a/1450934</fr:link>)</fr:p><fr:p>not going to mention pseudo-coherence really, but note that it's just the natural continuation of finite type, finite presentation, ... (<fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/064N">[Stacks:064N]</fr:link>)... it's particularly important for when <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is <fr:em>not</fr:em> coherent (over itself)</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>370</fr:anchor><fr:addr
-type="machine">#255</fr:addr><fr:route>unstable-255.xml</fr:route><fr:title
-text="Sheaf of finite type">Sheaf of finite type</fr:title><fr:taxon>Definition</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
-    We say that <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is <fr:em>of finite type</fr:em> (or, in some references, <fr:em>finitely generated</fr:em>) if it is locally generated by finitely many sections: if every point <fr:tex
-display="inline"><![CDATA[x\in  X]]></fr:tex> admits a neighbourhood <fr:tex
-display="inline"><![CDATA[U_x]]></fr:tex> such that there exists an exact sequence (i.e. a surjection)
-    <fr:tex
-display="block"><![CDATA[       \mathscr {O}_X^{\oplus  r_{U_x}}       \twoheadrightarrow \mathscr {F}|_{U_x}       \to  0     ]]></fr:tex>
-    for some <fr:tex
-display="inline"><![CDATA[r_{U_x}\in \mathbb {N}]]></fr:tex>.</fr:p><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>371</fr:anchor><fr:addr
-type="machine">#256</fr:addr><fr:route>unstable-256.xml</fr:route><fr:taxon>Explication</fr:taxon><fr:authors /><fr:parent>#255</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Any global section <fr:tex
-display="inline"><![CDATA[\sigma \in \Gamma (X,\mathscr {F})]]></fr:tex> induces a morphism <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X\to \mathscr {F}]]></fr:tex> by multiplication of (local) sections: <fr:tex
-display="inline"><![CDATA[f\mapsto  sf]]></fr:tex>.
-      In fact, this induces a bijection, where the inverse is given by associating to any morphism <fr:tex
-display="inline"><![CDATA[\varphi \colon \mathscr {O}_X\to \mathscr {F}]]></fr:tex> the section <fr:tex
-display="inline"><![CDATA[\sigma =\varphi (1)]]></fr:tex>.
-      We say that <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is <fr:em>generated by sections</fr:em> if there exists a set <fr:tex
-display="inline"><![CDATA[\{s_i\in \Gamma (X,\mathscr {F})\}_{i\in  I}]]></fr:tex> such that the morphism <fr:tex
-display="inline"><![CDATA[\oplus _{i\in  I}s_i\colon \oplus _{i\in  I}\mathscr {O}_X\to \mathscr {F}]]></fr:tex> is surjective; if <fr:tex
-display="inline"><![CDATA[I]]></fr:tex> is finite then we say that <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is <fr:em>finitely</fr:em> generated by sections.
-      By the above bijection, being finitely generated by sections is equivalent simply asking for there to exist a surjection <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X^{\oplus  r}\twoheadrightarrow \mathscr {F}]]></fr:tex> for some <fr:tex
-display="inline"><![CDATA[r\in \mathbb {N}]]></fr:tex>.</fr:p><fr:p>So, being <fr:em>locally</fr:em> generated by <fr:em>finitely</fr:em> many sections means that, for all <fr:tex
-display="inline"><![CDATA[x\in  X]]></fr:tex>, there exists some open neighbourhood <fr:tex
-display="inline"><![CDATA[U_x]]></fr:tex> of <fr:tex
-display="inline"><![CDATA[x]]></fr:tex>, some <fr:tex
-display="inline"><![CDATA[r_x\in \mathbb {N}]]></fr:tex>, and some surjection <fr:tex
-display="inline"><![CDATA[\mathscr {O}_{U_x}^{\oplus  r_x}\twoheadrightarrow \mathscr {F}|_{U_x}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>372</fr:anchor><fr:addr
-type="machine">#257</fr:addr><fr:route>unstable-257.xml</fr:route><fr:title
-text="Properties of sheaves of finite type">Properties of sheaves of finite type</fr:title><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Being of finite type is the weakest of the "standard" finiteness notions, but it already has a lot of nice properties.
-    For example, it is closed under pullbacks (<fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01B6">[Stacks:01B6]</fr:link>) and extensions (<fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01B7">[Stacks:01B7]</fr:link>), and it ensures that the support of the sheaf is closed (<fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01BA">[Stacks:01BA]</fr:link>).
+    But we immediately run into a problem: this is quite a strong condition to impose, and the sheaves of finite type carve out such a small subcategory of the category of arbitrary sheaves that they do not form an abelian category; kernels and cokernels of morphisms between sheaves of finite type are not necessarily themselves of finite type.</fr:p>
+                <fr:p>
+                  <html:mark xmlns:html="http://www.w3.org/1999/xhtml">
+                    <fr:strong>
+                      <fr:em>TO-DO: write the following:</fr:em>
+                    </fr:strong>
+                  </html:mark>
+                </fr:p>
+                <fr:p>but then we notice an asymmetry, in that this is good for surjections but not yet injections; to fix this it suffices to pass to <fr:em>finite presentation</fr:em> (which is an obvious specific case of <fr:em>quasi-coherent</fr:em>, but one that actually behaves much better for <fr:em>arbitrary</fr:em> locally ringed spaces)</fr:p>
+                <fr:p>finally, there's a rather slick way of <fr:em>ensuring</fr:em> finite presentation (but a priori strictly stronger) by just saying "finite type" twice, which is the definition of <fr:em>coherent</fr:em>, and this turns out to be equivalent to finite presentation if the structure sheaf itself is coherent; another definition of coherent is "any subsheaf of finite type is of finite presentation", i.e. we find a way to ensure the converse of finite-type=&gt;finite-presentation</fr:p>
+                <fr:p>coherent is GREAT because it lets us to stalk-to-neighbourhood arguments! this is super useful!</fr:p>
+                <fr:p>another great thing about coherent is that we always get an abelian category, whereas that's really not clear (or even necessarily true) for the other weaker finiteness conditions; the bad thing is that we lose closure under pullbacks... we would get this back <fr:em>if</fr:em> the structure sheaf were coherent, but that's not always the case! (give the example of smooth functions)</fr:p>
+                <fr:p>the fact that the holomorphic structure sheaf is coherent is a BIG theorem, because it's often not even Noetherian (e.g. for Stein)! and when the structure sheaf is coherent, we get lots of nice things, e.g. coherence is then preserved under pullbacks</fr:p>
+                <fr:p>in the algebraic case, especially in the case of a locally Noetherian scheme, all these properties get a bit mixed together (<fr:link type="external" href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>) and it can be hard to realise that they're all a priori distinct; you really need non-Noetherian to see the difference (see e.g. <fr:link type="external" href="https://math.stackexchange.com/a/1450934">MSE:a/1450934</fr:link>)</fr:p>
+                <fr:p>not going to mention pseudo-coherence really, but note that it's just the natural continuation of finite type, finite presentation, ... (<fr:link type="external" href="https://stacks.math.columbia.edu/tag/064N">[Stacks:064N]</fr:link>)... it's particularly important for when <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is <fr:em>not</fr:em> coherent (over itself)</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>370</fr:anchor>
+                <fr:addr type="machine">#255</fr:addr>
+                <fr:route>unstable-255.xml</fr:route>
+                <fr:title text="Sheaf of finite type">Sheaf of finite type</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Let <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
+    We say that <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is <fr:em>of finite type</fr:em> (or, in some references, <fr:em>finitely generated</fr:em>) if it is locally generated by finitely many sections: if every point <fr:tex display="inline"><![CDATA[x\in  X]]></fr:tex> admits a neighbourhood <fr:tex display="inline"><![CDATA[U_x]]></fr:tex> such that there exists an exact sequence (i.e. a surjection)
+    <fr:tex display="block"><![CDATA[       \mathscr {O}_X^{\oplus  r_{U_x}}       \twoheadrightarrow \mathscr {F}|_{U_x}       \to  0     ]]></fr:tex>
+    for some <fr:tex display="inline"><![CDATA[r_{U_x}\in \mathbb {N}]]></fr:tex>.</fr:p>
+                <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>371</fr:anchor>
+                    <fr:addr type="machine">#256</fr:addr>
+                    <fr:route>unstable-256.xml</fr:route>
+                    <fr:taxon>Explication</fr:taxon>
+                    <fr:authors />
+                    <fr:parent>#255</fr:parent>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>Any global section <fr:tex display="inline"><![CDATA[\sigma \in \Gamma (X,\mathscr {F})]]></fr:tex> induces a morphism <fr:tex display="inline"><![CDATA[\mathscr {O}_X\to \mathscr {F}]]></fr:tex> by multiplication of (local) sections: <fr:tex display="inline"><![CDATA[f\mapsto  sf]]></fr:tex>.
+      In fact, this induces a bijection, where the inverse is given by associating to any morphism <fr:tex display="inline"><![CDATA[\varphi \colon \mathscr {O}_X\to \mathscr {F}]]></fr:tex> the section <fr:tex display="inline"><![CDATA[\sigma =\varphi (1)]]></fr:tex>.
+      We say that <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is <fr:em>generated by sections</fr:em> if there exists a set <fr:tex display="inline"><![CDATA[\{s_i\in \Gamma (X,\mathscr {F})\}_{i\in  I}]]></fr:tex> such that the morphism <fr:tex display="inline"><![CDATA[\oplus _{i\in  I}s_i\colon \oplus _{i\in  I}\mathscr {O}_X\to \mathscr {F}]]></fr:tex> is surjective; if <fr:tex display="inline"><![CDATA[I]]></fr:tex> is finite then we say that <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is <fr:em>finitely</fr:em> generated by sections.
+      By the above bijection, being finitely generated by sections is equivalent simply asking for there to exist a surjection <fr:tex display="inline"><![CDATA[\mathscr {O}_X^{\oplus  r}\twoheadrightarrow \mathscr {F}]]></fr:tex> for some <fr:tex display="inline"><![CDATA[r\in \mathbb {N}]]></fr:tex>.</fr:p>
+                    <fr:p>So, being <fr:em>locally</fr:em> generated by <fr:em>finitely</fr:em> many sections means that, for all <fr:tex display="inline"><![CDATA[x\in  X]]></fr:tex>, there exists some open neighbourhood <fr:tex display="inline"><![CDATA[U_x]]></fr:tex> of <fr:tex display="inline"><![CDATA[x]]></fr:tex>, some <fr:tex display="inline"><![CDATA[r_x\in \mathbb {N}]]></fr:tex>, and some surjection <fr:tex display="inline"><![CDATA[\mathscr {O}_{U_x}^{\oplus  r_x}\twoheadrightarrow \mathscr {F}|_{U_x}]]></fr:tex>.</fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>372</fr:anchor>
+                <fr:addr type="machine">#257</fr:addr>
+                <fr:route>unstable-257.xml</fr:route>
+                <fr:title text="Properties of sheaves of finite type">Properties of sheaves of finite type</fr:title>
+                <fr:taxon>Remark</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Being of finite type is the weakest of the "standard" finiteness notions, but it already has a lot of nice properties.
+    For example, it is closed under pullbacks (<fr:link type="external" href="https://stacks.math.columbia.edu/tag/01B6">[Stacks:01B6]</fr:link>) and extensions (<fr:link type="external" href="https://stacks.math.columbia.edu/tag/01B7">[Stacks:01B7]</fr:link>), and it ensures that the support of the sheaf is closed (<fr:link type="external" href="https://stacks.math.columbia.edu/tag/01BA">[Stacks:01BA]</fr:link>).
     This last fact comes from maybe the most useful property of being of finite type:
 
-    <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>373</fr:anchor><fr:addr
-type="machine">#258</fr:addr><fr:route>unstable-258.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>#257</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex
-display="inline"><![CDATA[\varphi \colon \mathscr {F}\to \mathscr {G}]]></fr:tex> a morphism of sheaves of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
-        Assume that there exists <fr:tex
-display="inline"><![CDATA[x\in  X]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[\varphi _x\colon \mathscr {F}_x\to \mathscr {G}_x]]></fr:tex> is surjective.
-        If <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is of finite type, then there exists an open neighbourhood <fr:tex
-display="inline"><![CDATA[U_x]]></fr:tex> of <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[\varphi |_{U_x}\colon \mathscr {F}|_{U_x}\to \mathscr {G}|_{U_x}]]></fr:tex> is surjective.</fr:p>
+    <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>373</fr:anchor><fr:addr type="machine">#258</fr:addr><fr:route>unstable-258.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>#257</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex display="inline"><![CDATA[\varphi \colon \mathscr {F}\to \mathscr {G}]]></fr:tex> a morphism of sheaves of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
+        Assume that there exists <fr:tex display="inline"><![CDATA[x\in  X]]></fr:tex> such that <fr:tex display="inline"><![CDATA[\varphi _x\colon \mathscr {F}_x\to \mathscr {G}_x]]></fr:tex> is surjective.
+        If <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is of finite type, then there exists an open neighbourhood <fr:tex display="inline"><![CDATA[U_x]]></fr:tex> of <fr:tex display="inline"><![CDATA[x]]></fr:tex> such that <fr:tex display="inline"><![CDATA[\varphi |_{U_x}\colon \mathscr {F}|_{U_x}\to \mathscr {G}|_{U_x}]]></fr:tex> is surjective.</fr:p>
   
     
-    <fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>374</fr:anchor><fr:addr
-type="machine">#259</fr:addr><fr:route>unstable-259.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#258</fr:parent></fr:frontmatter><fr:mainmatter>
-        This is <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01B8">[Stacks:01B8]</fr:link>.
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>374</fr:anchor><fr:addr type="machine">#259</fr:addr><fr:route>unstable-259.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#258</fr:parent></fr:frontmatter><fr:mainmatter>
+        This is <fr:link type="external" href="https://stacks.math.columbia.edu/tag/01B8">[Stacks:01B8]</fr:link>.
       </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree>
 
     Being able to turn facts about behaviour at a <fr:em>point</fr:em> into facts about behaviour on an <fr:em>open subset</fr:em> is something that is incredibly useful in the context of holomorphic geometry, since knowing the behaviour of a holomorphic function on an open neighbourhood often tells you something about its <fr:em>global</fr:em> behaviour (as demonstrated by e.g. the identity theorem).
     So the notion of sheaves of finite type seems like it will be useful, but it is unfortunately not sufficiently well behaved.
-    For example, with sheaves of finite type we can only extend <fr:em>surjectivity</fr:em> from points to neighbourhoods, not <fr:em>injectivity</fr:em>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>375</fr:anchor><fr:addr
-type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:title
-text="Sheaf of finite presentation">Sheaf of finite presentation</fr:title><fr:taxon>Definition</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
-    We say that <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is <fr:em>of finite presentation</fr:em> if it is locally the cokernel of a morphism of finite-rank free sheaves: if every point <fr:tex
-display="inline"><![CDATA[x\in  X]]></fr:tex> admits a neighbourhood <fr:tex
-display="inline"><![CDATA[U_x]]></fr:tex> such that there exists an exact sequence
-    <fr:tex
-display="block"><![CDATA[       \mathscr {O}_{U_x}^{\oplus  s_{U_x}}       \to  \mathscr {O}_{U_x}^{\oplus  r_{U_x}}       \twoheadrightarrow  \mathscr {F}|_{U_x}       \to  0     ]]></fr:tex>
-    for some <fr:tex
-display="inline"><![CDATA[r_{U_x},s_{U_x}\in \mathbb {N}]]></fr:tex>.
-    We call this exact sequence a <fr:em>(finite) presentation</fr:em> of <fr:tex
-display="inline"><![CDATA[\mathscr {F}|_{U_x}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>376</fr:anchor><fr:addr
-type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:title
-text="Properties of sheaves of finite presentation">Properties of sheaves of finite presentation</fr:title><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>By definition, finite presentation implies finite type, and, since pullbacks are right-exact and commute with direct sums, we see that the property of being of finite presentation is also closed under pullbacks (<fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01BQ">[Stacks:01BQ]</fr:link>) and extensions (<html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: citation? maybe it follows from <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/0519">[Stacks:0519]</fr:link>?</fr:em></fr:strong></html:mark>).
+    For example, with sheaves of finite type we can only extend <fr:em>surjectivity</fr:em> from points to neighbourhoods, not <fr:em>injectivity</fr:em>.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>375</fr:anchor>
+                <fr:addr type="machine">#260</fr:addr>
+                <fr:route>unstable-260.xml</fr:route>
+                <fr:title text="Sheaf of finite presentation">Sheaf of finite presentation</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Let <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
+    We say that <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is <fr:em>of finite presentation</fr:em> if it is locally the cokernel of a morphism of finite-rank free sheaves: if every point <fr:tex display="inline"><![CDATA[x\in  X]]></fr:tex> admits a neighbourhood <fr:tex display="inline"><![CDATA[U_x]]></fr:tex> such that there exists an exact sequence
+    <fr:tex display="block"><![CDATA[       \mathscr {O}_{U_x}^{\oplus  s_{U_x}}       \to  \mathscr {O}_{U_x}^{\oplus  r_{U_x}}       \twoheadrightarrow  \mathscr {F}|_{U_x}       \to  0     ]]></fr:tex>
+    for some <fr:tex display="inline"><![CDATA[r_{U_x},s_{U_x}\in \mathbb {N}]]></fr:tex>.
+    We call this exact sequence a <fr:em>(finite) presentation</fr:em> of <fr:tex display="inline"><![CDATA[\mathscr {F}|_{U_x}]]></fr:tex>.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>376</fr:anchor>
+                <fr:addr type="machine">#261</fr:addr>
+                <fr:route>unstable-261.xml</fr:route>
+                <fr:title text="Properties of sheaves of finite presentation">Properties of sheaves of finite presentation</fr:title>
+                <fr:taxon>Remark</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>By definition, finite presentation implies finite type, and, since pullbacks are right-exact and commute with direct sums, we see that the property of being of finite presentation is also closed under pullbacks (<fr:link type="external" href="https://stacks.math.columbia.edu/tag/01BQ">[Stacks:01BQ]</fr:link>) and extensions (<html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: citation? maybe it follows from <fr:link type="external" href="https://stacks.math.columbia.edu/tag/0519">[Stacks:0519]</fr:link>?</fr:em></fr:strong></html:mark>).
     However, we are now slightly closer to having an abelian category, in that we are slightly closer to having two-out-of-three:
 
-    <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>378</fr:anchor><fr:addr
-type="machine">#262</fr:addr><fr:route>unstable-262.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>#261</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let
-        <fr:tex
-display="inline"><![CDATA[           0           \to  \mathscr {H}           \hookrightarrow  \mathscr {G}           \twoheadrightarrow  \mathscr {F}           \to  0         ]]></fr:tex>
-        be an exact sequence of sheaves of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules, with <fr:tex
-display="inline"><![CDATA[\mathscr {G}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> assumed to be of finite type.
-        If <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is further of finite presentation, then <fr:tex
-display="inline"><![CDATA[\mathscr {H}]]></fr:tex> is of finite type.</fr:p>
+    <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>378</fr:anchor><fr:addr type="machine">#262</fr:addr><fr:route>unstable-262.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>#261</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let
+        <fr:tex display="inline"><![CDATA[           0           \to  \mathscr {H}           \hookrightarrow  \mathscr {G}           \twoheadrightarrow  \mathscr {F}           \to  0         ]]></fr:tex>
+        be an exact sequence of sheaves of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules, with <fr:tex display="inline"><![CDATA[\mathscr {G}]]></fr:tex> and <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> assumed to be of finite type.
+        If <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is further of finite presentation, then <fr:tex display="inline"><![CDATA[\mathscr {H}]]></fr:tex> is of finite type.</fr:p>
   
     
-    <fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>379</fr:anchor><fr:addr
-type="machine">#263</fr:addr><fr:route>unstable-263.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#262</fr:parent></fr:frontmatter><fr:mainmatter>
-        This is <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01BP">[Stacks:01BP]</fr:link>.
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>379</fr:anchor><fr:addr type="machine">#263</fr:addr><fr:route>unstable-263.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#262</fr:parent></fr:frontmatter><fr:mainmatter>
+        This is <fr:link type="external" href="https://stacks.math.columbia.edu/tag/01BP">[Stacks:01BP]</fr:link>.
       </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree>
 
-    In other words, it's not true that the kernel of a surjection of sheaves of finite <fr:em>type</fr:em> is itself of finite type, but it <fr:em>is</fr:em> true if the sheaves are of finite <fr:em>presentation</fr:em> (in fact, the lemma above is stronger: we only require the codomain to be of finite presentation).</fr:p><fr:p>Having another part of two-out-of-three also gives us another point-to-neighbourhood lemma:
+    In other words, it's not true that the kernel of a surjection of sheaves of finite <fr:em>type</fr:em> is itself of finite type, but it <fr:em>is</fr:em> true if the sheaves are of finite <fr:em>presentation</fr:em> (in fact, the lemma above is stronger: we only require the codomain to be of finite presentation).</fr:p>
+                <fr:p>Having another part of two-out-of-three also gives us another point-to-neighbourhood lemma:
 
-    <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>380</fr:anchor><fr:addr
-type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>#261</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> an <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-module.
-        Assume there exists <fr:tex
-display="inline"><![CDATA[x\in  X]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[\mathscr {F}_x\cong \mathscr {O}_{X,x}^{\oplus  r}]]></fr:tex> for some <fr:tex
-display="inline"><![CDATA[r\in \mathbb {N}]]></fr:tex>.
-        If <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is of finite presentation, then there exists an open neighbourhood <fr:tex
-display="inline"><![CDATA[U_x]]></fr:tex> of <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[\mathscr {F}|_{U_x}\cong \mathscr {O}_{U_x}^{\oplus  r}]]></fr:tex>.</fr:p>
+    <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>380</fr:anchor><fr:addr type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>#261</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> an <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-module.
+        Assume there exists <fr:tex display="inline"><![CDATA[x\in  X]]></fr:tex> such that <fr:tex display="inline"><![CDATA[\mathscr {F}_x\cong \mathscr {O}_{X,x}^{\oplus  r}]]></fr:tex> for some <fr:tex display="inline"><![CDATA[r\in \mathbb {N}]]></fr:tex>.
+        If <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is of finite presentation, then there exists an open neighbourhood <fr:tex display="inline"><![CDATA[U_x]]></fr:tex> of <fr:tex display="inline"><![CDATA[x]]></fr:tex> such that <fr:tex display="inline"><![CDATA[\mathscr {F}|_{U_x}\cong \mathscr {O}_{U_x}^{\oplus  r}]]></fr:tex>.</fr:p>
   
     
-    <fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>381</fr:anchor><fr:addr
-type="machine">#265</fr:addr><fr:route>unstable-265.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#264</fr:parent></fr:frontmatter><fr:mainmatter>
-        This is <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/0B8J">[Stacks:0B8J]</fr:link>.
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>381</fr:anchor><fr:addr type="machine">#265</fr:addr><fr:route>unstable-265.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#264</fr:parent></fr:frontmatter><fr:mainmatter>
+        This is <fr:link type="external" href="https://stacks.math.columbia.edu/tag/0B8J">[Stacks:0B8J]</fr:link>.
       </fr:mainmatter><fr:backmatter /></fr:tree>
   
-</fr:mainmatter><fr:backmatter /></fr:tree></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>382</fr:anchor><fr:addr
-type="machine">#266</fr:addr><fr:route>unstable-266.xml</fr:route><fr:title
-text="Motivation for a definition of coherence">Motivation for a definition of coherence</fr:title><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: we saw above that if things are of finite type, then if they are <fr:em>also</fr:em> of finite presentation then stuff starts to work out well... so can we come up with a condition that ensures that subsheaves of finite type are of finite presentation?</fr:em></fr:strong></html:mark></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>384</fr:anchor><fr:addr
-type="machine">#267</fr:addr><fr:route>unstable-267.xml</fr:route><fr:title
-text="Coherent sheaf">Coherent sheaf</fr:title><fr:taxon>Definition-with-caveat</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
-    We say that <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is <fr:em>coherent</fr:em> if the following condition holds:
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>382</fr:anchor>
+                <fr:addr type="machine">#266</fr:addr>
+                <fr:route>unstable-266.xml</fr:route>
+                <fr:title text="Motivation for a definition of coherence">Motivation for a definition of coherence</fr:title>
+                <fr:taxon>Remark</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>
+                  <html:mark xmlns:html="http://www.w3.org/1999/xhtml">
+                    <fr:strong>
+                      <fr:em>TO-DO: we saw above that if things are of finite type, then if they are <fr:em>also</fr:em> of finite presentation then stuff starts to work out well... so can we come up with a condition that ensures that subsheaves of finite type are of finite presentation?</fr:em>
+                    </fr:strong>
+                  </html:mark>
+                </fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>384</fr:anchor>
+                <fr:addr type="machine">#267</fr:addr>
+                <fr:route>unstable-267.xml</fr:route>
+                <fr:title text="Coherent sheaf">Coherent sheaf</fr:title>
+                <fr:taxon>Definition-with-caveat</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Let <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
+    We say that <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is <fr:em>coherent</fr:em> if the following condition holds:
 
-    <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>385</fr:anchor><fr:addr
-type="machine">#268</fr:addr><fr:route>unstable-268.xml</fr:route><fr:taxon>Condition</fr:taxon><fr:authors /><fr:parent>#267</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Any subsheaf <fr:tex
-display="inline"><![CDATA[\mathscr {G}\subseteq \mathscr {F}]]></fr:tex> of finite type is further of finite presentation.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+    <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>385</fr:anchor><fr:addr type="machine">#268</fr:addr><fr:route>unstable-268.xml</fr:route><fr:taxon>Condition</fr:taxon><fr:authors /><fr:parent>#267</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Any subsheaf <fr:tex display="inline"><![CDATA[\mathscr {G}\subseteq \mathscr {F}]]></fr:tex> of finite type is further of finite presentation.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
 
-    <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>386</fr:anchor><fr:addr
-type="machine">#269</fr:addr><fr:route>unstable-269.xml</fr:route><fr:taxon>Caveat</fr:taxon><fr:authors /><fr:parent>#267</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>This condition on subsheaves has to include <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> itself, i.e. <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> must be of finite type.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>387</fr:anchor><fr:addr
-type="machine">#270</fr:addr><fr:route>unstable-270.xml</fr:route><fr:title
-text="Coherent sheaf">Coherent sheaf</fr:title><fr:taxon>Definition</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
-    We say that <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is <fr:em>coherent</fr:em> if it is of finite type and further satisfies the condition that locally the kernel of any morphism from a finite-rank free sheaf is of finite type: for every morphism of the form <fr:tex
-display="inline"><![CDATA[\varphi \colon \mathscr {O}_U^{\oplus  r}\to \mathscr {F}|_{U}]]></fr:tex> for <fr:tex
-display="inline"><![CDATA[r\in \mathbb {N}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[U\subseteq  X]]></fr:tex> open, the kernel <fr:tex
-display="inline"><![CDATA[\operatorname {Ker}\varphi ]]></fr:tex> is of finite type.</fr:p><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>388</fr:anchor><fr:addr
-type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>Comment</fr:taxon><fr:authors /><fr:parent>#270</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Note that we impose the constraint on the kernel of <fr:em>arbitrary</fr:em> maps from a finite-rank free sheaf, not just on surjections.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>389</fr:anchor><fr:addr
-type="machine">#272</fr:addr><fr:route>unstable-272.xml</fr:route><fr:title
-text="The two definitions of coherence agree">The two definitions of coherence agree</fr:title><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>The two definitions of coherence —
+    <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>386</fr:anchor><fr:addr type="machine">#269</fr:addr><fr:route>unstable-269.xml</fr:route><fr:taxon>Caveat</fr:taxon><fr:authors /><fr:parent>#267</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>This condition on subsheaves has to include <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> itself, i.e. <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> must be of finite type.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>387</fr:anchor>
+                <fr:addr type="machine">#270</fr:addr>
+                <fr:route>unstable-270.xml</fr:route>
+                <fr:title text="Coherent sheaf">Coherent sheaf</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Let <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
+    We say that <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is <fr:em>coherent</fr:em> if it is of finite type and further satisfies the condition that locally the kernel of any morphism from a finite-rank free sheaf is of finite type: for every morphism of the form <fr:tex display="inline"><![CDATA[\varphi \colon \mathscr {O}_U^{\oplus  r}\to \mathscr {F}|_{U}]]></fr:tex> for <fr:tex display="inline"><![CDATA[r\in \mathbb {N}]]></fr:tex> and <fr:tex display="inline"><![CDATA[U\subseteq  X]]></fr:tex> open, the kernel <fr:tex display="inline"><![CDATA[\operatorname {Ker}\varphi ]]></fr:tex> is of finite type.</fr:p>
+                <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>388</fr:anchor>
+                    <fr:addr type="machine">#271</fr:addr>
+                    <fr:route>unstable-271.xml</fr:route>
+                    <fr:taxon>Comment</fr:taxon>
+                    <fr:authors />
+                    <fr:parent>#270</fr:parent>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>Note that we impose the constraint on the kernel of <fr:em>arbitrary</fr:em> maps from a finite-rank free sheaf, not just on surjections.</fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>389</fr:anchor>
+                <fr:addr type="machine">#272</fr:addr>
+                <fr:route>unstable-272.xml</fr:route>
+                <fr:title text="The two definitions of coherence agree">The two definitions of coherence agree</fr:title>
+                <fr:taxon>Lemma</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter><fr:p>The two definitions of coherence —
 
-    <fr:ol><fr:li><fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is of finite type, and all its subsheaves of finite type are of finite presentation</fr:li>
-      <fr:li><fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is of finite type, and the kernel of any morphism from a finite free sheaf is of finite type</fr:li></fr:ol>
+    <fr:ol><fr:li><fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is of finite type, and all its subsheaves of finite type are of finite presentation</fr:li>
+      <fr:li><fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is of finite type, and the kernel of any morphism from a finite free sheaf is of finite type</fr:li></fr:ol>
 
     — are equivalent.</fr:p>
   
     
-    <fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>390</fr:anchor><fr:addr
-type="machine">#273</fr:addr><fr:route>unstable-273.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#272</fr:parent></fr:frontmatter><fr:mainmatter>
-    <html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: write this proof</fr:em></fr:strong></html:mark>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>390</fr:anchor><fr:addr type="machine">#273</fr:addr><fr:route>unstable-273.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#272</fr:parent></fr:frontmatter><fr:mainmatter>
+    <html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: write this proof</fr:em></fr:strong></html:mark>
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
-</fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>392</fr:anchor><fr:addr
-type="machine">#274</fr:addr><fr:route>unstable-274.xml</fr:route><fr:title
-text="Properties of coherent sheaves">Properties of coherent sheaves</fr:title><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>By definition, coherent sheaves are also of finite type, but since we are trying to build a hierarchy of finiteness conditions we should show that coherent sheaves are also of finite presentation.
-    Then we will have that [coherent <fr:tex
-display="inline"><![CDATA[\implies ]]></fr:tex> finite presentation <fr:tex
-display="inline"><![CDATA[\implies ]]></fr:tex> finite type].</fr:p><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>393</fr:anchor><fr:addr
-type="machine">#275</fr:addr><fr:route>unstable-275.xml</fr:route><fr:title
-text="Coherence generalises finite presentation">Coherence generalises finite presentation</fr:title><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>#274</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
-      If <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent, then it is also of finite presentation.</fr:p>
+</fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>392</fr:anchor>
+                <fr:addr type="machine">#274</fr:addr>
+                <fr:route>unstable-274.xml</fr:route>
+                <fr:title text="Properties of coherent sheaves">Properties of coherent sheaves</fr:title>
+                <fr:taxon>Remark</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>By definition, coherent sheaves are also of finite type, but since we are trying to build a hierarchy of finiteness conditions we should show that coherent sheaves are also of finite presentation.
+    Then we will have that [coherent <fr:tex display="inline"><![CDATA[\implies ]]></fr:tex> finite presentation <fr:tex display="inline"><![CDATA[\implies ]]></fr:tex> finite type].</fr:p>
+                <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>393</fr:anchor>
+                    <fr:addr type="machine">#275</fr:addr>
+                    <fr:route>unstable-275.xml</fr:route>
+                    <fr:title text="Coherence generalises finite presentation">Coherence generalises finite presentation</fr:title>
+                    <fr:taxon>Lemma</fr:taxon>
+                    <fr:authors />
+                    <fr:parent>#274</fr:parent>
+                  </fr:frontmatter>
+                  <fr:mainmatter><fr:p>Let <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
+      If <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent, then it is also of finite presentation.</fr:p>
   
     
-    <fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>394</fr:anchor><fr:addr
-type="machine">#276</fr:addr><fr:route>unstable-276.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#275</fr:parent></fr:frontmatter><fr:mainmatter>
-      <fr:p>This is <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01BW">[Stacks:01BW]</fr:link>.
-        The idea of the (short) proof is to use that <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is of finite type to build a surjection from a finite-rank free sheaf, and then the fact that the kernel of this surjection is also, by the definition of coherence, of finite type; this gives a finite presentation.</fr:p>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>394</fr:anchor><fr:addr type="machine">#276</fr:addr><fr:route>unstable-276.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#275</fr:parent></fr:frontmatter><fr:mainmatter>
+      <fr:p>This is <fr:link type="external" href="https://stacks.math.columbia.edu/tag/01BW">[Stacks:01BW]</fr:link>.
+        The idea of the (short) proof is to use that <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is of finite type to build a surjection from a finite-rank free sheaf, and then the fact that the kernel of this surjection is also, by the definition of coherence, of finite type; this gives a finite presentation.</fr:p>
     </fr:mainmatter><fr:backmatter /></fr:tree>
   
-</fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>395</fr:anchor><fr:addr
-type="machine">#277</fr:addr><fr:route>unstable-277.xml</fr:route><fr:title
-text="Finiteness conditions on subsheaves of coherent sheaves">Finiteness conditions on subsheaves of coherent sheaves</fr:title><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:parent>#274</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules, and <fr:tex
-display="inline"><![CDATA[\mathscr {G}]]></fr:tex> a subsheaf of <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex>.
-      If <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent, then the following conditions are equivalent:
+</fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+                <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>395</fr:anchor>
+                    <fr:addr type="machine">#277</fr:addr>
+                    <fr:route>unstable-277.xml</fr:route>
+                    <fr:title text="Finiteness conditions on subsheaves of coherent sheaves">Finiteness conditions on subsheaves of coherent sheaves</fr:title>
+                    <fr:taxon>Corollary</fr:taxon>
+                    <fr:authors />
+                    <fr:parent>#274</fr:parent>
+                  </fr:frontmatter>
+                  <fr:mainmatter><fr:p>Let <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules, and <fr:tex display="inline"><![CDATA[\mathscr {G}]]></fr:tex> a subsheaf of <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex>.
+      If <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent, then the following conditions are equivalent:
 
-      <fr:ol><fr:li><fr:tex
-display="inline"><![CDATA[\mathscr {G}]]></fr:tex> is coherent;</fr:li>
-        <fr:li><fr:tex
-display="inline"><![CDATA[\mathscr {G}]]></fr:tex> is of finite presentation;</fr:li>
-        <fr:li><fr:tex
-display="inline"><![CDATA[\mathscr {G}]]></fr:tex> is of finite type.</fr:li></fr:ol></fr:p>
+      <fr:ol><fr:li><fr:tex display="inline"><![CDATA[\mathscr {G}]]></fr:tex> is coherent;</fr:li>
+        <fr:li><fr:tex display="inline"><![CDATA[\mathscr {G}]]></fr:tex> is of finite presentation;</fr:li>
+        <fr:li><fr:tex display="inline"><![CDATA[\mathscr {G}]]></fr:tex> is of finite type.</fr:li></fr:ol></fr:p>
   
     
-    <fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>396</fr:anchor><fr:addr
-type="machine">#278</fr:addr><fr:route>unstable-278.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#277</fr:parent></fr:frontmatter><fr:mainmatter>
-      <fr:p>We know that, in general, coherence implies finite presentation implies finite type, so we know that [(1) <fr:tex
-display="inline"><![CDATA[\implies ]]></fr:tex> (2) <fr:tex
-display="inline"><![CDATA[\implies ]]></fr:tex> (3)] even without the hypothesis that <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent.
-        But then, since <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> <fr:em>is</fr:em> coherent, [(3) <fr:tex
-display="inline"><![CDATA[\implies ]]></fr:tex> (2)].
-        Finally, we have a sort of domino effect: if <fr:tex
-display="inline"><![CDATA[\mathscr {H}]]></fr:tex> is a subsheaf of <fr:tex
-display="inline"><![CDATA[\mathscr {G}]]></fr:tex>, then it is also a subsheaf of <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex>, and the property of being finite type is a property on a sheaf itself, not on its realisation as a subsheaf of a specific sheaf;
-        in other words, any subsheaf <fr:tex
-display="inline"><![CDATA[\mathscr {H}]]></fr:tex> of <fr:tex
-display="inline"><![CDATA[\mathscr {G}]]></fr:tex> of finite type is also a subsheaf of <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> of finite type, and thus of finite presentation (since <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent);
-        thus <fr:tex
-display="inline"><![CDATA[\mathscr {G}]]></fr:tex> is coherent, i.e. [(2) <fr:tex
-display="inline"><![CDATA[\implies ]]></fr:tex> (1)].</fr:p>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>396</fr:anchor><fr:addr type="machine">#278</fr:addr><fr:route>unstable-278.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#277</fr:parent></fr:frontmatter><fr:mainmatter>
+      <fr:p>We know that, in general, coherence implies finite presentation implies finite type, so we know that [(1) <fr:tex display="inline"><![CDATA[\implies ]]></fr:tex> (2) <fr:tex display="inline"><![CDATA[\implies ]]></fr:tex> (3)] even without the hypothesis that <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent.
+        But then, since <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> <fr:em>is</fr:em> coherent, [(3) <fr:tex display="inline"><![CDATA[\implies ]]></fr:tex> (2)].
+        Finally, we have a sort of domino effect: if <fr:tex display="inline"><![CDATA[\mathscr {H}]]></fr:tex> is a subsheaf of <fr:tex display="inline"><![CDATA[\mathscr {G}]]></fr:tex>, then it is also a subsheaf of <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex>, and the property of being finite type is a property on a sheaf itself, not on its realisation as a subsheaf of a specific sheaf;
+        in other words, any subsheaf <fr:tex display="inline"><![CDATA[\mathscr {H}]]></fr:tex> of <fr:tex display="inline"><![CDATA[\mathscr {G}]]></fr:tex> of finite type is also a subsheaf of <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> of finite type, and thus of finite presentation (since <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent);
+        thus <fr:tex display="inline"><![CDATA[\mathscr {G}]]></fr:tex> is coherent, i.e. [(2) <fr:tex display="inline"><![CDATA[\implies ]]></fr:tex> (1)].</fr:p>
     </fr:mainmatter><fr:backmatter /></fr:tree>
   
-</fr:mainmatter><fr:backmatter /></fr:tree><fr:p>Now, at last, we get the full two-out-of-three property, and it is stronger than the partial results that we had for sheaves of finite presentation, in that we do not even need to assume that the sheaves are of finite type:
+</fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+                <fr:p>Now, at last, we get the full two-out-of-three property, and it is stronger than the partial results that we had for sheaves of finite presentation, in that we do not even need to assume that the sheaves are of finite type:
 
-    <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>397</fr:anchor><fr:addr
-type="machine">#279</fr:addr><fr:route>unstable-279.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>#274</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[0\to \mathscr {H}\to \mathscr {G}\to \mathscr {F}\to 0]]></fr:tex> be a short exact sequence of sheaves of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
-        If any two of <fr:tex
-display="inline"><![CDATA[\mathscr {H}]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[\mathscr {G}]]></fr:tex>, and <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> are coherent, then so too is the third.</fr:p>
+    <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>397</fr:anchor><fr:addr type="machine">#279</fr:addr><fr:route>unstable-279.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>#274</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex display="inline"><![CDATA[0\to \mathscr {H}\to \mathscr {G}\to \mathscr {F}\to 0]]></fr:tex> be a short exact sequence of sheaves of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
+        If any two of <fr:tex display="inline"><![CDATA[\mathscr {H}]]></fr:tex>, <fr:tex display="inline"><![CDATA[\mathscr {G}]]></fr:tex>, and <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> are coherent, then so too is the third.</fr:p>
   
     
-    <fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>398</fr:anchor><fr:addr
-type="machine">#280</fr:addr><fr:route>unstable-280.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#279</fr:parent></fr:frontmatter><fr:mainmatter>
-        <fr:p>This is part of <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01BY">[Stacks:01BY]</fr:link>.</fr:p>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>398</fr:anchor><fr:addr type="machine">#280</fr:addr><fr:route>unstable-280.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#279</fr:parent></fr:frontmatter><fr:mainmatter>
+        <fr:p>This is part of <fr:link type="external" href="https://stacks.math.columbia.edu/tag/01BY">[Stacks:01BY]</fr:link>.</fr:p>
       </fr:mainmatter><fr:backmatter /></fr:tree>
   
-</fr:mainmatter><fr:backmatter /></fr:tree></fr:p><fr:p>In fact, we have an even better result than mere two-out-of-three:
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:p>
+                <fr:p>In fact, we have an even better result than mere two-out-of-three:
 
-    <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>399</fr:anchor><fr:addr
-type="machine">#281</fr:addr><fr:route>unstable-281.xml</fr:route><fr:title
-text="Coherent sheaves form an abelian category">Coherent sheaves form an abelian category</fr:title><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>#274</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>The category of coherent sheaves of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules on a ringed space <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is an abelian category.
-        Furthermore, its inclusion into the category of sheaves of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules is an exact functor.</fr:p>
+    <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>399</fr:anchor><fr:addr type="machine">#281</fr:addr><fr:route>unstable-281.xml</fr:route><fr:title text="Coherent sheaves form an abelian category">Coherent sheaves form an abelian category</fr:title><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>#274</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>The category of coherent sheaves of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules on a ringed space <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is an abelian category.
+        Furthermore, its inclusion into the category of sheaves of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules is an exact functor.</fr:p>
   
     
-    <fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>400</fr:anchor><fr:addr
-type="machine">#282</fr:addr><fr:route>unstable-282.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#281</fr:parent></fr:frontmatter><fr:mainmatter>
-        <fr:p>This is the rest of <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01BY">[Stacks:01BY]</fr:link>.</fr:p>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>400</fr:anchor><fr:addr type="machine">#282</fr:addr><fr:route>unstable-282.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#281</fr:parent></fr:frontmatter><fr:mainmatter>
+        <fr:p>This is the rest of <fr:link type="external" href="https://stacks.math.columbia.edu/tag/01BY">[Stacks:01BY]</fr:link>.</fr:p>
       </fr:mainmatter><fr:backmatter /></fr:tree>
   
-</fr:mainmatter><fr:backmatter /></fr:tree></fr:p><fr:p><html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: finally, the big property of coherence: (combining <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01C0">[Stacks:01C0]</fr:link> with <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01BP">[Stacks:01BP]</fr:link>) for coherent, SES on stalks implies SES on a neighbourhood</fr:em></fr:strong></html:mark></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>402</fr:anchor><fr:addr
-type="machine">#283</fr:addr><fr:route>unstable-283.xml</fr:route><fr:title
-text="Coherence of the structure sheaf, and pullbacks and pushforwards">Coherence of the structure sheaf, and pullbacks and pushforwards</fr:title><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Even though coherent sheaves give an abelian category when the other finiteness conditions did not, we have paid a price somewhere else: in general, it is <fr:em>not</fr:em> true that the pullback of a coherent sheaf is coherent.
-    Even worse, there is <fr:em>no reason</fr:em> a priori for <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> itself to be coherent, and so we cannot even ensure that (locally) free sheaves of finite rank are coherent — these <fr:em>should</fr:em> be a prototypical example of whatever sort of finiteness conditions we want, so the fact that the category of locally free sheaves is <fr:em>not</fr:em> necessarily a subcategory of the category of coherent sheaves is not a desirable outcome.
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:p>
+                <fr:p>
+                  <html:mark xmlns:html="http://www.w3.org/1999/xhtml">
+                    <fr:strong>
+                      <fr:em>TO-DO: finally, the big property of coherence: (combining <fr:link type="external" href="https://stacks.math.columbia.edu/tag/01C0">[Stacks:01C0]</fr:link> with <fr:link type="external" href="https://stacks.math.columbia.edu/tag/01BP">[Stacks:01BP]</fr:link>) for coherent, SES on stalks implies SES on a neighbourhood</fr:em>
+                    </fr:strong>
+                  </html:mark>
+                </fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>402</fr:anchor>
+                <fr:addr type="machine">#283</fr:addr>
+                <fr:route>unstable-283.xml</fr:route>
+                <fr:title text="Coherence of the structure sheaf, and pullbacks and pushforwards">Coherence of the structure sheaf, and pullbacks and pushforwards</fr:title>
+                <fr:taxon>Remark</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Even though coherent sheaves give an abelian category when the other finiteness conditions did not, we have paid a price somewhere else: in general, it is <fr:em>not</fr:em> true that the pullback of a coherent sheaf is coherent.
+    Even worse, there is <fr:em>no reason</fr:em> a priori for <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> itself to be coherent, and so we cannot even ensure that (locally) free sheaves of finite rank are coherent — these <fr:em>should</fr:em> be a prototypical example of whatever sort of finiteness conditions we want, so the fact that the category of locally free sheaves is <fr:em>not</fr:em> necessarily a subcategory of the category of coherent sheaves is not a desirable outcome.
     But it turns out that the latter problem is somehow the only problem, in the sense of the following results:
 
-    <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>403</fr:anchor><fr:addr
-type="machine">#284</fr:addr><fr:route>unstable-284.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>#283</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
-        If <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent, then <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent if and only if <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is of finite presentation.</fr:p>
+    <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>403</fr:anchor><fr:addr type="machine">#284</fr:addr><fr:route>unstable-284.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:parent>#283</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a ringed space, and <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a sheaf of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules.
+        If <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent, then <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent if and only if <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is of finite presentation.</fr:p>
   
     
-    <fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>404</fr:anchor><fr:addr
-type="machine">#285</fr:addr><fr:route>unstable-285.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#284</fr:parent></fr:frontmatter><fr:mainmatter>
-        This is <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01BZ">[Stacks:01BZ]</fr:link>.
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>404</fr:anchor><fr:addr type="machine">#285</fr:addr><fr:route>unstable-285.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#284</fr:parent></fr:frontmatter><fr:mainmatter>
+        This is <fr:link type="external" href="https://stacks.math.columbia.edu/tag/01BZ">[Stacks:01BZ]</fr:link>.
       </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree>
 
-    <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>405</fr:anchor><fr:addr
-type="machine">#286</fr:addr><fr:route>unstable-286.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:parent>#283</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[(Y,\mathscr {O}_Y)]]></fr:tex> be ringed spaces, and <fr:tex
-display="inline"><![CDATA[f\colon (X,\mathscr {O}_X)\to (Y,\mathscr {O}_Y)]]></fr:tex> a morphism.
-        If <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent, then the pullback functor <fr:tex
-display="inline"><![CDATA[f^*]]></fr:tex> that sends sheaves of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_Y]]></fr:tex>-modules to sheaves of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules respects coherence: the pullback of any coherent sheaf is again coherent.</fr:p>
+    <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>405</fr:anchor><fr:addr type="machine">#286</fr:addr><fr:route>unstable-286.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:parent>#283</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> and <fr:tex display="inline"><![CDATA[(Y,\mathscr {O}_Y)]]></fr:tex> be ringed spaces, and <fr:tex display="inline"><![CDATA[f\colon (X,\mathscr {O}_X)\to (Y,\mathscr {O}_Y)]]></fr:tex> a morphism.
+        If <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent, then the pullback functor <fr:tex display="inline"><![CDATA[f^*]]></fr:tex> that sends sheaves of <fr:tex display="inline"><![CDATA[\mathscr {O}_Y]]></fr:tex>-modules to sheaves of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules respects coherence: the pullback of any coherent sheaf is again coherent.</fr:p>
   
     
-    <fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>406</fr:anchor><fr:addr
-type="machine">#287</fr:addr><fr:route>unstable-287.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#286</fr:parent></fr:frontmatter><fr:mainmatter>
-        <fr:p>Any coherent <fr:tex
-display="inline"><![CDATA[\mathscr {O}_Y]]></fr:tex>-module is in particular of finite presentation, and pullback always preserves being of finite presentation;
-          since <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent, being of finite presentation implies coherence, and so the pullback is coherent.</fr:p>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>406</fr:anchor><fr:addr type="machine">#287</fr:addr><fr:route>unstable-287.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#286</fr:parent></fr:frontmatter><fr:mainmatter>
+        <fr:p>Any coherent <fr:tex display="inline"><![CDATA[\mathscr {O}_Y]]></fr:tex>-module is in particular of finite presentation, and pullback always preserves being of finite presentation;
+          since <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent, being of finite presentation implies coherence, and so the pullback is coherent.</fr:p>
       </fr:mainmatter><fr:backmatter /></fr:tree>
   
-</fr:mainmatter><fr:backmatter /></fr:tree></fr:p><fr:p>The fact that <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> itself can be non-coherent is "not surprising", since an arbitrary ringed space with no further hypotheses could conceivably have "too many functions".
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:p>
+                <fr:p>The fact that <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> itself can be non-coherent is "not surprising", since an arbitrary ringed space with no further hypotheses could conceivably have "too many functions".
     There are two particularly important results concerning ringed spaces whose structure sheaf is coherent: one in algebraic geometry, and one in holomorphic geometry; the latter is one of the fundamental results in complex geometry.
 
-    <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>407</fr:anchor><fr:addr
-type="machine">#288</fr:addr><fr:route>unstable-288.xml</fr:route><fr:title
-text="Noetherian coherence">Noetherian coherence</fr:title><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:parent>#283</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a locally Noetherian scheme.
-        Then <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is a coherent <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-module.</fr:p>
+    <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>407</fr:anchor><fr:addr type="machine">#288</fr:addr><fr:route>unstable-288.xml</fr:route><fr:title text="Noetherian coherence">Noetherian coherence</fr:title><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:parent>#283</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a locally Noetherian scheme.
+        Then <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is a coherent <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-module.</fr:p>
   
     
-    <fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>408</fr:anchor><fr:addr
-type="machine">#289</fr:addr><fr:route>unstable-289.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#288</fr:parent></fr:frontmatter><fr:mainmatter>
-        <fr:p>This is <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>.</fr:p>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>408</fr:anchor><fr:addr type="machine">#289</fr:addr><fr:route>unstable-289.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#288</fr:parent></fr:frontmatter><fr:mainmatter>
+        <fr:p>This is <fr:link type="external" href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>.</fr:p>
       </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree>
 
-    <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>409</fr:anchor><fr:addr
-type="machine">#290</fr:addr><fr:route>unstable-290.xml</fr:route><fr:title
-text="Oka coherence">Oka coherence</fr:title><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:parent>#283</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a complex manifold.
-        Then <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is a coherent <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-module.</fr:p>
+    <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>409</fr:anchor><fr:addr type="machine">#290</fr:addr><fr:route>unstable-290.xml</fr:route><fr:title text="Oka coherence">Oka coherence</fr:title><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:parent>#283</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> be a complex manifold.
+        Then <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is a coherent <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-module.</fr:p>
   
     
-    <fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>410</fr:anchor><fr:addr
-type="machine">#291</fr:addr><fr:route>unstable-291.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#290</fr:parent></fr:frontmatter><fr:mainmatter>
-        <fr:p><html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: give a good reference</fr:em></fr:strong></html:mark></fr:p>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>410</fr:anchor><fr:addr type="machine">#291</fr:addr><fr:route>unstable-291.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#290</fr:parent></fr:frontmatter><fr:mainmatter>
+        <fr:p><html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: give a good reference</fr:em></fr:strong></html:mark></fr:p>
       </fr:mainmatter><fr:backmatter /></fr:tree>
   
-<fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>412</fr:anchor><fr:addr
-type="machine">#292</fr:addr><fr:route>unstable-292.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>#290</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>One reason that this result is so deep is that it is somehow stronger than the corresponding result in algebraic geometry, since <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X(X)]]></fr:tex> is not a Noetherian ring in general for complex manifolds (e.g. for <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> a Stein manifold) and yet <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is still coherent.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:p><fr:p>Alongside Oka's coherence theorem, the other fundamental result for holomorphic geometry concerns pushforwards.
-    Combining Oka's coherence theorem (or by assuming a locally Noetherian hypothesis, in the algebraic case) with <html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: the lemma about <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> coherent implies pullback preserves coherence</fr:em></fr:strong></html:mark>, we obtain <fr:em>functoriality of coherent sheaves for complex manifolds</fr:em>, in that
-    <fr:tex
-display="block"><![CDATA[       \begin {aligned}         \mathsf {RingSp}         &\longrightarrow  \mathsf {Cat}       \\(X,\mathscr {O}_X)         &\longmapsto  \mathsf {Coh}(X)       \\{}[f\colon (X,\mathscr {O}_X)\to (Y,\mathscr {O}_Y)]         &\longmapsto  [f^*\colon \mathsf {Coh}(Y)\to \mathsf {Coh}(X)]       \end {aligned}     ]]></fr:tex>
+<fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>412</fr:anchor><fr:addr type="machine">#292</fr:addr><fr:route>unstable-292.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>#290</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>One reason that this result is so deep is that it is somehow stronger than the corresponding result in algebraic geometry, since <fr:tex display="inline"><![CDATA[\mathscr {O}_X(X)]]></fr:tex> is not a Noetherian ring in general for complex manifolds (e.g. for <fr:tex display="inline"><![CDATA[X]]></fr:tex> a Stein manifold) and yet <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is still coherent.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:p>
+                <fr:p>Alongside Oka's coherence theorem, the other fundamental result for holomorphic geometry concerns pushforwards.
+    Combining Oka's coherence theorem (or by assuming a locally Noetherian hypothesis, in the algebraic case) with <html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: the lemma about <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> coherent implies pullback preserves coherence</fr:em></fr:strong></html:mark>, we obtain <fr:em>functoriality of coherent sheaves for complex manifolds</fr:em>, in that
+    <fr:tex display="block"><![CDATA[       \begin {aligned}         \mathsf {RingSp}         &\longrightarrow  \mathsf {Cat}       \\(X,\mathscr {O}_X)         &\longmapsto  \mathsf {Coh}(X)       \\{}[f\colon (X,\mathscr {O}_X)\to (Y,\mathscr {O}_Y)]         &\longmapsto  [f^*\colon \mathsf {Coh}(Y)\to \mathsf {Coh}(X)]       \end {aligned}     ]]></fr:tex>
     defines a (pseudo-)functor from the category of ringed spaces to the category of (dg-)categories.
-    More simply, for <fr:em>any</fr:em> morphism <fr:tex
-display="inline"><![CDATA[f\colon (X,\mathscr {O}_X)\to (Y,\mathscr {O}_Y)]]></fr:tex> we obtain a pullback functor <fr:tex
-display="inline"><![CDATA[f^*\colon \mathsf {Coh}(Y)\to \mathsf {Coh}(X)]]></fr:tex>.
-    It is then natural to ask if a similar stories holds true for a pushforward functor.</fr:p><fr:p>In general, for an arbitrary morphism <fr:tex
-display="inline"><![CDATA[f\colon (X,\mathscr {O}_X)\to (Y,\mathscr {O}_Y)]]></fr:tex>, it is not the case that the pushforward <fr:tex
-display="inline"><![CDATA[f_*\mathscr {F}]]></fr:tex> of a coherent sheaf <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules will again be coherent (as a sheaf of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_Y]]></fr:tex>-modules).
-    However, this <fr:em>is</fr:em> true if we take <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> to be <fr:em>proper</fr:em> (by a result of Grauert–Remmert <html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: cite GR84, Theorem 10.4.6</fr:em></fr:strong></html:mark> in the holomorphic case, and Grothendieck <html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: cite EGA III, 3.2.1</fr:em></fr:strong></html:mark> in the algebraic case).
-    Here we state only the holomorphic version; the algebraic version is <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/02O3">[Stacks:02O3]</fr:link>.
+    More simply, for <fr:em>any</fr:em> morphism <fr:tex display="inline"><![CDATA[f\colon (X,\mathscr {O}_X)\to (Y,\mathscr {O}_Y)]]></fr:tex> we obtain a pullback functor <fr:tex display="inline"><![CDATA[f^*\colon \mathsf {Coh}(Y)\to \mathsf {Coh}(X)]]></fr:tex>.
+    It is then natural to ask if a similar stories holds true for a pushforward functor.</fr:p>
+                <fr:p>In general, for an arbitrary morphism <fr:tex display="inline"><![CDATA[f\colon (X,\mathscr {O}_X)\to (Y,\mathscr {O}_Y)]]></fr:tex>, it is not the case that the pushforward <fr:tex display="inline"><![CDATA[f_*\mathscr {F}]]></fr:tex> of a coherent sheaf <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules will again be coherent (as a sheaf of <fr:tex display="inline"><![CDATA[\mathscr {O}_Y]]></fr:tex>-modules).
+    However, this <fr:em>is</fr:em> true if we take <fr:tex display="inline"><![CDATA[f]]></fr:tex> to be <fr:em>proper</fr:em> (by a result of Grauert–Remmert <html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: cite GR84, Theorem 10.4.6</fr:em></fr:strong></html:mark> in the holomorphic case, and Grothendieck <html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: cite EGA III, 3.2.1</fr:em></fr:strong></html:mark> in the algebraic case).
+    Here we state only the holomorphic version; the algebraic version is <fr:link type="external" href="https://stacks.math.columbia.edu/tag/02O3">[Stacks:02O3]</fr:link>.
 
-    <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>416</fr:anchor><fr:addr
-type="machine">#293</fr:addr><fr:route>unstable-293.xml</fr:route><fr:title
-text="Grauert direct image">Grauert direct image</fr:title><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:parent>#283</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: state</fr:em></fr:strong></html:mark></fr:p>
+    <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>416</fr:anchor><fr:addr type="machine">#293</fr:addr><fr:route>unstable-293.xml</fr:route><fr:title text="Grauert direct image">Grauert direct image</fr:title><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:parent>#283</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: state</fr:em></fr:strong></html:mark></fr:p>
   
     
-    <fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>418</fr:anchor><fr:addr
-type="machine">#294</fr:addr><fr:route>unstable-294.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#293</fr:parent></fr:frontmatter><fr:mainmatter>
-        <html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: mention a few proofs? including Levy's "A new proof of the Grauert direct image theorem"</fr:em></fr:strong></html:mark>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>418</fr:anchor><fr:addr type="machine">#294</fr:addr><fr:route>unstable-294.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#293</fr:parent></fr:frontmatter><fr:mainmatter>
+        <html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: mention a few proofs? including Levy's "A new proof of the Grauert direct image theorem"</fr:em></fr:strong></html:mark>
       </fr:mainmatter><fr:backmatter /></fr:tree>
   
-</fr:mainmatter><fr:backmatter /></fr:tree></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>420</fr:anchor><fr:addr
-type="machine">#295</fr:addr><fr:route>unstable-295.xml</fr:route><fr:title
-text="Quasi-coherent and pseudo-coherent sheaves">Quasi-coherent and pseudo-coherent sheaves</fr:title><fr:taxon>Aside</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: quasi-coherence</fr:em></fr:strong></html:mark> ... but on a locally Noetherian scheme, quasi-coherent sheaves are surprisingly well behaved, and generalise coherent sheaves in that they are just "coherent sheaves of possibly infinite rank" (<fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>)" <html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: also mention Fréchet and nuclear/condensed</fr:em></fr:strong></html:mark> <html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: also that note about how quasi-coherent actually is an abelian category even in the holomorphic case?</fr:em></fr:strong></html:mark></fr:p><fr:p><html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: pseudo-coherence??? just mention in passing as it carries on the pattern "finite type, finite presentation, ..." (made precise by <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/064T">[Stacks:064T]</fr:link> (for just modules over a ring though...))</fr:em></fr:strong></html:mark></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>425</fr:anchor><fr:addr
-type="machine">#296</fr:addr><fr:route>unstable-296.xml</fr:route><fr:title
-text="Algebraic, holomorphic, and smooth geometries">Algebraic, holomorphic, and smooth geometries</fr:title><fr:taxon>Example</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Different finiteness conditions show up in different ways depending on the flavour of geometry being studied.</fr:p><fr:ul><fr:li><fr:p><fr:strong>Algebraic geometry.</fr:strong>
-        For locally Noetherian schemes <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex>, the structure sheaf <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is itself coherent (<fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>).
-        This implies, amongst other things, that a sheaf of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules is then coherent if and only if it is finitely presented (also <fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>).
-        Since being locally Noetherian is not an overly restrictive hypothesis in general, some algebraic geometry references even <fr:em>define</fr:em> coherence as being finitely presented (or, equivalently, "quasi-coherent of finite type") — most notably <html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: Hartshorne</fr:em></fr:strong></html:mark>.</fr:p></fr:li>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>420</fr:anchor>
+                <fr:addr type="machine">#295</fr:addr>
+                <fr:route>unstable-295.xml</fr:route>
+                <fr:title text="Quasi-coherent and pseudo-coherent sheaves">Quasi-coherent and pseudo-coherent sheaves</fr:title>
+                <fr:taxon>Aside</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p><html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: quasi-coherence</fr:em></fr:strong></html:mark> ... but on a locally Noetherian scheme, quasi-coherent sheaves are surprisingly well behaved, and generalise coherent sheaves in that they are just "coherent sheaves of possibly infinite rank" (<fr:link type="external" href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>)" <html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: also mention Fréchet and nuclear/condensed</fr:em></fr:strong></html:mark> <html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: also that note about how quasi-coherent actually is an abelian category even in the holomorphic case?</fr:em></fr:strong></html:mark></fr:p>
+                <fr:p>
+                  <html:mark xmlns:html="http://www.w3.org/1999/xhtml">
+                    <fr:strong>
+                      <fr:em>TO-DO: pseudo-coherence??? just mention in passing as it carries on the pattern "finite type, finite presentation, ..." (made precise by <fr:link type="external" href="https://stacks.math.columbia.edu/tag/064T">[Stacks:064T]</fr:link> (for just modules over a ring though...))</fr:em>
+                    </fr:strong>
+                  </html:mark>
+                </fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>425</fr:anchor>
+                <fr:addr type="machine">#296</fr:addr>
+                <fr:route>unstable-296.xml</fr:route>
+                <fr:title text="Algebraic, holomorphic, and smooth geometries">Algebraic, holomorphic, and smooth geometries</fr:title>
+                <fr:taxon>Example</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Different finiteness conditions show up in different ways depending on the flavour of geometry being studied.</fr:p>
+                <fr:ul><fr:li><fr:p><fr:strong>Algebraic geometry.</fr:strong>
+        For locally Noetherian schemes <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex>, the structure sheaf <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is itself coherent (<fr:link type="external" href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>).
+        This implies, amongst other things, that a sheaf of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules is then coherent if and only if it is finitely presented (also <fr:link type="external" href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>).
+        Since being locally Noetherian is not an overly restrictive hypothesis in general, some algebraic geometry references even <fr:em>define</fr:em> coherence as being finitely presented (or, equivalently, "quasi-coherent of finite type") — most notably <html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: Hartshorne</fr:em></fr:strong></html:mark>.</fr:p></fr:li>
 
     <fr:li><fr:p><fr:strong>Holomorphic geometry.</fr:strong>
-        For complex manifolds, the Noetherian condition is generally far too restrictive: any Stein manifold gives an example of a non-Noetherian <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex>.
-        What is arguably surprising, however, is that <fr:em>despite</fr:em> this the structure sheaf <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> of any complex manifold is still coherent.
+        For complex manifolds, the Noetherian condition is generally far too restrictive: any Stein manifold gives an example of a non-Noetherian <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex>.
+        What is arguably surprising, however, is that <fr:em>despite</fr:em> this the structure sheaf <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> of any complex manifold is still coherent.
         This is a deep non-trivial theorem of Oka, and one of the fundamental results in complex geometry.</fr:p></fr:li>
 
     <fr:li><fr:p><fr:strong>Differential geometry</fr:strong>.
-        For smooth manifolds, their structure sheaves are generally <fr:link
-type="external"
-href="https://mathoverflow.net/questions/21168/how-to-classify-the-algebras-c%E2%88%9Em#comment43031_21345">neither Noetherian</fr:link> <fr:link
-type="external"
-href="https://math.stackexchange.com/a/305962">nor coherent</fr:link>.
+        For smooth manifolds, their structure sheaves are generally <fr:link type="external" href="https://mathoverflow.net/questions/21168/how-to-classify-the-algebras-c%E2%88%9Em#comment43031_21345">neither Noetherian</fr:link> <fr:link type="external" href="https://math.stackexchange.com/a/305962">nor coherent</fr:link>.
         In both cases, non-zero smooth functions with identically zero Taylor series on a neighbourhood are the problem.
-        However, differential geometry can appeal to something that neither algebraic nor analytic geometry can: partitions of unity, with bump functions.</fr:p></fr:li></fr:ul><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>427</fr:anchor><fr:addr
-type="machine">#297</fr:addr><fr:route>unstable-297.xml</fr:route><fr:title
-text="Partitions of unity and the Nullstellensatz">Partitions of unity and the Nullstellensatz</fr:title><fr:taxon>Aside</fr:taxon><fr:authors /><fr:parent>#296</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Although the existence of partitions of unity in the smooth case is not expressed as a property of <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex>, it still plays an analogous role to the coherence of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>, in that it gives rise to acyclicity theorems of resolutions.
-      It is possible to think of the Nullstellensatz — a form of which holds in both the algebraic (over an algebraically closed field) and holomorphic cases — as a type of partition of unity statement: one version of it says that, for any set of functions <fr:tex
-display="inline"><![CDATA[f_1,\ldots ,f_n\in \mathscr {O}_X(X)]]></fr:tex> that do not have a common zero, we can find <fr:tex
-display="inline"><![CDATA[g_1,\ldots ,g_n\in \mathscr {O}_X(X)]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[\sum _i f_ig_i=1]]></fr:tex> (where <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> is affine in the algebraic case, and Stein in the holomorphic case).
+        However, differential geometry can appeal to something that neither algebraic nor analytic geometry can: partitions of unity, with bump functions.</fr:p></fr:li></fr:ul>
+                <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>427</fr:anchor>
+                    <fr:addr type="machine">#297</fr:addr>
+                    <fr:route>unstable-297.xml</fr:route>
+                    <fr:title text="Partitions of unity and the Nullstellensatz">Partitions of unity and the Nullstellensatz</fr:title>
+                    <fr:taxon>Aside</fr:taxon>
+                    <fr:authors />
+                    <fr:parent>#296</fr:parent>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>Although the existence of partitions of unity in the smooth case is not expressed as a property of <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex>, it still plays an analogous role to the coherence of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>, in that it gives rise to acyclicity theorems of resolutions.
+      It is possible to think of the Nullstellensatz — a form of which holds in both the algebraic (over an algebraically closed field) and holomorphic cases — as a type of partition of unity statement: one version of it says that, for any set of functions <fr:tex display="inline"><![CDATA[f_1,\ldots ,f_n\in \mathscr {O}_X(X)]]></fr:tex> that do not have a common zero, we can find <fr:tex display="inline"><![CDATA[g_1,\ldots ,g_n\in \mathscr {O}_X(X)]]></fr:tex> such that <fr:tex display="inline"><![CDATA[\sum _i f_ig_i=1]]></fr:tex> (where <fr:tex display="inline"><![CDATA[X]]></fr:tex> is affine in the algebraic case, and Stein in the holomorphic case).
       Indeed, this can even be proven by using coherence of the structure sheaf: it follows from Cartan's Theorem B.
-      However, this analogy is not entirely precise, since partitions of unity involve extension by zero ("bump functions"), which is not possible in the algebraic or holomorphic cases; the fact that smooth partitions of unity are stronger (in this sense) is what implies that the structure sheaf of a smooth manifold is <fr:em>soft</fr:em>, and thus acyclic.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>428</fr:anchor><fr:addr
-type="machine">#298</fr:addr><fr:route>unstable-298.xml</fr:route><fr:taxon>Summary</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>429</fr:anchor><fr:addr
-type="machine">#299</fr:addr><fr:route>unstable-299.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:parent>#298</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>For a sheaf <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules on a ringed space <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex>, we have three classical finiteness conditions:
+      However, this analogy is not entirely precise, since partitions of unity involve extension by zero ("bump functions"), which is not possible in the algebraic or holomorphic cases; the fact that smooth partitions of unity are stronger (in this sense) is what implies that the structure sheaf of a smooth manifold is <fr:em>soft</fr:em>, and thus acyclic.</fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>428</fr:anchor>
+                <fr:addr type="machine">#298</fr:addr>
+                <fr:route>unstable-298.xml</fr:route>
+                <fr:taxon>Summary</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>429</fr:anchor>
+                    <fr:addr type="machine">#299</fr:addr>
+                    <fr:route>unstable-299.xml</fr:route>
+                    <fr:taxon>Definition</fr:taxon>
+                    <fr:authors />
+                    <fr:parent>#298</fr:parent>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>For a sheaf <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules on a ringed space <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex>, we have three classical finiteness conditions:
 
       <fr:ul><fr:li><fr:strong>Finite type:</fr:strong> locally covered by some finite free sheaf
-          <fr:tex
-display="block"><![CDATA[             \mathscr {O}_U^{\oplus  r}\twoheadrightarrow \mathscr {F}|_U           ]]></fr:tex>
-          (i.e. <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is locally finitely generated by sections)</fr:li>
+          <fr:tex display="block"><![CDATA[             \mathscr {O}_U^{\oplus  r}\twoheadrightarrow \mathscr {F}|_U           ]]></fr:tex>
+          (i.e. <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is locally finitely generated by sections)</fr:li>
         <fr:li><fr:strong>Finite presentation:</fr:strong> ... and all the extra fluff is locally the image of some finite free sheaf
-          <fr:tex
-display="block"><![CDATA[             \mathscr {O}_V^{\oplus  s}\to \mathscr {O}_V^{\oplus  r}\twoheadrightarrow \mathscr {F}|_V           ]]></fr:tex>
-          (i.e. <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is locally the cokernel of a finite free morphism)</fr:li>
+          <fr:tex display="block"><![CDATA[             \mathscr {O}_V^{\oplus  s}\to \mathscr {O}_V^{\oplus  r}\twoheadrightarrow \mathscr {F}|_V           ]]></fr:tex>
+          (i.e. <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is locally the cokernel of a finite free morphism)</fr:li>
         <fr:li><fr:strong>Coherent:</fr:strong> ... and this whole story is also true of any subsheaf of finite type
-          <fr:tex
-display="block"><![CDATA[             \left [               \mathscr {F}'\hookrightarrow \mathscr {F}               \quad \text {and}\quad                \mathscr {O}_U^{\oplus  r'}\twoheadrightarrow \mathscr {F}'_U             \right ]             \implies              \left [               \mathscr {O}_V^{\oplus  s'}\to \mathscr {O}_V^{\oplus  r'}\twoheadrightarrow \mathscr {F}'|_V             \right ]           ]]></fr:tex>
-          (i.e. <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is locally the cokernel of a finite free morphism, as are all its subsheaves of finite type)</fr:li></fr:ul>
+          <fr:tex display="block"><![CDATA[             \left [               \mathscr {F}'\hookrightarrow \mathscr {F}               \quad \text {and}\quad                \mathscr {O}_U^{\oplus  r'}\twoheadrightarrow \mathscr {F}'_U             \right ]             \implies              \left [               \mathscr {O}_V^{\oplus  s'}\to \mathscr {O}_V^{\oplus  r'}\twoheadrightarrow \mathscr {F}'|_V             \right ]           ]]></fr:tex>
+          (i.e. <fr:tex display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is locally the cokernel of a finite free morphism, as are all its subsheaves of finite type)</fr:li></fr:ul>
 
-      (where <fr:tex
-display="inline"><![CDATA[V\subseteq  U\subseteq  X]]></fr:tex>).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>430</fr:anchor><fr:addr
-type="machine">#300</fr:addr><fr:route>unstable-300.xml</fr:route><fr:taxon>Application</fr:taxon><fr:authors /><fr:parent>#298</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Coherence allows us to turn exactness on <fr:em>stalks</fr:em> to exactness on <fr:em>neighbourhoods</fr:em>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>431</fr:anchor><fr:addr
-type="machine">#301</fr:addr><fr:route>unstable-301.xml</fr:route><fr:taxon>Implications</fr:taxon><fr:authors /><fr:parent>#298</fr:parent></fr:frontmatter><fr:mainmatter><fr:ul><fr:li><fr:p>In general, [finite type <fr:tex
-display="inline"><![CDATA[\Longleftarrow ]]></fr:tex> finite presentation <fr:tex
-display="inline"><![CDATA[\Longleftarrow ]]></fr:tex> coherent].</fr:p>
+      (where <fr:tex display="inline"><![CDATA[V\subseteq  U\subseteq  X]]></fr:tex>).</fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+                <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>430</fr:anchor>
+                    <fr:addr type="machine">#300</fr:addr>
+                    <fr:route>unstable-300.xml</fr:route>
+                    <fr:taxon>Application</fr:taxon>
+                    <fr:authors />
+                    <fr:parent>#298</fr:parent>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>Coherence allows us to turn exactness on <fr:em>stalks</fr:em> to exactness on <fr:em>neighbourhoods</fr:em>.</fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+                <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>431</fr:anchor>
+                    <fr:addr type="machine">#301</fr:addr>
+                    <fr:route>unstable-301.xml</fr:route>
+                    <fr:taxon>Implications</fr:taxon>
+                    <fr:authors />
+                    <fr:parent>#298</fr:parent>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:ul><fr:li><fr:p>In general, [finite type <fr:tex display="inline"><![CDATA[\Longleftarrow ]]></fr:tex> finite presentation <fr:tex display="inline"><![CDATA[\Longleftarrow ]]></fr:tex> coherent].</fr:p>
 
         <fr:p>For any subsheaf of a coherent sheaf, these three conditions become equivalent.</fr:p></fr:li>
 
-      <fr:li><fr:p><fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01BZ">[Stacks:01BZ]</fr:link>:
-          If <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> itself is coherent, then [finite presentation <fr:tex
-display="inline"><![CDATA[\iff ]]></fr:tex> coherent].</fr:p>
+      <fr:li><fr:p><fr:link type="external" href="https://stacks.math.columbia.edu/tag/01BZ">[Stacks:01BZ]</fr:link>:
+          If <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> itself is coherent, then [finite presentation <fr:tex display="inline"><![CDATA[\iff ]]></fr:tex> coherent].</fr:p>
 
-        <fr:p>In particular, if <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent, then any locally free sheaf of finite rank (i.e. any "vector bundle") is also coherent.</fr:p></fr:li>
+        <fr:p>In particular, if <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent, then any locally free sheaf of finite rank (i.e. any "vector bundle") is also coherent.</fr:p></fr:li>
 
-      <fr:li><fr:p><fr:link
-type="external"
-href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>:
-          If <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a locally Noetherian scheme, then these three conditions are <fr:em>almost</fr:em> equivalent: for any sheaf, [finite type* <fr:tex
-display="inline"><![CDATA[\iff ]]></fr:tex> finite presentation <fr:tex
-display="inline"><![CDATA[\iff ]]></fr:tex> coherent], where "finite type*" means <fr:em>quasi-coherent</fr:em> of finite type (but we don't want to talk about quasi-coherence right now).</fr:p>
+      <fr:li><fr:p><fr:link type="external" href="https://stacks.math.columbia.edu/tag/01XZ">[Stacks:01XZ]</fr:link>:
+          If <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a locally Noetherian scheme, then these three conditions are <fr:em>almost</fr:em> equivalent: for any sheaf, [finite type* <fr:tex display="inline"><![CDATA[\iff ]]></fr:tex> finite presentation <fr:tex display="inline"><![CDATA[\iff ]]></fr:tex> coherent], where "finite type*" means <fr:em>quasi-coherent</fr:em> of finite type (but we don't want to talk about quasi-coherence right now).</fr:p>
 
-        <fr:p>In particular, if <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a locally Noetherian scheme, then <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent, and the proof of this is trivial: it's of finite presentation (indeed, it's even of finite type).</fr:p></fr:li>
+        <fr:p>In particular, if <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a locally Noetherian scheme, then <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent, and the proof of this is trivial: it's of finite presentation (indeed, it's even of finite type).</fr:p></fr:li>
 
-      <fr:li><fr:p>The fact that <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent when <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a complex manifold is a deep theorem of Oka whose proof is not at all trivial.
-          Indeed, <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is not Noetherian in the case where <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> is in particular a Stein manifold, so we cannot simply copy the algebraic proof and say that it follows from <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> being of finite type.</fr:p></fr:li>
+      <fr:li><fr:p>The fact that <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is coherent when <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a complex manifold is a deep theorem of Oka whose proof is not at all trivial.
+          Indeed, <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is not Noetherian in the case where <fr:tex display="inline"><![CDATA[X]]></fr:tex> is in particular a Stein manifold, so we cannot simply copy the algebraic proof and say that it follows from <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> being of finite type.</fr:p></fr:li>
 
-      <fr:li><fr:p>When <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a smooth manifold, then <fr:tex
-display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is not Noetherian and also <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is not coherent.
-          This <fr:em>would</fr:em> cause a lot of issues, were it not for the fact that partitions of unity allow differential geometers to build acyclic resolutions in the form of flasque sheaves.</fr:p></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>432</fr:anchor><fr:addr
-type="machine">#302</fr:addr><fr:route>unstable-302.xml</fr:route><fr:taxon>History</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Looking up the definition of what it means for a sheaf of <fr:tex
-display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules to be <fr:em>coherent</fr:em> will give different results depending on the reference, both in terms of when it was written and what its focus is.
-    For example, you might hear people complain that "the definition in EGA (<html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: citation</fr:em></fr:strong></html:mark>) is not functorial (it's not preserved by pullbacks)", or that "the definition in Hartshorne (<html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: citation</fr:em></fr:strong></html:mark>) makes Oka coherence sound trivial".
+      <fr:li><fr:p>When <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a smooth manifold, then <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is not Noetherian and also <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex> is not coherent.
+          This <fr:em>would</fr:em> cause a lot of issues, were it not for the fact that partitions of unity allow differential geometers to build acyclic resolutions in the form of flasque sheaves.</fr:p></fr:li></fr:ul>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>432</fr:anchor>
+                <fr:addr type="machine">#302</fr:addr>
+                <fr:route>unstable-302.xml</fr:route>
+                <fr:taxon>History</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Looking up the definition of what it means for a sheaf of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules to be <fr:em>coherent</fr:em> will give different results depending on the reference, both in terms of when it was written and what its focus is.
+    For example, you might hear people complain that "the definition in EGA (<html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: citation</fr:em></fr:strong></html:mark>) is not functorial (it's not preserved by pullbacks)", or that "the definition in Hartshorne (<html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: citation</fr:em></fr:strong></html:mark>) makes Oka coherence sound trivial".
     Lots of confusion stems from the fact that, when dealing with (locally) Noetherian schemes, or ringed spaces with coherent structure sheaf (such as complex manifolds), the differences between various finiteness conditions collapse somewhat, making it hard to tell that they were actually distinct in the first place.
-    Not only this, but references dealing with <fr:em>algebraic</fr:em> geometry (in the sense that they talk about <fr:em>schemes</fr:em>) are likely to discuss <fr:em>quasi</fr:em>-coherent sheaves, which are not well-behaved objects for arbitrary locally ringed spaces, and definitely not well-behaved in the specific case of complex manifolds.</fr:p><fr:p>Part of the reason for this confusing proliferation of competing definitions is the historical journey coherent sheaves have taken: they started in complex geometry, worked their way into algebraic geometry, and then through into scheme theory.</fr:p><fr:p><html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: history: Cartan, Oka, Serre (FAC), EGA, SGA 6, ... Grauert–Remmer–Forster?</fr:em></fr:strong></html:mark></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>436</fr:anchor><fr:addr
-type="machine">#303</fr:addr><fr:route>unstable-303.xml</fr:route><fr:taxon>Literature</fr:taxon><fr:authors /><fr:parent>hh-3L2M</fr:parent></fr:frontmatter><fr:mainmatter><html:mark
-xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: FAC, Stacks, SGA 6, Oka(?), the original (Cartan?) citation</fr:em></fr:strong></html:mark></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+    Not only this, but references dealing with <fr:em>algebraic</fr:em> geometry (in the sense that they talk about <fr:em>schemes</fr:em>) are likely to discuss <fr:em>quasi</fr:em>-coherent sheaves, which are not well-behaved objects for arbitrary locally ringed spaces, and definitely not well-behaved in the specific case of complex manifolds.</fr:p>
+                <fr:p>Part of the reason for this confusing proliferation of competing definitions is the historical journey coherent sheaves have taken: they started in complex geometry, worked their way into algebraic geometry, and then through into scheme theory.</fr:p>
+                <fr:p>
+                  <html:mark xmlns:html="http://www.w3.org/1999/xhtml">
+                    <fr:strong>
+                      <fr:em>TO-DO: history: Cartan, Oka, Serre (FAC), EGA, SGA 6, ... Grauert–Remmer–Forster?</fr:em>
+                    </fr:strong>
+                  </html:mark>
+                </fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>436</fr:anchor>
+                <fr:addr type="machine">#303</fr:addr>
+                <fr:route>unstable-303.xml</fr:route>
+                <fr:taxon>Literature</fr:taxon>
+                <fr:authors />
+                <fr:parent>hh-3L2M</fr:parent>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:mark xmlns:html="http://www.w3.org/1999/xhtml">
+                  <fr:strong>
+                    <fr:em>TO-DO: FAC, Stacks, SGA 6, Oka(?), the original (Cartan?) citation</fr:em>
+                  </fr:strong>
+                </html:mark>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

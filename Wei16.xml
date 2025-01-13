@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>306</fr:anchor><fr:addr
-type="user">Wei16</fr:addr><fr:route>Wei16.xml</fr:route><fr:title
-text="Twisted complexes on a ringed space as a dg-enhancement of the derived category of perfect complexes">Twisted complexes on a ringed space as a dg-enhancement of the derived category of perfect complexes</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2016</fr:year></fr:date><fr:authors><fr:author>Zhaoting Wei</fr:author></fr:authors><fr:meta
-name="venue"><fr:em>European Journal of Mathematics</fr:em> <fr:strong>2</fr:strong> pp. 716–759</fr:meta><fr:meta
-name="doi">10.1007/s40879-016-0102-8</fr:meta><fr:meta
-name="bibtex"><![CDATA[@article{Wei16,
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>306</fr:anchor>
+    <fr:addr type="user">Wei16</fr:addr>
+    <fr:route>Wei16.xml</fr:route>
+    <fr:title text="Twisted complexes on a ringed space as a dg-enhancement of the derived category of perfect complexes">Twisted complexes on a ringed space as a dg-enhancement of the derived category of perfect complexes</fr:title>
+    <fr:taxon>Reference</fr:taxon>
+    <fr:date>
+      <fr:year>2016</fr:year>
+    </fr:date>
+    <fr:authors>
+      <fr:author>Zhaoting Wei</fr:author>
+    </fr:authors>
+    <fr:meta name="venue"><fr:em>European Journal of Mathematics</fr:em> <fr:strong>2</fr:strong> pp. 716–759</fr:meta>
+    <fr:meta name="doi">10.1007/s40879-016-0102-8</fr:meta>
+    <fr:meta name="bibtex"><![CDATA[@article{Wei16,
   title = {Twisted complexes on a ringed space as a dg-enhancement of the derived category of perfect complexes},
   author = {Wei, Zhaoting},
   date = {2016},
@@ -20,4 +23,8 @@ name="bibtex"><![CDATA[@article{Wei16,
   volume = {2},
   pages = {716–759},
   doi = {10.1007/s40879-016-0102-8}
-}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
+}]]></fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter />
+  <fr:backmatter />
+</fr:tree>
