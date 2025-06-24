@@ -2,16 +2,22 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>336</fr:anchor>
+    <fr:anchor>337</fr:anchor>
     <fr:addr type="machine">#242</fr:addr>
     <fr:route>unstable-242.xml</fr:route>
-    <fr:taxon>Proof</fr:taxon>
+    <fr:taxon>Theorem</fr:taxon>
     <fr:authors />
-    <fr:parent>#241</fr:parent>
+    <fr:parent>hh-VBWR</fr:parent>
   </fr:frontmatter>
-  <fr:mainmatter>
-    This is <fr:link type="local" href="OTT85.xml" addr="OTT85" title="A Grothendieck–Riemann–Roch formula for maps of complex manifolds">[OTT85, Proposition 1.2.3]</fr:link>, or <fr:link type="external" href="Wei2016">[Wei2016, Proposition 3.20]</fr:link>.
-  </fr:mainmatter>
+  <fr:mainmatter><fr:p>Let <fr:tex display="inline"><![CDATA[\mathscr {F}^\bullet ]]></fr:tex> be a <fr:link type="local" href="hh-8BU1.xml" addr="hh-8BU1" title="Perfectness conditions on complexes"><fr:strong>perfect complex</fr:strong></fr:link> (such that each <fr:tex display="inline"><![CDATA[\mathscr {F}^i]]></fr:tex> is quasi-coherent) on a <fr:strong>locally ringed space</fr:strong>.
+    Then <fr:tex display="inline"><![CDATA[\mathscr {F}^\bullet ]]></fr:tex> admits a resolution by a twisting cochain.</fr:p>
+  
+    
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>317</fr:anchor><fr:addr type="machine">#243</fr:addr><fr:route>unstable-243.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#242</fr:parent></fr:frontmatter><fr:mainmatter>
+    This is a corollary (<html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: explain how!</fr:em></fr:strong></html:mark>) to <fr:link type="external" href="Wei2016">[Wei2016, Proposition 3.20]</fr:link>, though the terminology there is different: their "twisted perfect complexes" are (roughly) exactly twisting cochains.
+  </fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter>
   <fr:backmatter>
     <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
       <fr:frontmatter>
@@ -21,7 +27,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>337</fr:anchor>
+            <fr:anchor>338</fr:anchor>
             <fr:addr type="user">hh-VBWR</fr:addr>
             <fr:route>hh-VBWR.xml</fr:route>
             <fr:title text="Resolutions by twisting cochains">Resolutions by twisting cochains</fr:title>
@@ -30,9 +36,9 @@
           <fr:mainmatter>
             <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>313</fr:anchor>
-                <fr:addr type="machine">#239</fr:addr>
-                <fr:route>unstable-239.xml</fr:route>
+                <fr:anchor>312</fr:anchor>
+                <fr:addr type="machine">#238</fr:addr>
+                <fr:route>unstable-238.xml</fr:route>
                 <fr:taxon>Theorem</fr:taxon>
                 <fr:authors />
                 <fr:parent>hh-VBWR</fr:parent>
@@ -42,7 +48,7 @@
     Furthermore, for any choice of open cover <fr:tex display="inline"><![CDATA[\mathcal {U}]]></fr:tex> of the manifold, we can construct the holomorphic twisting cochain to be with respect to a refinement of <fr:tex display="inline"><![CDATA[\mathcal {U}]]></fr:tex>.</fr:p>
   
     
-    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>314</fr:anchor><fr:addr type="machine">#240</fr:addr><fr:route>unstable-240.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#239</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:addr type="machine">#239</fr:addr><fr:route>unstable-239.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#238</fr:parent></fr:frontmatter><fr:mainmatter>
     This is <fr:link type="local" href="TT78.xml" addr="TT78" title="Duality and Intersection Theory in Complex Manifolds. I.">[TT78, Proposition 2.4]</fr:link>;
     a brief summary of the proof is also given in the paragraphs around <fr:link type="external" href="OTT81">[OTT81, Lemma 1.6]</fr:link>.
     The fact that we can do this with respect to a refinement of a given cover is shown in <fr:link type="local" href="OTT85.xml" addr="OTT85" title="A Grothendieck–Riemann–Roch formula for maps of complex manifolds">[OTT85, Proposition 1.2.3]</fr:link>.
@@ -53,9 +59,9 @@
             </fr:tree>
             <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>315</fr:anchor>
-                <fr:addr type="machine">#241</fr:addr>
-                <fr:route>unstable-241.xml</fr:route>
+                <fr:anchor>314</fr:anchor>
+                <fr:addr type="machine">#240</fr:addr>
+                <fr:route>unstable-240.xml</fr:route>
                 <fr:taxon>Theorem</fr:taxon>
                 <fr:authors />
                 <fr:parent>hh-VBWR</fr:parent>
@@ -65,7 +71,7 @@
     Furthermore, for any choice of open cover <fr:tex display="inline"><![CDATA[\mathcal {U}]]></fr:tex> of the manifold, we can construct the holomorphic twisting cochain to be with respect to a refinement of <fr:tex display="inline"><![CDATA[\mathcal {U}]]></fr:tex>.</fr:p>
   
     
-    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>316</fr:anchor><fr:addr type="machine">#242</fr:addr><fr:route>unstable-242.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#241</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>315</fr:anchor><fr:addr type="machine">#241</fr:addr><fr:route>unstable-241.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#240</fr:parent></fr:frontmatter><fr:mainmatter>
     This is <fr:link type="local" href="OTT85.xml" addr="OTT85" title="A Grothendieck–Riemann–Roch formula for maps of complex manifolds">[OTT85, Proposition 1.2.3]</fr:link>, or <fr:link type="external" href="Wei2016">[Wei2016, Proposition 3.20]</fr:link>.
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
@@ -74,9 +80,9 @@
             </fr:tree>
             <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>317</fr:anchor>
-                <fr:addr type="machine">#243</fr:addr>
-                <fr:route>unstable-243.xml</fr:route>
+                <fr:anchor>316</fr:anchor>
+                <fr:addr type="machine">#242</fr:addr>
+                <fr:route>unstable-242.xml</fr:route>
                 <fr:taxon>Theorem</fr:taxon>
                 <fr:authors />
                 <fr:parent>hh-VBWR</fr:parent>
@@ -85,7 +91,7 @@
     Then <fr:tex display="inline"><![CDATA[\mathscr {F}^\bullet ]]></fr:tex> admits a resolution by a twisting cochain.</fr:p>
   
     
-    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>318</fr:anchor><fr:addr type="machine">#244</fr:addr><fr:route>unstable-244.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#243</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>317</fr:anchor><fr:addr type="machine">#243</fr:addr><fr:route>unstable-243.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#242</fr:parent></fr:frontmatter><fr:mainmatter>
     This is a corollary (<html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: explain how!</fr:em></fr:strong></html:mark>) to <fr:link type="external" href="Wei2016">[Wei2016, Proposition 3.20]</fr:link>, though the terminology there is different: their "twisted perfect complexes" are (roughly) exactly twisting cochains.
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
@@ -94,9 +100,9 @@
             </fr:tree>
             <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>320</fr:anchor>
-                <fr:addr type="machine">#245</fr:addr>
-                <fr:route>unstable-245.xml</fr:route>
+                <fr:anchor>319</fr:anchor>
+                <fr:addr type="machine">#244</fr:addr>
+                <fr:route>unstable-244.xml</fr:route>
                 <fr:taxon>Remark</fr:taxon>
                 <fr:authors />
                 <fr:parent>hh-VBWR</fr:parent>

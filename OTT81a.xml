@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>321</fr:anchor>
+    <fr:anchor>320</fr:anchor>
     <fr:addr type="user">OTT81a</fr:addr>
     <fr:route>OTT81a.xml</fr:route>
     <fr:title text="The Trace Map and Characteristic Classes for Coherent Sheaves">The Trace Map and Characteristic Classes for Coherent Sheaves</fr:title>
