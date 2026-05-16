@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>348</fr:anchor>
+    <fr:anchor>363</fr:anchor>
     <fr:addr type="machine">#245</fr:addr>
     <fr:route>unstable-245.xml</fr:route>
     <fr:taxon>Overview</fr:taxon>
@@ -22,7 +22,7 @@
     <fr:li>guess what! as always, they exist in the smooth case (partitions of unity) and the algebraic case (... <html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: key component of the proof?</fr:em></fr:strong></html:mark>), and not in the holomorphic case! (famous counterexample: Voisin's construction)</fr:li>
 
     <fr:li>but yet again we are <fr:em>locally</fr:em> ok, i.e. <fr:em>locally</fr:em> there exist locally free resolutions.
-      WARNING: (that remark that you emailed Mahmoud and Cheyne about)</fr:li>
+      WARNING: (that remark that you emailed Mahmoud and Cheyne about: <fr:link type="local" href="Fie1982.xml" addr="Fie1982" title="Several complex variables and complex manifolds II">[Fie1982, Remark 1 p.143]</fr:link>)</fr:li>
 
     <fr:li>ok but can we glue these local locally free things into a global thing? yes, but only homotopically/weakly/simplicially (just as for <fr:link type="local" href="hh-JJ1M.xml" addr="hh-JJ1M" title="Connections">connections</fr:link>!) and this will be the subject of <fr:link type="local" href="hh-VBWR.xml" addr="hh-VBWR" title="Resolutions by twisting cochains">the next section</fr:link></fr:li></fr:ul>
   </fr:mainmatter>
@@ -35,7 +35,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>352</fr:anchor>
+            <fr:anchor>364</fr:anchor>
             <fr:addr type="user">hh-8BU1</fr:addr>
             <fr:route>hh-8BU1.xml</fr:route>
             <fr:title text="Perfectness conditions on complexes">Perfectness conditions on complexes</fr:title>
@@ -44,7 +44,7 @@
           <fr:mainmatter>
             <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>353</fr:anchor>
+                <fr:anchor>328</fr:anchor>
                 <fr:addr type="machine">#245</fr:addr>
                 <fr:route>unstable-245.xml</fr:route>
                 <fr:taxon>Overview</fr:taxon>
@@ -64,7 +64,7 @@
     <fr:li>guess what! as always, they exist in the smooth case (partitions of unity) and the algebraic case (... <html:mark xmlns:html="http://www.w3.org/1999/xhtml"><fr:strong><fr:em>TO-DO: key component of the proof?</fr:em></fr:strong></html:mark>), and not in the holomorphic case! (famous counterexample: Voisin's construction)</fr:li>
 
     <fr:li>but yet again we are <fr:em>locally</fr:em> ok, i.e. <fr:em>locally</fr:em> there exist locally free resolutions.
-      WARNING: (that remark that you emailed Mahmoud and Cheyne about)</fr:li>
+      WARNING: (that remark that you emailed Mahmoud and Cheyne about: <fr:link type="local" href="Fie1982.xml" addr="Fie1982" title="Several complex variables and complex manifolds II">[Fie1982, Remark 1 p.143]</fr:link>)</fr:li>
 
     <fr:li>ok but can we glue these local locally free things into a global thing? yes, but only homotopically/weakly/simplicially (just as for <fr:link type="local" href="hh-JJ1M.xml" addr="hh-JJ1M" title="Connections">connections</fr:link>!) and this will be the subject of <fr:link type="local" href="hh-VBWR.xml" addr="hh-VBWR" title="Resolutions by twisting cochains">the next section</fr:link></fr:li></fr:ul>
               </fr:mainmatter>
@@ -72,7 +72,7 @@
             </fr:tree>
             <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>354</fr:anchor>
+                <fr:anchor>332</fr:anchor>
                 <fr:addr type="machine">#246</fr:addr>
                 <fr:route>unstable-246.xml</fr:route>
                 <fr:title text="Strictly perfect complex">Strictly perfect complex</fr:title>
@@ -88,7 +88,7 @@
             </fr:tree>
             <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>355</fr:anchor>
+                <fr:anchor>333</fr:anchor>
                 <fr:addr type="machine">#247</fr:addr>
                 <fr:route>unstable-247.xml</fr:route>
                 <fr:title text="Perfect complex">Perfect complex</fr:title>
@@ -104,7 +104,7 @@
             </fr:tree>
             <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>356</fr:anchor>
+                <fr:anchor>334</fr:anchor>
                 <fr:addr type="machine">#248</fr:addr>
                 <fr:route>unstable-248.xml</fr:route>
                 <fr:taxon>Lemma</fr:taxon>
@@ -114,7 +114,7 @@
               <fr:mainmatter><fr:p>If <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a <fr:em>locally</fr:em> ringed space, then a complex <fr:tex display="inline"><![CDATA[L^\bullet ]]></fr:tex> of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules is strictly perfect if and only if it is bounded and such that each <fr:tex display="inline"><![CDATA[L^i]]></fr:tex> is locally free of finite rank.</fr:p>
   
     
-    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>357</fr:anchor><fr:addr type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#248</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>335</fr:anchor><fr:addr type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>#248</fr:parent></fr:frontmatter><fr:mainmatter>
     Since <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is <fr:em>locally</fr:em> ringed, any direct summand of a locally free <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-module of finite rank is itself locally free of finite rank (<fr:link type="external" href="https://stacks.math.columbia.edu/tag/0BCI">[Stacks:0BCI]</fr:link>)
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
@@ -123,7 +123,7 @@
             </fr:tree>
             <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>358</fr:anchor>
+                <fr:anchor>336</fr:anchor>
                 <fr:addr type="machine">#250</fr:addr>
                 <fr:route>unstable-250.xml</fr:route>
                 <fr:taxon>Corollary</fr:taxon>
@@ -134,7 +134,7 @@
                 <fr:p>If <fr:tex display="inline"><![CDATA[(X,\mathscr {O}_X)]]></fr:tex> is a <fr:em>locally</fr:em> ringed space, then a complex <fr:tex display="inline"><![CDATA[L^\bullet ]]></fr:tex> of <fr:tex display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>-modules is perfect if and only if it is locally quasi-isomorphic to a bounded complex of locally free modules of finite rank.</fr:p>
                 <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
                   <fr:frontmatter>
-                    <fr:anchor>359</fr:anchor>
+                    <fr:anchor>337</fr:anchor>
                     <fr:addr type="machine">#251</fr:addr>
                     <fr:route>unstable-251.xml</fr:route>
                     <fr:taxon>Unpacking</fr:taxon>
@@ -158,7 +158,7 @@
             </fr:p>
             <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>361</fr:anchor>
+                <fr:anchor>339</fr:anchor>
                 <fr:addr type="machine">#252</fr:addr>
                 <fr:route>unstable-252.xml</fr:route>
                 <fr:taxon>Literature</fr:taxon>

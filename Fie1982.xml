@@ -2,27 +2,38 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>373</fr:anchor>
-    <fr:addr type="machine">#252</fr:addr>
-    <fr:route>unstable-252.xml</fr:route>
-    <fr:taxon>Literature</fr:taxon>
-    <fr:authors />
-    <fr:parent>hh-8BU1</fr:parent>
+    <fr:anchor>325</fr:anchor>
+    <fr:addr type="user">Fie1982</fr:addr>
+    <fr:route>Fie1982.xml</fr:route>
+    <fr:title text="Several complex variables and complex manifolds II">Several complex variables and complex manifolds II</fr:title>
+    <fr:taxon>Reference</fr:taxon>
+    <fr:date>
+      <fr:year>1982</fr:year>
+    </fr:date>
+    <fr:authors>
+      <fr:author>Mike Field</fr:author>
+    </fr:authors>
+    <fr:meta name="venue">Cambridge University Press</fr:meta>
+    <fr:meta name="isbn">0521288886</fr:meta>
+    <fr:meta name="bibtex"><![CDATA[@book{Fie1982,
+  title = {Several complex variables and complex manifolds II},
+  author = {Field, Mike},
+  date = {1982},
+  publisher = {Cambridge University Press},
+  isbn = {0521288886}
+}]]></fr:meta>
   </fr:frontmatter>
-  <fr:mainmatter>
-    <fr:ul><fr:li>Brief overview: <fr:link type="external" href="Wei2016">[Wei2016, §2]</fr:link></fr:li>
-    <fr:li>Detailed proofs: <fr:link type="external" href="https://stacks.math.columbia.edu/tag/08C3">[Stacks:08C3]</fr:link> and <fr:link type="external" href="https://stacks.math.columbia.edu/tag/08CL">[Stacks:08CL]</fr:link></fr:li></fr:ul>
-  </fr:mainmatter>
+  <fr:mainmatter />
   <fr:backmatter>
     <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
       <fr:frontmatter>
-        <fr:title text="Context">Context</fr:title>
+        <fr:title text="Backlinks">Backlinks</fr:title>
         <fr:authors />
       </fr:frontmatter>
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>374</fr:anchor>
+            <fr:anchor>327</fr:anchor>
             <fr:addr type="user">hh-8BU1</fr:addr>
             <fr:route>hh-8BU1.xml</fr:route>
             <fr:title text="Perfectness conditions on complexes">Perfectness conditions on complexes</fr:title>

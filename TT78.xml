@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>325</fr:anchor>
+    <fr:anchor>340</fr:anchor>
     <fr:addr type="user">TT78</fr:addr>
     <fr:route>TT78.xml</fr:route>
     <fr:title text="Duality and Intersection Theory in Complex Manifolds. I.">Duality and Intersection Theory in Complex Manifolds. I.</fr:title>
@@ -36,7 +36,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>328</fr:anchor>
+            <fr:anchor>343</fr:anchor>
             <fr:addr type="user">hh-VBWR</fr:addr>
             <fr:route>hh-VBWR.xml</fr:route>
             <fr:title text="Resolutions by twisting cochains">Resolutions by twisting cochains</fr:title>
