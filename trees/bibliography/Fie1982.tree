@@ -1,0 +1,16 @@
+\taxon{reference}
+
+\title{Several complex variables and complex manifolds II}
+\author{Mike Field}
+\date{1982}
+\meta{venue}{Cambridge University Press}
+\meta{isbn}{0521288886}
+
+\meta{bibtex}{\startverb
+@book{Fie1982,
+  title = {Several complex variables and complex manifolds II},
+  author = {Field, Mike},
+  date = {1982},
+  publisher = {Cambridge University Press},
+  isbn = {0521288886}
+}\stopverb}
