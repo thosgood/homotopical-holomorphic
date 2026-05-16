@@ -2,12 +2,12 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>344</fr:anchor>
-    <fr:addr type="machine">#244</fr:addr>
-    <fr:route>unstable-244.xml</fr:route>
+    <fr:anchor>504</fr:anchor>
+    <fr:addr type="machine">#303</fr:addr>
+    <fr:route>unstable-303.xml</fr:route>
     <fr:taxon>Overview</fr:taxon>
     <fr:authors />
-    <fr:parent>hh-ICBL</fr:parent>
+    <fr:parent>hh-224J</fr:parent>
   </fr:frontmatter>
   <fr:mainmatter>
     <fr:p>
@@ -27,21 +27,21 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>346</fr:anchor>
-            <fr:addr type="user">hh-ICBL</fr:addr>
-            <fr:route>hh-ICBL.xml</fr:route>
-            <fr:title text="Six-functors">Six-functors</fr:title>
+            <fr:anchor>506</fr:anchor>
+            <fr:addr type="user">hh-224J</fr:addr>
+            <fr:route>hh-224J.xml</fr:route>
+            <fr:title text="Holomorphic K-theory and G-theory">Holomorphic <fr:tex display="inline"><![CDATA[K]]></fr:tex>-theory and <fr:tex display="inline"><![CDATA[G]]></fr:tex>-theory</fr:title>
             <fr:authors />
           </fr:frontmatter>
           <fr:mainmatter>
             <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>347</fr:anchor>
-                <fr:addr type="machine">#244</fr:addr>
-                <fr:route>unstable-244.xml</fr:route>
+                <fr:anchor>507</fr:anchor>
+                <fr:addr type="machine">#303</fr:addr>
+                <fr:route>unstable-303.xml</fr:route>
                 <fr:taxon>Overview</fr:taxon>
                 <fr:authors />
-                <fr:parent>hh-ICBL</fr:parent>
+                <fr:parent>hh-224J</fr:parent>
               </fr:frontmatter>
               <fr:mainmatter>
                 <fr:p>
