@@ -19,11 +19,11 @@
         \em{sheaves}, but in particular really just \strong{gluing data #{\{g_{\alpha\beta}\}}}
       }
       \li{
-        \em{homotopy coherent structures}, but in particular really just the \strong{Maurer-Cartan equation #{\mathrm{d}\mathfrak{a}+\mathfrak{a}^2=0}}
+        \em{homotopy coherent structures}, but in particular really just the \strong{Maurer-Cartan equation #{\mathrm{d}\mathfrak{a}+\mathfrak{a}^2=0}}.
       }
     }
 
-    Note that \em{algebraic geometry} is one of the (many) things missing from this list.
+    Note that \em{algebraic geometry} is one of the many things missing from this list.
   }
 
   \p{
@@ -50,6 +50,7 @@
   \transclude{hh-3L2M}
   \transclude{hh-8BU1}
   \transclude{hh-VBWR}
+  \transclude{hh-JJ1M}
 }
 
 \put\transclude/expanded{true}

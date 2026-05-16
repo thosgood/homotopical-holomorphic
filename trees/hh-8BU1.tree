@@ -3,6 +3,25 @@
 \import{macros}
 \put\transclude/numbered{false}
 
+\ul{
+  \li{
+    working with locally free sheaves is nice and easy (\todo{give examples}) so it would be nice to always have locally free resolutions of stuff that we care about, i.e. coherent sheaves.
+  }
+
+  \li{
+    guess what! as always, they exist in the smooth case (partitions of unity) and the algebraic case (... key component of the proof?), and not in the holomorphic case! (famous counterexample: Voisin's construction)
+  }
+
+  \li{
+    but yet again we are \em{locally} ok, i.e. \em{locally} there exist locally free resolutions.
+    WARNING: (that remark that you emailed Mahmoud and Cheyne about)
+  }
+
+  \li{
+    ok but can we glue these local locally free things into a global thing? yes, but only homotopically/weakly/simplicially (just as for [connections](hh-JJ1M)!) and this will be the subject of [the next section](hh-VBWR)
+  }
+}
+
 \subtree{
   \title{Strictly perfect complex}
   \taxon{definition}
